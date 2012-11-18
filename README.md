@@ -130,3 +130,77 @@ If you modified the dictionary, you have to send a `!reload` to the bot for chan
 
 ##### Rules
 
+The shorter way is to take an example:
+
+ 	<rules>
+		<rule permissions="admin,guest" activated="true">
+		 	<input message="wired.chat.say" comparison="contains" sensitive="false">hello</input>
+		
+		 	<output message="wired.chat.say" delay="1">Hey @INPUT_NICK. :-)</output>
+		 	<output message="wired.chat.say" delay="1">Hello @INPUT_NICK. :-)</output>
+		 	<output message="wired.chat.say" repeat="3">:-)</output>
+		 </rule>
+	</rules>
+
+**Definition:**	
+
+* permissions: User logins able to trigger this rule, use "any" for all users.
+* activated: Use "true" if the rule is activated, "false" if not.
+* inputs:
+	* message: The input message name referring to the Wired specifications. 
+	See "currently supported messages" below.
+	* comparison: The method used to match the input string.
+	* sensitive: Use "true" for sensitive matching, "false" otherwise.
+* outputs:
+	* message: The output message name referring to the Wired specifications.
+	* delay: Set a delay before executing the output.
+	* repeat: Repeat output action as many time as specified.
+	
+##### List of currently supported input messages 
+	
+* wired.chat.say
+* wired.chat.me
+* wired.message.message
+* wired.chat.user_join
+* wired.chat.user_leave
+
+##### List of currently supported output messages 
+	
+* wired.chat.say
+* wired.chat.me
+* wired.message.message
+
+
+##### Commands
+
+TBD
+
+
+
+## Licence
+
+Copyright (c) 2004-2008 Axel Andersson. All rights reserved.
+
+Copyright (c) 2011-2012 Rafaël Warnault. All rights reserved.
+
+Redistribution and use in source and binary forms, with or without
+modification, are permitted provided that the following conditions
+are met:
+
+1. Redistributions of source code must retain the above copyright
+   notice, this list of conditions and the following disclaimer.
+2. Redistributions in binary form must reproduce the above copyright
+   notice, this list of conditions and the following disclaimer in the
+   documentation and/or other materials provided with the distribution.
+
+THIS SOFTWARE IS PROVIDED BY THE PROJECT AND CONTRIBUTORS ``AS IS'' AND
+ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE
+IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE
+ARE DISCLAIMED.  IN NO EVENT SHALL THE PROJECT OR CONTRIBUTORS BE LIABLE
+FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL
+DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS
+OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION)
+HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT
+LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY
+OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF
+SUCH DAMAGE.
