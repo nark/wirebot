@@ -1,0 +1,19 @@
+WELCOME
+=======
+
+Welcome to Wirebot. For installation instructions, please see the file
+"INSTALL".
+
+Most of the documentation comes in the form of man pages, that can be
+read after installing Wirebot.
+
+The documentation is also available at http://www.read-write.fr/wired/wiki.
+
+
+FEATURES
+========
+
+* Support for Wired 2.0 protocol
+* 
+* XML-based triggers dictionary
+* Custom chat commands

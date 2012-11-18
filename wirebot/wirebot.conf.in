@@ -1,0 +1,19 @@
+login 				= guest
+
+hostname 			= localhost
+
+port 				= 4871
+
+password 			= 
+
+icon path 			= icon.png
+
+nick 				= WireBot
+
+status 				= Jedi in the Matrix
+
+auto reconnect		= true
+
+reconnect on kick	= false
+
+dictionary path		= 
