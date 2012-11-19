@@ -54,7 +54,7 @@ Be sure to have these components installed on your system, they are dependencies
 
 		gmake
 		
-	*The "make" on non-GNU systems*
+	*Use "make" on non-GNU systems*
 	
 6. Install Wirebot:
 
@@ -161,6 +161,7 @@ The shorter way is to take an example:
 * wired.chat.say
 * wired.chat.me
 * wired.message.message
+* wired.message.broadcast
 * wired.chat.user_join
 * wired.chat.user_leave
 
@@ -169,6 +170,7 @@ The shorter way is to take an example:
 * wired.chat.say
 * wired.chat.me
 * wired.message.message
+* wired.message.broadcast
 
 
 ##### Commands
