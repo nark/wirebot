@@ -1,12 +1,8 @@
-# Wirebot
+# Wirebot for UNIX
 
 ## Introduction
 
-Welcome to Wirebot. For installation instructions, please see the "Install Wirebot" section below.
-
-Wirebot is an UNIX chat robot for the Wired 2.0 (b55) protocol entirely based on libwired. It is a client-side software able to trigger actions automatically following a dictionary of statements and by analyzing received events from the server.
-
-The documentation is available at http://www.read-write.fr/wired/wiki.
+Wirebot is a chat robot for the Wired 2.0 protocol. It connects to a Wired server and interacts with other users following rules and command setup by the administrator. Wirebot is a kind of mix between Wire and Wired, mainly because it is a client program running as a daemon.
 
 ## Features
 
@@ -15,10 +11,15 @@ The documentation is available at http://www.read-write.fr/wired/wiki.
 * Custom chat commands
 * Many more...
 
+## How it works
 
-## Install Wirebot (BSD-like systems)
+Wirebot is basically a client, that receives/sends/replies messages from/to the server. With Wirebot you can define rules that trigger on received messages to execute a corresponding operation, like for example sending a message back. This I/O system is combined to features like multiple-random-outputs, delays or repeats to create an interactive engine for a chat robot. 
 
-This tutorial explains how to install and run Wirebot using FreeBSD (9.0) as operating system.
+The bot also respond to chat commands, thus users can directly execute some operations on-demand. See "Commands " below in the Customize section.
+
+## Install Wirebot (UNIX-like systems)
+
+This tutorial explains how to install and run Wirebot on an UNIX-like operating system.
 
 ### Requirements
 
@@ -30,11 +31,11 @@ This tutorial explains how to install and run Wirebot using FreeBSD (9.0) as ope
 
 Be sure to have these components installed on your system, they are dependencies of libwired and Wirebot. 
 
-### Install form sources
+### Install form binary
 
 1. Clone Wiredbot repository:
 
-		git clone https://nark@bitbucket.org/nark/wirebot.git wirebot/
+		wget http://master.dl.sourceforge.net/project/wired2/wirebot/wirebot.tar.gz
 	
 2. Move into the clone directory:
 
@@ -52,13 +53,13 @@ Be sure to have these components installed on your system, they are dependencies
 	
 5. Compile both libwired and Wirebot
 
-		gmake
+		make
 		
-	*Use "make" on non-GNU systems*
+	*Use "gmake" on non-GNU systems*
 	
 6. Install Wirebot:
 
-		sudo gmake install
+		sudo make install
 		
 ### Using Wirebot
 		
@@ -66,14 +67,12 @@ Be sure to have these components installed on your system, they are dependencies
 		
 1. Run it a first time:
 
-		rehash && wirebot -D -d
+		wirebot -D -d
 	
 	*"-D" is to not daemonize the process*
 	
 	*"-d" is to enable debug mode*
-	
-	*"rehash" is used here to reload system commands before trying to calling a new one*
-	
+		
 	This will launch Wirebot a firt time and it will try to connect to localhost:4875 with "admin" login and no password. Wirebot also created default config files (~/.wirebot/).  Now kill it (^C), and edit the Wirebot config:
 	
 		nano ~/.wirebot/wirebot.conf
@@ -177,11 +176,11 @@ The shorter way is to take an example:
 
 TBD
 
+### Mac Users
 
+If you are a Mac user, have a look to [WireBot for Mac](http://wired.read-write.fr/products/wire-bot/). It provides a binary version for OSX and a graphical user interface to edit dictionnary file. 
 
 ## Licence
-
-Copyright (c) 2004-2008 Axel Andersson. All rights reserved.
 
 Copyright (c) 2011-2012 Rafaël Warnault. All rights reserved.
 

@@ -25,7 +25,7 @@ CC				= @CC@
 CFLAGS			= @CFLAGS@
 CPPFLAGS		= @CPPFLAGS@
 LDFLAGS			= -L$(rundir)/libwired/lib @LDFLAGS@
-LIBS			= -lwired @LIBS@
+LIBS			= -lwired @LIBS@ -lcurl
 INCLUDES		= -I$(abs_top_srcdir) -I$(rundir)/libwired/include
 
 INSTALL			= @INSTALL@

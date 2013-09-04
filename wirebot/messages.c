@@ -106,9 +106,6 @@ static wi_mutable_dictionary_t					*wr_message_handlers;
 	wi_mutable_dictionary_set_data_for_key(wr_message_handlers, (handler), (message))
 	
 void wr_messages_init(void) {
-	wi_string_t 			*dict_path;
-	wi_string_t 			*dict_string;
-
 	wr_message_handlers = wi_dictionary_init_with_capacity_and_callbacks(wi_mutable_dictionary_alloc(),
 		0, wi_dictionary_default_key_callbacks, wi_dictionary_null_value_callbacks);
 	
@@ -134,26 +131,6 @@ void wr_messages_init(void) {
     WR_MESSAGE_HANDLER(WI_STR("wired.file.file_list"), wr_message_file_list);
     WR_MESSAGE_HANDLER(WI_STR("wired.file.file_list.done"), wr_message_file_list_done);
 	WR_MESSAGE_HANDLER(WI_STR("wired.file.directory_changed"), wr_message_file_directory_changed);
-
-
-	// get dictionary path from the config
-	dict_path = wi_config_path_for_name(wd_config, WI_STR("dictionary path"));
-
-	// check if dictionary path is relatiove or absolute path. If relative, append it to the user wirebot folder (.wirebot)
-	if(!wi_string_has_prefix(dict_path, WI_STR("/")))
-		dict_path = wi_string_by_appending_path_component(wi_string_by_appending_path_component(wi_user_home(), WI_STR(".wirebot")), dict_path);
-
-	// if the dictionary doesn't exist at path, setup the default dictionary
-	if(!wi_fs_path_exists(dict_path, false)) {
-		if(wi_fs_path_exists(WI_STR("/usr/local/share/doc/wirebot/wirebot.xml"), false))
-			dict_string = wi_string_init_with_contents_of_file(wi_string_alloc(), WI_STR("/usr/local/share/doc/wirebot/wirebot.xml"));
-			wi_string_write_to_file(dict_string, dict_path);
-			wi_release(dict_string);
-	}
-
-	// init the bot here
-	if(wi_fs_path_exists(dict_path, false))
-   	 	wb_bot = wb_bot_init_with_file(wb_bot_alloc(), dict_path);
 }
 
 
@@ -673,23 +650,60 @@ static void wr_message_message_broadcast(wi_p7_message_t *message) {
 
 static void wr_message_file_list(wi_p7_message_t *message) {
     wr_chat_t			*chat;
-    wi_string_t 		*path;
+    wi_string_t 		*path, *watcher_path;
+    wb_watcher_t 		*watcher;
 
-    path = wi_p7_message_string_for_name(message, WI_STR("wired.file.path"));
-    //path = wi_string_by_deleting_last_path_component(path);
+    path 				= wi_p7_message_string_for_name(message, WI_STR("wired.file.path"));
+    watcher_path 		= wi_string_by_deleting_last_path_component(path);
+	watcher 			= wb_bot_watcher_for_path(wb_bot, watcher_path);
 
-    //wb_bot_add_file_to_watchers();
+	if(watcher && wb_watcher_activated(watcher)) {
+	    if(wb_bot_is_subscribing(wb_bot)) {
+			wb_watcher_add_file(watcher, path);
+	    }
+	    else {
+	    	wb_watcher_add_new_file(watcher, path);
+	    }
+	}
 }
 
 
 
 static void wr_message_file_list_done(wi_p7_message_t *message) {
+	wi_string_t 		*path;
+	wb_watcher_t 		*watcher;
 
+	path		= wi_p7_message_string_for_name(message, WI_STR("wired.file.path"));
+	watcher 	= wb_bot_watcher_for_path(wb_bot, path);
+
+	if(watcher && wb_watcher_activated(watcher)) {
+	    if(wb_bot_is_subscribing(wb_bot)) {
+    		
+	    }
+	    else {
+	    	wb_watcher_files_diff(watcher);
+	    }
+	}
 }
 
 
 static void wr_message_file_directory_changed(wi_p7_message_t *message) {
-	wi_log_info(WI_STR("wr_message_file_directory_changed"));
+	wi_string_t 		*path;
+	wb_watcher_t 		*watcher;
+
+	// this is a like hacky...
+	wb_bot_set_subscribing(wb_bot, false);
+
+	path		= wi_p7_message_string_for_name(message, WI_STR("wired.file.path"));
+	watcher 	= wb_bot_watcher_for_path(wb_bot, path);
+
+	if(watcher && wb_watcher_activated(watcher)) {
+		message = wi_p7_message_with_name(WI_STR("wired.file.list_directory"), wr_p7_spec);
+		wi_p7_message_set_string_for_name(message, path, WI_STR("wired.file.path"));
+
+		if(wr_connected)
+	    	wr_client_send_message(message);
+	}
 }
 
 

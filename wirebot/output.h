@@ -58,9 +58,11 @@ typedef enum _wb_time_range			wb_bot_time_range_t;
 
 typedef struct _wb_output		wb_output_t;
 
+void 							wb_outputs_init(void);
+
 wb_output_t * 					wb_output_alloc(void);
 wb_output_t *					wb_output_init(wb_output_t *, xmlNodePtr);
-wb_output_t *					wb_output_init_with_message(wb_output_t *, wi_p7_message_t *);
+wb_output_t *					wb_output_init_with_message_name(wb_output_t *, wi_string_t *);
 
 wi_string_t *					wb_output_wire_command_string(wb_output_t *, wr_user_t *);
 wi_boolean_t					wb_output_is_chat(wb_output_t *);
@@ -73,6 +75,9 @@ void							wb_output_set_input_text(wb_output_t *, wi_string_t *);
 
 wi_string_t * 					wb_output_output(wb_output_t *);
 void							wb_output_set_output(wb_output_t *, wi_string_t *);
+
+wi_string_t * 					wb_output_board(wb_output_t *);
+void							wb_output_set_board(wb_output_t *, wi_string_t *);
 
 wb_bot_time_range_t				wb_output_time(wb_output_t *);
 wi_integer_t					wb_output_delay(wb_output_t *);

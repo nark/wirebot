@@ -1,201 +1,179 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<!--
-	Wirebot.xml
-	Created by Rafaël Warnault on 2012-04-01.
-	Copyright (c) 2012 Read-Write.fr. All rights reserved.
--->
-
-
 <wirebot>
- 	<commands>
-		<command name="reload" permissions="admin,nark" activated="true">
-			<output>Ready to fight!</output>
-			<output delay="1">Oh. I learnt many new studip worlds…</output>
-			<output>Yay! Reloaded.</output>
-		</command>
+	<rules>
+		<rule permissions="any" activated="true">
+			<input message="wired.message.message" comparison="equals" sensitive="false">:-)</input>
 
- 		<command name="stop" permissions="admin,nark" activated="true">
-			<output>Ping me when you need. :-)</output>
-			<output>I jump.</output>
- 		</command>
-
- 		<command name="start" permissions="admin,nark" activated="true">
-			<output>Yes, my lord.</output>
-			<output>I need more blood.</output>
-			<output>Ready to serve.</output>
- 		</command>
-
- 		<command name="nick" permissions="admin,nark" activated="true">
- 		</command>
-
-		<command name="status" permissions="admin,nark" activated="true">
-		</command>
-		
- 		<command name="sleep" permissions="any" activated="true">
-			<output>Zzz</output>
-			<output>Ok, Ok… Time for a nap.</output>
- 		</command>
-
-		<command name="help" permissions="any" activated="true">
-		</command>
- 	</commands>
-
-
- 	<watchers>
- 		<watcher path="/Uploads" activated="true"></watcher>
- 	</watchers>
- 	
-
- 	<rules>
-
- 		<rule permissions="any" activated="true">
-		 	<input message="wired.message.message" comparison="equals" sensitive="false">:-)</input>
-
-		 	<output message="wired.message.message" delay="1">OK</output>
+			<output message="wired.message.message" delay="1" repeat="0">OK</output>
 		</rule>
 
-
-		 <rule permissions="any" activated="true">
-		 	<input message="wired.chat.say" comparison="contains" sensitive="false">fuck</input>
-			<input message="wired.chat.say" comparison="contains" sensitive="false">shit</input>
-			<input message="wired.chat.say" comparison="contains" sensitive="false">dick</input>
-			<input message="wired.chat.say" comparison="contains" sensitive="false">asshole</input>
-			<input message="wired.chat.say" comparison="contains" sensitive="false">ass</input>
-			
-		 	<output message="wired.chat.say" delay="2">Hey @INPUT_NICK, why did you say "@INPUT_TEXT" ?</output>
-			<output message="wired.chat.say" delay="1">Very impolite!</output>
-			<output message="wired.chat.say" delay="1">@INPUT_NICK, don't be rude please...</output>
-		 </rule>
-		
-		
 		<rule permissions="any" activated="true">
-		 	<input message="wired.chat.say" comparison="contains" sensitive="false">hello</input>
-		 	<input message="wired.chat.me" comparison="contains" sensitive="false">hello</input>
-		 	<input message="wired.chat.say" comparison="contains" sensitive="false">hey</input>
-		 	<input message="wired.chat.me" comparison="contains" sensitive="false">hey</input>
-		 	<input message="wired.chat.say" comparison="contains" sensitive="false">hi</input>
-		 	<input message="wired.chat.me" comparison="contains" sensitive="false">hi</input>
-		
-		 	<output message="wired.chat.say">Hey @INPUT_NICK. :-)</output>
-		 	<output message="wired.chat.say">Hello @INPUT_NICK. :-)</output>
-		 	<output message="wired.chat.say">Hi @INPUT_NICK. :-)</output>
-		 	<output message="wired.chat.say">Yo @INPUT_NICK. :-)</output>
-		 </rule>
-		
+			<input message="wired.chat.say" comparison="equals" sensitive="false">fuck</input>
+			<input message="wired.chat.say" comparison="equals" sensitive="false">shit</input>
+			<input message="wired.chat.say" comparison="equals" sensitive="false">dick</input>
+			<input message="wired.chat.say" comparison="equals" sensitive="false">asshole</input>
+			<input message="wired.chat.say" comparison="equals" sensitive="false">ass</input>
 
-		 <rule permissions="any" activated="true">
-		 	<input message="wired.chat.say" comparison="equals" sensitive="false">:-)</input>
+			<output message="wired.chat.say" delay="2" repeat="0">Hey @INPUT_NICK, why did you say "@INPUT_TEXT" ?</output>
+			<output message="wired.chat.say" delay="1" repeat="0">Very impolite!</output>
+			<output message="wired.chat.say" delay="1" repeat="0">@INPUT_NICK, don't be rude please...</output>
+		</rule>
+
+		<rule permissions="any" activated="true">
+			<input message="wired.chat.say" comparison="equals" sensitive="false">hello</input>
+			<input message="wired.chat.me" comparison="equals" sensitive="false">hello</input>
+			<input message="wired.chat.say" comparison="equals" sensitive="false">hey</input>
+			<input message="wired.chat.me" comparison="equals" sensitive="false">hey</input>
+			<input message="wired.chat.say" comparison="equals" sensitive="false">hi</input>
+			<input message="wired.chat.me" comparison="equals" sensitive="false">hi</input>
+
+			<output message="wired.chat.say" delay="0" repeat="0">Hey @INPUT_NICK. :-)</output>
+			<output message="wired.chat.say" delay="0" repeat="0">Hello @INPUT_NICK. :-)</output>
+			<output message="wired.chat.say" delay="0" repeat="0">Hi @INPUT_NICK. :-)</output>
+			<output message="wired.chat.say" delay="0" repeat="0">Yo @INPUT_NICK. :-)</output>
+		</rule>
+
+		<rule permissions="any" activated="true">
+			<input message="wired.chat.say" comparison="equals" sensitive="false">:-)</input>
 			<input message="wired.chat.say" comparison="equals" sensitive="false">:)</input>
 			<input message="wired.chat.say" comparison="equals" sensitive="false">;-)</input>
 			<input message="wired.chat.say" comparison="equals" sensitive="false">;)</input>
 			<input message="wired.chat.say" comparison="equals" sensitive="false">:-D</input>
 			<input message="wired.chat.say" comparison="equals" sensitive="false">:D</input>
-			
-		 	<output message="wired.chat.say" delay="1">:-)</output>
-			<output message="wired.chat.say" delay="1">:-D</output>
-			<output message="wired.chat.say" delay="1">:-P</output>
-		 	<output message="wired.chat.say" delay="1">:-O</output>
-			<output message="wired.chat.say" delay="1">;-)</output>
-			<output message="wired.chat.say" delay="1">¬¬</output>
-		 </rule>
 
+			<output message="wired.chat.say" delay="1" repeat="0">:-)</output>
+			<output message="wired.chat.say" delay="1" repeat="0">:-D</output>
+			<output message="wired.chat.say" delay="1" repeat="0">:-P</output>
+			<output message="wired.chat.say" delay="1" repeat="0">:-O</output>
+			<output message="wired.chat.say" delay="1" repeat="0">;-)</output>
+			<output message="wired.chat.say" delay="1" repeat="0">¬¬</output>
+		</rule>
 
-
-		 <rule permissions="any" activated="true">
-		 	<input message="wired.chat.say" comparison="equals" sensitive="false">:-o</input>
+		<rule permissions="any" activated="true">
+			<input message="wired.chat.say" comparison="equals" sensitive="false">:-o</input>
 			<input message="wired.chat.say" comparison="equals" sensitive="false">:o</input>
-			
-		 	<output message="wired.chat.say" delay="1">O_o</output>
-			<output message="wired.chat.say" delay="1">:-O</output>
-			<output message="wired.chat.say" delay="1">:-P</output>
-		 </rule>  
-	
-		 <rule permissions="any" activated="true">
-		 	<input message="wired.chat.say" comparison="contains" sensitive="false">√</input>
-			
-		 	<output message="wired.chat.say" delay="1">Yay for @INPUT_NICK!</output>
-			<output message="wired.chat.say" delay="1">Yay !</output>
-			<output message="wired.chat.say" delay="1">Weeee !</output>
-		 </rule>
-		
-		
-		 <rule permissions="any" activated="true">
-		 	<input message="wired.chat.say" comparison="contains" sensitive="false">test</input>
-			
-		 	<output message="wired.chat.say" delay="1">Yay for @BOT_NICK!</output>
-		 </rule>
-		
-		
-		 <rule permissions="any" activated="true">
-		 	<input message="wired.chat.say" comparison="contains" sensitive="false">wired</input>
-			<input message="wired.chat.me" comparison="contains" sensitive="false">wired</input>
-			
-		 	<output message="wired.chat.say" delay="3">Uh? What's "Wired" @INPUT_NICK?</output>
-			<output message="wired.chat.say" delay="4">Ooooh, Wired! The magazine ? :-/</output>
-			<output message="wired.chat.say" delay="1">http://www.read-write.fr/wired !</output>
-		 </rule>
-		
-		 <rule permissions="any" activated="true">
-		 	<input message="wired.chat.say" comparison="contains" sensitive="false">Chantal</input>
-			<input message="wired.chat.say" comparison="contains" sensitive="false">Plorkian</input>
-			
-		 	<output message="wired.chat.say" delay="3">Oh, do you have some news about @INPUT_TEXT BOT ?</output>
-			<output message="wired.chat.say" delay="4">@INPUT_TEXT!!! My old firend! :-D</output>
-			<output message="wired.chat.say" delay="3">Oh ja, a distant Perl cousin…</output>
-		 </rule>
-		
-		 <rule permissions="any" activated="true">
-			<input message="wired.chat.say" comparison="contains" sensitive="false">chat bot</input>
-		 	<input message="wired.chat.say" comparison="contains" sensitive="false">chatbot</input>
-			<input message="wired.chat.say" comparison="contains" sensitive="false">robot</input>
-			<input message="wired.chat.say" comparison="contains" sensitive="false">the bot</input>
-			
-		 	<output message="wired.chat.say" delay="2">Bot? What's a bot?</output>
-			<output message="wired.chat.say" delay="5">I'M NOT A BOT!</output>
-			<output message="wired.chat.say" delay="3">Bots are silly programs. :-)</output>
-			<output message="wired.chat.me" delay="2">hates bots…</output>
-			<output message="wired.chat.me" delay="2">hides!</output>
-			<output message="wired.chat.me" delay="2">runs!</output>
-		 </rule>
 
-		 <rule permissions="admin,nark" activated="true">
-		 	<input message="wired.chat.user_join"></input>
+			<output message="wired.chat.say" delay="1" repeat="0">O_o</output>
+			<output message="wired.chat.say" delay="1" repeat="0">:-O</output>
+			<output message="wired.chat.say" delay="1" repeat="0">:-P</output>
+		</rule>
 
-		 	<output message="wired.chat.say">Weeeee! :-)</output>
-		 	<output message="wired.chat.say">Welcome Boss! :-)</output>
-		 </rule>
-		
-		
-		
-		 <rule permissions="admin,nark" activated="true">
-		 	<input message="wired.chat.user_leave"></input>
+		<rule permissions="any" activated="true">
+			<input message="wired.chat.say" comparison="equals" sensitive="false">√</input>
 
-		 	<output message="wired.chat.say">:-(</output>
-		 	<output message="wired.chat.say">Ciao Boss! :-)</output>
-		 </rule>
-		
-		
-		
-		 <rule permissions="any" activated="true">
-		 	<input message="wired.chat.user_join"></input>
+			<output message="wired.chat.say" delay="1" repeat="0">Yay for @INPUT_NICK!</output>
+			<output message="wired.chat.say" delay="1" repeat="0">Yay !</output>
+			<output message="wired.chat.say" delay="1" repeat="0">Weeee !</output>
+		</rule>
 
-		 	<output message="wired.chat.say" delay="1">Hey @INPUT_NICK. :-)</output>
-			<output message="wired.chat.say" delay="1">Hello @INPUT_NICK. :-)</output>
-			<output message="wired.chat.say" delay="1">Hi @INPUT_NICK. :-)</output>
-			<output message="wired.chat.say" delay="1">Welcome, @INPUT_NICK. :-)</output>
-		 </rule>
-		
-	
-		
-		
-		 <rule permissions="any" activated="true">
-		 	<input message="wired.chat.user_leave"></input>
+		<rule permissions="any" activated="true">
+			<input message="wired.chat.say" comparison="equals" sensitive="false">test</input>
 
-		 	<output message="wired.chat.say">Later, @INPUT_NICK! :-)</output>
-			<output message="wired.chat.say">Cya, @INPUT_NICK! :-)</output>
-			<output message="wired.chat.say">Bye, @INPUT_NICK! :-)</output>
-			<output message="wired.chat.say">Ciao, @INPUT_NICK! :-)</output>
-		 </rule>
-		
+			<output message="wired.chat.say" delay="1" repeat="0">Yay for @BOT_NICK!</output>
+		</rule>
+
+		<rule permissions="any" activated="true">
+			<input message="wired.chat.say" comparison="equals" sensitive="false">wired</input>
+			<input message="wired.chat.me" comparison="equals" sensitive="false">wired</input>
+
+			<output message="wired.chat.say" delay="3" repeat="0">Uh? What's "Wired" @INPUT_NICK?</output>
+			<output message="wired.chat.say" delay="4" repeat="0">Ooooh, Wired! The magazine ? :-/</output>
+			<output message="wired.chat.say" delay="1" repeat="0">http://wired.read-write.fr !</output>
+		</rule>
+
+		<rule permissions="any" activated="true">
+			<input message="wired.chat.say" comparison="equals" sensitive="false">chantal</input>
+			<input message="wired.chat.say" comparison="equals" sensitive="false">plorkian</input>
+
+			<output message="wired.chat.say" delay="3" repeat="0">Oh, do you have some news about @INPUT_TEXT BOT ?</output>
+			<output message="wired.chat.say" delay="4" repeat="0">@INPUT_TEXT!!! My old firend! :-D</output>
+			<output message="wired.chat.say" delay="3" repeat="0">…</output>
+		</rule>
+
+		<rule permissions="any" activated="true">
+			<input message="wired.chat.say" comparison="equals" sensitive="false">chat bot</input>
+			<input message="wired.chat.say" comparison="equals" sensitive="false">chatbot</input>
+			<input message="wired.chat.say" comparison="equals" sensitive="false">robot</input>
+			<input message="wired.chat.say" comparison="equals" sensitive="false">the bot</input>
+
+			<output message="wired.chat.say" delay="2" repeat="0">Bot? What's a bot?</output>
+			<output message="wired.chat.say" delay="5" repeat="0">I'M NOT A BOT!</output>
+			<output message="wired.chat.say" delay="3" repeat="0">Bots are silly programs. :-)</output>
+			<output message="wired.chat.me" delay="2" repeat="0">…</output>
+			<output message="wired.chat.me" delay="2" repeat="0">hides!</output>
+			<output message="wired.chat.me" delay="2" repeat="0">runs!</output>
+		</rule>
+
+		<rule permissions="admin,nark" activated="true">
+			<input message="wired.chat.user_join" comparison="equals" sensitive="false"></input>
+
+			<output message="wired.chat.say" delay="0" repeat="0">Weeeee! :-)</output>
+			<output message="wired.chat.say" delay="0" repeat="0">Welcome Boss! :-)</output>
+		</rule>
+
+		<rule permissions="admin,nark" activated="true">
+			<input message="wired.chat.user_leave" comparison="equals" sensitive="false"></input>
+
+			<output message="wired.chat.say" delay="0" repeat="0">:-(</output>
+			<output message="wired.chat.say" delay="0" repeat="0">Ciao Boss! :-)</output>
+		</rule>
+
+		<rule permissions="any" activated="true">
+			<input message="wired.chat.user_join" comparison="equals" sensitive="false"></input>
+
+			<output message="wired.chat.say" delay="1" repeat="0">Hey @INPUT_NICK. :-)</output>
+			<output message="wired.chat.say" delay="1" repeat="0">Hello @INPUT_NICK. :-)</output>
+			<output message="wired.chat.say" delay="1" repeat="0">Hi @INPUT_NICK. :-)</output>
+			<output message="wired.chat.say" delay="1" repeat="0">Welcome, @INPUT_NICK. :-)</output>
+		</rule>
+
+		<rule permissions="any" activated="true">
+			<input message="wired.chat.user_leave" comparison="equals" sensitive="false"></input>
+
+			<output message="wired.chat.say" delay="0" repeat="0">Later, @INPUT_NICK! :-)</output>
+			<output message="wired.chat.say" delay="0" repeat="0">Cya, @INPUT_NICK! :-)</output>
+			<output message="wired.chat.say" delay="0" repeat="0">Bye, @INPUT_NICK! :-)</output>
+			<output message="wired.chat.say" delay="0" repeat="0">Ciao, @INPUT_NICK! :-)</output>
+		</rule>
+
 	</rules>
+
+	<commands>
+		<command name="reload" permissions="admin,nark" activated="true">
+			<output message="wired.chat.say" delay="0" repeat="0">Ready to fight!</output>
+			<output message="wired.chat.say" delay="1" repeat="0">…</output>
+			<output message="wired.chat.say" delay="0" repeat="0">Yay! Reloaded.</output>
+		</command>
+
+		<command name="stop" permissions="admin,nark" activated="true">
+			<output message="wired.chat.say" delay="0" repeat="0">Ping me when you need. :-)</output>
+			<output message="wired.chat.say" delay="0" repeat="0">I jump.</output>
+		</command>
+
+		<command name="start" permissions="admin,nark" activated="true">
+			<output message="wired.chat.say" delay="0" repeat="0">Yes, my lord.</output>
+			<output message="wired.chat.say" delay="0" repeat="0">I need more blood.</output>
+			<output message="wired.chat.say" delay="0" repeat="0">Ready to serve.</output>
+		</command>
+
+		<command name="test" permissions="any" activated="true">
+			<output message="wired.chat.say" delay="0" repeat="0">Test OK.</output>
+		</command>
+
+		<command name="nick" permissions="admin,nark" activated="true">
+		</command>
+
+		<command name="status" permissions="admin,nark" activated="true">
+		</command>
+
+		<command name="sleep" permissions="any" activated="true">
+			<output message="wired.chat.say" delay="0" repeat="0">Zzz</output>
+			<output message="wired.chat.say" delay="0" repeat="0">… Time for a nap.</output>
+		</command>
+
+		<command name="help" permissions="any" activated="true">
+		</command>
+
+	</commands>
+
 </wirebot>

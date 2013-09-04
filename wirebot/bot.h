@@ -40,7 +40,7 @@
 #include "input.h"
 #include "output.h"
 #include "command.h"
-
+#include "watcher.h"
 
 #define WB_BOT_NICK 				WI_STR("@BOT_NICK")
 #define WB_INPUT_NICK 				WI_STR("@INPUT_NICK")
@@ -52,20 +52,18 @@
  * Wirebot object types
  */
 typedef struct _wb_bot				wb_bot_t;
-typedef struct _wb_watcher			wb_watcher_t;
 
 /* Initializer */
+void 								wb_bot_initialize(void);
 void								wb_bot_init(void);
 
 
 /* Allocators */
 wb_bot_t *							wb_bot_alloc(void);
-wb_watcher_t * 						wb_watcher_alloc(void);
 
 
 /* Constructors */
 wb_bot_t *							wb_bot_init_with_file(wb_bot_t *, wi_string_t *);
-wb_watcher_t * 						wb_watcher_init(wb_watcher_t *, xmlNodePtr);
 
 
 /* Accessors */
@@ -73,6 +71,8 @@ wi_string_t *						wb_bot_path(wb_bot_t *);
 wi_array_t *						wb_bot_commands(wb_bot_t *);
 wi_array_t *						wb_bot_rules(wb_bot_t *);
 
+wi_boolean_t						wb_bot_is_subscribing(wb_bot_t *);
+wi_boolean_t						wb_bot_set_subscribing(wb_bot_t *, wi_boolean_t);
 
 /* Bot Engine */
 wi_boolean_t						wb_bot_dispatch_message(wb_bot_t *, wi_p7_message_t *);
@@ -86,6 +86,7 @@ wi_boolean_t						wb_bot_reload_configuration(wb_bot_t *);
 
 void								wb_bot_subscribe_watchers(wb_bot_t *);
 void								wb_bot_unsubscribe_watchers(wb_bot_t *);
+wb_watcher_t *						wb_bot_watcher_for_path(wb_bot_t *, wi_string_t *);
 
 wi_boolean_t						wb_bot_execute_output(wb_output_t *, wr_user_t *);
 wi_boolean_t						wb_bot_execute_command(wb_bot_t *, wb_command_t *, wi_string_t *, wr_user_t *, wi_p7_message_t *);

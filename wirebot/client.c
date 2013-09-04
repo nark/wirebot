@@ -43,7 +43,9 @@
 #include "settings.h"
 
 static wr_server_t *				wr_client_login(wi_p7_socket_t *, wi_string_t *, wi_string_t *);
+
 static wi_p7_message_t *			wr_client_info_message(void);
+
 static wi_p7_message_t *			wr_client_read_message(wi_p7_socket_t *);
 static wi_boolean_t					wr_client_write_message(wi_p7_socket_t *, wi_p7_message_t *);
 
@@ -127,16 +129,18 @@ void wr_client_init(void) {
 	wr_nick 	= wi_retain(wi_config_string_for_name(wd_config, WI_STR("nick")));
 	wr_status 	= wi_retain(wi_config_string_for_name(wd_config, WI_STR("status")));
 
-	if(wi_fs_path_exists(wr_icon_path, false)) {
-		wi_log_info(WI_STR("wr_icon_path: %@"), wr_icon_path);
-		wr_icon	= wi_data_init_with_contents_of_file(wi_data_alloc(), wr_icon_path);
-	}	
+	// if(wi_fs_path_exists(wr_icon_path, false)) {
+	// 	wi_log_info(WI_STR("wr_icon_path: %@"), wr_icon_path);
+	// 	wr_icon	= wi_data_init_with_contents_of_file(wi_data_alloc(), wr_icon_path);
+	// }	
 
 	if(!wr_nick)
 		wr_nick = wi_retain(wi_user_name());
 
-	if(!wr_icon)
-		wr_icon = wi_data_init_with_base64(wi_data_alloc(), wi_string_with_cstring(wr_default_icon));
+	// if(!wr_icon)
+	// 	wr_icon = wi_data_init_with_base64(wi_data_alloc(), wi_string_with_cstring(wr_default_icon));
+
+	wr_client_reload_icon();
 }
 
 
@@ -262,6 +266,9 @@ void wr_client_connect(wi_string_t *hostname, wi_uinteger_t port, wi_string_t *l
 		wi_socket_set_direction(wr_socket, WI_SOCKET_READ);
 		wr_runloop_add_socket(wr_socket, &wr_runloop_server_callback);
 
+		// suscribe bot watchers
+		wb_bot_subscribe_watchers(wb_bot);
+		
 		break;
 	}
 }
@@ -444,9 +451,9 @@ static wi_p7_message_t * wr_client_info_message(void) {
 	wi_p7_message_t		*message;
 	
 	message = wi_p7_message_with_name(WI_STR("wired.client_info"), wr_p7_spec);
-	wi_p7_message_set_string_for_name(message, WI_STR("Wire"), WI_STR("wired.info.application.name"));
+	wi_p7_message_set_string_for_name(message, WI_STR("Wirebot"), WI_STR("wired.info.application.name"));
 	wi_p7_message_set_string_for_name(message, wi_string_with_cstring(WR_VERSION), WI_STR("wired.info.application.version"));
-	wi_p7_message_set_string_for_name(message, WI_REVISION, WI_STR("wired.info.application.build"));
+	wi_p7_message_set_string_for_name(message, WI_STR(WI_REVISION), WI_STR("wired.info.application.build"));
 	wi_p7_message_set_string_for_name(message, wi_process_os_name(wi_process()), WI_STR("wired.info.os.name"));
 	wi_p7_message_set_string_for_name(message, wi_process_os_release(wi_process()), WI_STR("wired.info.os.version"));
 	wi_p7_message_set_string_for_name(message, wi_process_os_arch(wi_process()), WI_STR("wired.info.arch"));
@@ -548,17 +555,48 @@ void wr_client_apply_settings(wi_set_t *changes) {
 	}
 
 	if(wi_set_contains_data(changes, WI_STR("icon"))) {
-		wi_release(wr_icon);
 
-		wr_icon 	= wi_data_init_with_contents_of_file(wi_data_alloc(), wr_icon_path);
+		wr_client_reload_icon();
 
-		if(!wr_icon)
-			wr_icon = wi_data_init_with_base64(wi_data_alloc(), wi_string_with_cstring(wr_default_icon));
+		// wi_fs_path_exists(wr_icon_path, false) {
+		// 	wi_release(wr_icon);
 
-		if(wr_connected) {
-			message = wi_p7_message_with_name(WI_STR("wired.user.set_icon"), wr_p7_spec);
-			wi_p7_message_set_data_for_name(message, wr_icon, WI_STR("wired.user.icon"));
-			wr_client_send_message(message);
-		}
+		// 	wr_icon 	= wi_data_init_with_contents_of_file(wi_data_alloc(), wr_icon_path);
+
+		// 	if(!wr_icon)
+		// 		wr_icon = wi_data_init_with_base64(wi_data_alloc(), wi_string_with_cstring(wr_default_icon));
+
+			if(wr_connected) {
+				message = wi_p7_message_with_name(WI_STR("wired.user.set_icon"), wr_p7_spec);
+				wi_p7_message_set_data_for_name(message, wr_icon, WI_STR("wired.user.icon"));
+				wr_client_send_message(message);
+			}
+		//}
+	}
+}
+
+
+void wr_client_reload_icon(void) {
+	wi_data_t 		*data;
+	wi_string_t 	*icon_path;
+
+	if(wr_icon)
+		wi_release(wr_icon), wr_icon = NULL;
+
+	if(wr_icon_path)
+		wi_release(wr_icon_path), wr_icon_path = NULL;
+
+	icon_path = wi_config_path_for_name(wd_config, WI_STR("icon path"));
+
+	if(!wi_string_has_prefix(icon_path, WI_STR("/")))
+		wr_icon_path = wi_retain(wi_string_by_appending_path_component(wi_string_by_appending_path_component(wi_user_home(), WI_STR(".wirebot")), icon_path));
+	else {
+		wr_icon_path = wi_retain(icon_path);
+	}
+
+	if(wi_fs_path_exists(wr_icon_path, false))	{
+		wr_icon = wi_data_init_with_contents_of_file(wi_data_alloc(), wr_icon_path);
+	} else {
+		wr_icon = wi_data_init_with_base64(wi_data_alloc(), wi_string_with_cstring(wr_default_icon));
 	}
 }

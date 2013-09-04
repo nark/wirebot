@@ -54,6 +54,8 @@ typedef enum _wb_comparison_method			wb_bot_comparison_method_t;
 
 typedef struct _wb_input			wb_input_t;
 
+void 								wb_inputs_init(void);
+
 wb_input_t * 						wb_input_alloc(void);
 wb_input_t *						wb_input_init(wb_input_t *, xmlNodePtr);
 

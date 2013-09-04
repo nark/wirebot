@@ -185,13 +185,22 @@ int main(int argc, const char **argv) {
 
 	wr_config_path = wi_retain(wi_string_by_appending_path_component(homepath, WI_STR(WB_WIREBOT_CONFIG_PATH)));
 
+	// init config
 	wd_settings_initialize();
-
 	if(!wd_settings_read_config()) {
 		exit(1);
 	}
 
-	wr_icon_path	= wi_retain(wi_string_by_appending_path_component(wirepath, wi_config_path_for_name(wd_config, WI_STR("icon path"))));
+	// set icon path from confog
+	wr_icon_path = wi_retain(wi_string_by_appending_path_component(wirepath, wi_config_path_for_name(wd_config, WI_STR("icon path"))));
+
+	wb_bot_initialize();
+	wb_outputs_init();
+	wb_inputs_init();
+	wb_services_init();
+	wb_watchers_init();
+	wb_rules_init();
+	wb_commands_init();
 
 	wr_readline_init();
 	wr_chats_init();
@@ -202,10 +211,11 @@ int main(int argc, const char **argv) {
 	wr_runloop_init();
 	wr_users_init();
 
+	wb_bot_init();
+
 	wr_topics_init();
 	wr_servers_init();
 
-	wb_bot_init();
 	wb_write_pid();
 
 	wr_signals_init();
@@ -217,11 +227,8 @@ int main(int argc, const char **argv) {
 	wb_password		= wi_retain(wi_config_string_for_name(wd_config, WI_STR("password")));
 	wb_port			= wi_config_port_for_name(wd_config, WI_STR("port"));
 
-	wr_client_connect(wb_hostname, wb_port, wb_login, wb_password);
-	//wb_bot_subscribe_watchers(wb_bot);
-	
+	wr_client_connect(wb_hostname, wb_port, wb_login, wb_password);	
 	wi_pool_drain(pool);
-
 
 	wi_thread_create_thread(wd_signal_thread, NULL);
 	wr_runloop_run();
@@ -246,7 +253,7 @@ static void wr_cleanup(void) {
 
 static void wr_usage(void) {
 	fprintf(stderr,
-"Usage: wire [-Dhv] [bookmark]\n\
+"Usage: wirebot [-ucDdhv]\n\
 \n\
 Options:\n\
     -u             wired URL for server to connect\n\
@@ -256,9 +263,7 @@ Options:\n\
     -h             display this message\n\
     -v             display version information\n\
 \n\
-If specified, ~/.wire/<bookmark> is loaded on startup.\n\
-\n\
-By Axel Andersson <%s>\n", WR_BUGREPORT);
+By Rafael Warnault <%s>\n", WR_BUGREPORT);
 
 	exit(2);
 }
@@ -266,7 +271,7 @@ By Axel Andersson <%s>\n", WR_BUGREPORT);
 
 
 static void wr_version(void) {
-	fprintf(stderr, "Wirebot %s (%u), protocol %s %s\n",
+	fprintf(stderr, "Wirebot %s (%s), protocol %s %s\n",
 		WR_VERSION,
 		WI_REVISION,
 		wi_string_cstring(wi_p7_spec_name(wr_p7_spec)),
@@ -339,17 +344,22 @@ void wd_signal_thread(wi_runtime_instance_t *arg) {
 				wi_log_info(WI_STR("Signal HUP received, reloading configuration"));
 
 				wd_settings_read_config();
+				wr_client_reload_icon();
 				
+				if(wb_bot) {
+					wb_bot_reload_configuration(wb_bot);
+				}
+
 				// wd_schedule();
 				break;
 				
 			case SIGUSR1:
-				wi_log_info(WI_STR("Signal USR1 received, registering with trackers"));
+				wi_log_info(WI_STR("Signal USR1 received, TBD"));
 				//wd_trackers_register();
 				break;
 
 			case SIGUSR2:
-				wi_log_info(WI_STR("Signal USR2 received, indexing files"));
+				wi_log_info(WI_STR("Signal USR2 received, TBD"));
 				//wd_index_index_files(false);
 				break;
 

@@ -54,6 +54,7 @@
 	wi_string_t						*message_name;
 	wi_string_t						*input_text;
 	wi_string_t						*output;
+	wi_string_t 					*board;
 	wb_bot_time_range_t				time;
 	wi_integer_t					delay;
 	wi_integer_t					repeat;
@@ -74,7 +75,18 @@ static wi_runtime_class_t			wb_output_runtime_class = {
 
 
 
-static wb_output_t*					_wb_bot_load_output_with_node(wb_output_t *, xmlNodePtr);
+static wb_output_t*					_wb_output_load_with_node(wb_output_t *, xmlNodePtr);
+
+
+
+
+
+#pragma mark -
+
+void wb_outputs_init(void) {
+	wb_output_runtime_id = wi_runtime_register_class(&wb_output_runtime_class);
+}
+
 
 
 
@@ -89,15 +101,16 @@ wb_output_t * wb_output_alloc(void) {
 
 
 wb_output_t * wb_output_init(wb_output_t *output, xmlNodePtr node) {
-	return _wb_bot_load_output_with_node(output, node);
+	return _wb_output_load_with_node(output, node);
 }
 
 
-wb_output_t * wb_output_init_with_message(wb_output_t *output, wi_p7_message_t *message) {
-	output->message_name = wi_retain(wi_p7_message_name(message));
+wb_output_t * wb_output_init_with_message_name(wb_output_t *output, wi_string_t *name) {
+	output->message_name 	= wi_retain(name);
 
 	return output;
 }
+
 
 
 
@@ -189,6 +202,18 @@ void wb_output_set_output(wb_output_t *output, wi_string_t *string) {
 
 
 
+wi_string_t * wb_output_board(wb_output_t *output) {
+	return output->board;
+}
+
+void wb_output_set_board(wb_output_t *output, wi_string_t *board) {
+	if(output->board)
+		wi_release(output->board);
+
+	output->board = wi_retain(board);
+}
+
+
 
 wb_bot_time_range_t wb_output_time(wb_output_t *output) {
 	return output->time;
@@ -210,9 +235,9 @@ wi_integer_t wb_output_repeat(wb_output_t *output) {
 
 #pragma mark - 
 
-static wb_output_t * _wb_bot_load_output_with_node(wb_output_t *output, xmlNodePtr node) {
+static wb_output_t * _wb_output_load_with_node(wb_output_t *output, xmlNodePtr node) {
 
-	wi_string_t * message_name, *output_string, *time, *delay, *repeat;
+	wi_string_t * message_name, *output_string, *time, *delay, *repeat, *board;
 
 	message_name = wi_xml_node_attribute_with_name(node, WI_STR("message"));
 	if(message_name)
@@ -234,6 +259,10 @@ static wb_output_t * _wb_bot_load_output_with_node(wb_output_t *output, xmlNodeP
 	if(repeat)
 		output->repeat = wi_string_integer(repeat);
 
+	board = wi_xml_node_attribute_with_name(node, WI_STR("board"));
+	if(board)
+		wb_output_set_board(output, board);
+
 	return output;
 }
 
@@ -246,9 +275,17 @@ static wb_output_t * _wb_bot_load_output_with_node(wb_output_t *output, xmlNodeP
 static void wb_output_dealloc(wi_runtime_instance_t *instance) {
 	wb_output_t			*output = instance;
 
-	wi_release(output->message_name);
-	wi_release(output->input_text);
-	wi_release(output->output);
+	if(output->message_name)
+		wi_release(output->message_name);
+
+	if(output->input_text)
+		wi_release(output->input_text);
+
+	if(output->output)
+		wi_release(output->output);
+
+	if(output->board)
+		wi_release(output->board);
 }
 
 static wi_string_t * wb_output_description(wi_runtime_instance_t *instance) {

@@ -55,7 +55,7 @@ void wd_settings_initialize(void) {
 		WI_INT32(WI_CONFIG_STRING),				WI_STR("nick"),
 		WI_INT32(WI_CONFIG_STRING),				WI_STR("status"),
 		WI_INT32(WI_CONFIG_PATH),				WI_STR("icon path"),
-		WI_INT32(WI_CONFIG_PATH),				WI_STR("dictionary"),
+		WI_INT32(WI_CONFIG_PATH),				WI_STR("dictionary path"),
 		WI_INT32(WI_CONFIG_BOOL),				WI_STR("auto reconnect"),
 		WI_INT32(WI_CONFIG_BOOL),				WI_STR("reconnect on kick"),
 		NULL);

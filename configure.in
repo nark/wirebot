@@ -1,5 +1,5 @@
 # Process this file with autoconf to produce a configure script
-AC_INIT([wirebot], [2.0], [axel@zankasoftware.com])
+AC_INIT([wirebot], [2.0], [dev@read-write.fr])
 AC_PREREQ([2.57])
 AC_CONFIG_SRCDIR([config.h.in])
 AC_CONFIG_HEADER([config.h])
@@ -128,7 +128,7 @@ AC_ARG_WITH([libwired], , [
 ])
 
 if test "$wr_libwired"; then
-	ac_configure_args="$ac_configure_args --enable-p7 --enable-termcap --enable-iconv --enable-libxml2 --with-rundir=$wr_libwired_rundir --with-objdir=$wr_libwired_objdir"
+	ac_configure_args="$ac_configure_args --enable-p7 --enable-pthreads --enable-termcap --enable-iconv --enable-libxml2 --with-rundir=$wr_libwired_rundir --with-objdir=$wr_libwired_objdir"
 	AC_CONFIG_SUBDIRS([libwired])
 fi
 

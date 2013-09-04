@@ -26,9 +26,11 @@
  * POSSIBILITY OF SUCH DAMAGE.
  */
 
-#ifndef WR_COMMAND_H
-#define WR_COMMAND_H 1
+#ifndef WR_SERVICE_H
+#define WR_SERVICE_H 1
 
+#include "watcher.h"
+ 
 #include <libxml/tree.h>
 #include <libxml/parser.h>
 #include <libxml/xmlerror.h>
@@ -36,17 +38,20 @@
 #include <wired/wired.h>
 
 
-typedef struct _wb_command			wb_command_t;
+typedef struct _wb_service		wb_service_t;
 
-void 								wb_commands_init(void);
+void 							wb_services_init(void);
 
-wb_command_t * 						wb_command_alloc(void);
-wb_command_t *						wb_command_init(wb_command_t *, xmlNodePtr);
+wb_service_t * 					wb_service_alloc(void);
+wb_service_t *					wb_service_init(wb_service_t *, xmlNodePtr);
 
-wi_string_t *						wb_command_name(wb_command_t *);
-wi_boolean_t						wb_command_is_activated(wb_command_t *);
-wi_string_t *						wb_command_permissions(wb_command_t *);
-wi_mutable_array_t * 				wb_command_outputs(wb_command_t *);
+wi_string_t *					wb_service_type(wb_service_t *);
+wi_string_t *					wb_service_file_path(wb_service_t *);
+wi_string_t *					wb_service_readable_filename(wb_service_t *);
+wi_string_t *					wb_service_text(wb_service_t *);
+void 							wb_service_set_file_path(wb_service_t *, wi_string_t *);
 
-#endif /* WR_COMMAND_H */
+wi_boolean_t 					wb_service_execute(wb_service_t *, wb_watcher_t *);
+void 							wb_service_cleanup(wb_service_t *);
 
+#endif /* WR_SERVICE_H */

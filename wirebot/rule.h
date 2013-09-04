@@ -40,6 +40,8 @@
 
 typedef struct _wb_rule				wb_rule_t;
 
+void 								wb_rules_init(void);
+
 wb_rule_t * 						wb_rule_alloc(void);
 wb_rule_t *							wb_rule_init(wb_rule_t *, xmlNodePtr);
 

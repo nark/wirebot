@@ -79,7 +79,7 @@
 #define HAVE_ZLIB_H 1
 
 /* Define to the address where bug reports for this package should be sent. */
-#define PACKAGE_BUGREPORT "axel@zankasoftware.com"
+#define PACKAGE_BUGREPORT "dev@read-write.fr"
 
 /* Define to the full name of this package. */
 #define PACKAGE_NAME "wirebot"
@@ -97,10 +97,10 @@
 #define STDC_HEADERS 1
 
 /* Subversion revision */
-#define WI_REVISION 0
+#define WI_REVISION "fa15497"
 
 /* Maintainer's email address */
-#define WR_BUGREPORT "axel@zankasoftware.com"
+#define WR_BUGREPORT "dev@read-write.fr"
 
 /* Protocol version */
 #define WR_PROTOCOL_VERSION "1.1"

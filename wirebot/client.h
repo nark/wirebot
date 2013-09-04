@@ -46,7 +46,7 @@ void									wr_client_send_message(wi_p7_message_t *);
 void									wr_client_reply_message(wi_p7_message_t *, wi_p7_message_t *);
 
 void									wr_client_apply_settings(wi_set_t *);
-
+void 									wr_client_reload_icon(void);
 
 extern wi_string_encoding_t				*wr_client_string_encoding;
 extern wi_string_encoding_t				*wr_server_string_encoding;

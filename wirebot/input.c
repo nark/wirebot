@@ -67,7 +67,17 @@ static wi_runtime_class_t			wb_input_runtime_class = {
 };
 
 
-static wb_input_t *				 	_wb_bot_load_input_with_node(wb_input_t *, xmlNodePtr);
+static wb_input_t *				 	_wb_input_load_with_node(wb_input_t *, xmlNodePtr);
+
+
+
+
+#pragma mark -
+
+void wb_inputs_init(void) {
+	wb_input_runtime_id = wi_runtime_register_class(&wb_input_runtime_class);
+}
+
 
 
 
@@ -85,7 +95,7 @@ wb_input_t * wb_input_init(wb_input_t *input, xmlNodePtr node) {
 	input->case_sensitive 	= false;
 	input->comparison 		= WB_EQUALS;
 
-	return _wb_bot_load_input_with_node(input, node);
+	return _wb_input_load_with_node(input, node);
 }
 
 
@@ -116,7 +126,7 @@ wi_boolean_t wb_input_is_case_sensitive(wb_input_t *input) {
 
 #pragma mark -
 
-static wb_input_t * _wb_bot_load_input_with_node(wb_input_t *input, xmlNodePtr node) {
+static wb_input_t * _wb_input_load_with_node(wb_input_t *input, xmlNodePtr node) {
 	
 	wi_string_t		*message_name, *input_string, *comparison, *sensitive;
 

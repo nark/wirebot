@@ -55,10 +55,15 @@ static wi_runtime_class_t			wb_rule_runtime_class = {
 };
 
 
-static wb_rule_t*					_wb_bot_load_rule_with_node(wb_rule_t *, xmlNodePtr);
+static wb_rule_t*					_wb_rule_load_with_node(wb_rule_t *, xmlNodePtr);
 
 
 
+#pragma mark -
+
+void wb_rules_init(void) {
+	wb_rule_runtime_id = wi_runtime_register_class(&wb_rule_runtime_class);
+}
 
 
 
@@ -82,7 +87,7 @@ wb_rule_t * wb_rule_alloc(void) {
 	rule->inputs 		= wi_array_init(wi_mutable_array_alloc());
 	rule->outputs 		= wi_array_init(wi_mutable_array_alloc());
 
-	return _wb_bot_load_rule_with_node(rule, node);
+	return _wb_rule_load_with_node(rule, node);
 }
 
 
@@ -111,7 +116,7 @@ wi_mutable_array_t * wb_rule_outputs(wb_rule_t *rule) {
 
 #pragma mark -
 
-static wb_rule_t * _wb_bot_load_rule_with_node(wb_rule_t *rule, xmlNodePtr node) {
+static wb_rule_t * _wb_rule_load_with_node(wb_rule_t *rule, xmlNodePtr node) {
 	wi_string_t 			*permissions, *activated;
 	wb_input_t 				*input;
 	wb_output_t 			*output;
@@ -139,12 +144,15 @@ static wb_rule_t * _wb_bot_load_rule_with_node(wb_rule_t *rule, xmlNodePtr node)
 				if(input)
 					wi_mutable_array_add_data(rule->inputs, input);
 
+				wi_release(input);
+
 			} else if(strcmp((const char *) sub_node->name, "output") == 0) {
 				
 				output = wb_output_init(wb_output_alloc(), sub_node);
 				if(output)
 					wi_mutable_array_add_data(rule->outputs, output);
 
+				wi_release(output);
 			}
 		}
 	}

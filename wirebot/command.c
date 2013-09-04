@@ -57,7 +57,17 @@ static wi_runtime_class_t			wb_command_runtime_class = {
 
 
 
-static wb_command_t * 				_wb_bot_load_command_with_node(wb_command_t *, xmlNodePtr);
+static wb_command_t * 				_wb_command_load_with_node(wb_command_t *, xmlNodePtr);
+
+
+
+
+#pragma mark -
+
+void wb_commands_init(void) {
+	wb_command_runtime_id = wi_runtime_register_class(&wb_command_runtime_class);
+}
+
 
 
 
@@ -77,7 +87,7 @@ wb_command_t * wb_command_init(wb_command_t *command, xmlNodePtr node) {
 	command->permissions 	= wi_retain(WI_STR("any"));
 	command->outputs 		= wi_array_init(wi_mutable_array_alloc());
 
-	return _wb_bot_load_command_with_node(command, node);
+	return _wb_command_load_with_node(command, node);
 }
 
 
@@ -111,7 +121,7 @@ wi_mutable_array_t * wb_command_outputs(wb_command_t * command) {
 
 #pragma mark -
 
-static wb_command_t * _wb_bot_load_command_with_node(wb_command_t *command, xmlNodePtr node) {
+static wb_command_t * _wb_command_load_with_node(wb_command_t *command, xmlNodePtr node) {
 	wi_string_t 			*permissions, *activated, *name;
 	wb_output_t 			*output;
 	xmlNodePtr				sub_node, next_node;
@@ -142,6 +152,8 @@ static wb_command_t * _wb_bot_load_command_with_node(wb_command_t *command, xmlN
 				output = wb_output_init(wb_output_alloc(), sub_node);
 				if(output)
 					wi_mutable_array_add_data(command->outputs, output);
+
+				wi_release(output);
 			}
 		}
 	}

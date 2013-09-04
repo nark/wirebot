@@ -32,6 +32,7 @@
 #include "client.h"
 #include "commands.h"
 #include "messages.h"
+#include "settings.h"
 #include <wired/wired.h>
 
 
@@ -43,6 +44,7 @@ struct _wb_bot {
 	wi_runtime_base_t				base;
 
 	wi_boolean_t					started;
+	wi_boolean_t					subscribing;
 	wi_string_t 					*path;
 	wi_string_t						*xml;
 	wi_mutable_array_t				*commands;
@@ -70,26 +72,6 @@ static wi_runtime_class_t			wb_bot_runtime_class = {
 
 
 
-struct _wb_watcher {
-	wi_runtime_base_t				base;
-
-	wi_boolean_t					activated;
-	wi_string_t						*path;
-	wi_mutable_array_t 				*files;
-};  
-
-static void							wb_watcher_dealloc(wi_runtime_instance_t *);
-static wi_string_t *				wb_watcher_description(wi_runtime_instance_t *);
-
-static wi_runtime_id_t				wb_watcher_runtime_id = WI_RUNTIME_ID_NULL;
-static wi_runtime_class_t			wb_watcher_runtime_class = {
-	"wb_watcher_t",
-	wb_watcher_dealloc,
-	NULL,
-	NULL,
-	wb_watcher_description,
-	NULL
-};
 
 
 static wi_array_t * 				_wb_bot_decompose_bot_command_arguments(wi_p7_message_t *);
@@ -102,13 +84,11 @@ static wi_boolean_t 				_wb_bot_load_rules(wb_bot_t *, xmlNodePtr);
 static wi_boolean_t 				_wb_bot_load_commands(wb_bot_t *, xmlNodePtr);
 static wi_boolean_t 				_wb_bot_load_watchers(wb_bot_t *, xmlNodePtr);
 
-static wb_watcher_t * 				_wb_bot_load_watcher_with_node(wb_watcher_t *, xmlNodePtr);
-
 static wb_input_t*					_wb_bot_load_input_with_node(wb_input_t *, xmlNodePtr);
 static wb_output_t*					_wb_bot_load_output_with_node(wb_output_t *, xmlNodePtr);
 
-void 								_wb_bot_subscribe_to_remote_directory_for_watcher(wb_watcher_t *);
-void								_wb_bot_unsubscribe_to_remote_directory_for_watcher(wb_watcher_t *);
+void 								_wb_bot_subscribe_to_remote_directory_for_watcher(wb_bot_t *, wb_watcher_t *);
+void								_wb_bot_unsubscribe_to_remote_directory_for_watcher(wb_bot_t *, wb_watcher_t *);
 
 
 
@@ -117,8 +97,40 @@ void								_wb_bot_unsubscribe_to_remote_directory_for_watcher(wb_watcher_t *);
 #pragma mark -
 #pragma mark initializer methods
 
+void wb_bot_initialize(void) {
+	wb_bot_runtime_id = wi_runtime_register_class(&wb_bot_runtime_class);
+}
+
+
+
+
 void wb_bot_init(void) {
+	wi_string_t 			*dict_path;
+	wi_string_t 			*dict_string;
+
+	// init XML parser
 	xmlInitParser();
+
+	// get dictionary path from the config
+	dict_path = wi_config_path_for_name(wd_config, WI_STR("dictionary path"));
+
+	// check if dictionary path is relatiove or absolute path. If relative, append it to the user wirebot folder (.wirebot)
+	if(!wi_string_has_prefix(dict_path, WI_STR("/")))
+		dict_path = wi_string_by_appending_path_component(wi_string_by_appending_path_component(wi_user_home(), WI_STR(".wirebot")), dict_path);
+
+	// if the dictionary doesn't exist at path, setup the default dictionary
+	if(!wi_fs_path_exists(dict_path, false)) {
+		if(wi_fs_path_exists(WI_STR("/usr/local/share/doc/wirebot/wirebot.xml"), false))
+			dict_string = wi_string_init_with_contents_of_file(wi_string_alloc(), WI_STR("/usr/local/share/doc/wirebot/wirebot.xml"));
+			wi_string_write_to_file(dict_string, dict_path);
+			wi_release(dict_string);
+	}
+
+	// init the bot here
+	if(wi_fs_path_exists(dict_path, false))
+   	 	wb_bot = wb_bot_init_with_file(wb_bot_alloc(), dict_path);
+
+   	 wi_log_info(WI_STR("wb_bot path: %@"), wb_bot->path);
 }
 
 
@@ -131,9 +143,6 @@ wb_bot_t * wb_bot_alloc(void) {
 	return wi_runtime_create_instance(wb_bot_runtime_id, sizeof(wb_bot_t));
 }
 
-wb_watcher_t * wb_watcher_alloc(void) {
-	return wi_runtime_create_instance(wb_watcher_runtime_id, sizeof(wb_watcher_t));
-}
 
 
 
@@ -143,6 +152,7 @@ wb_watcher_t * wb_watcher_alloc(void) {
 wb_bot_t * wb_bot_init_with_file(wb_bot_t *bot, wi_string_t *path) {
 
 	bot->started 				= true;
+	bot->subscribing			= false;
 	bot->path					= wi_retain(path);
 	bot->commands				= wi_array_init(wi_mutable_array_alloc());
 	bot->rules					= wi_array_init(wi_mutable_array_alloc());
@@ -155,16 +165,6 @@ wb_bot_t * wb_bot_init_with_file(wb_bot_t *bot, wi_string_t *path) {
 	
 	return bot;
 }
-
-
-wb_watcher_t * wb_watcher_init(wb_watcher_t *watcher, xmlNodePtr node) {
-	
-	watcher->path 			= wi_retain(WI_STR(""));
-	watcher->files 			= wi_array_init(wi_mutable_array_alloc());
-
-	return _wb_bot_load_watcher_with_node(watcher, node);
-}
-
 
 
 
@@ -264,7 +264,7 @@ void wb_bot_subscribe_watchers(wb_bot_t *bot) {
 	enumerator = wi_array_data_enumerator(bot->watchers);
 
 	while((watcher = wi_enumerator_next_data(enumerator))) {
-		_wb_bot_subscribe_to_remote_directory_for_watcher(watcher);
+		_wb_bot_subscribe_to_remote_directory_for_watcher(bot, watcher);
 	}
 }
 
@@ -279,8 +279,25 @@ void wb_bot_unsubscribe_watchers(wb_bot_t *bot) {
 	enumerator = wi_array_data_enumerator(bot->watchers);
 
 	while((watcher = wi_enumerator_next_data(enumerator))) {
-		_wb_bot_unsubscribe_to_remote_directory_for_watcher(watcher);
+		_wb_bot_unsubscribe_to_remote_directory_for_watcher(bot, watcher);
 	}
+}
+
+wb_watcher_t * wb_bot_watcher_for_path(wb_bot_t *bot, wi_string_t *path) {
+	wi_enumerator_t			*enumerator;
+	wb_watcher_t 			*watcher;
+
+	if(!bot->watchers)
+		return;
+
+	enumerator = wi_array_data_enumerator(bot->watchers);
+
+	while((watcher = wi_enumerator_next_data(enumerator))) {
+		if(wi_is_equal(wb_watcher_path(watcher), path)) {
+			return watcher;
+		}
+	}
+	return NULL;
 }
 
 
@@ -420,7 +437,7 @@ wi_boolean_t wb_bot_check_command_permissions(wr_user_t *user, wb_command_t *com
 
 wi_boolean_t wb_bot_check_input_match(wb_input_t *input, wi_string_t *message_input) {
 
-	// specific and critical case for empty string on chat eveents: join and leave
+	// specific and critical case for empty string on chat events: join and leave
 	if(!message_input)
 		return true;
 
@@ -679,7 +696,10 @@ wi_boolean_t wb_bot_reload_configuration(wb_bot_t *bot) {
 	// if(loaded)
 	// 	wb_bot_unsubscribe_watchers(bot);
 
-	// reload icon
+
+	wr_client_reload_icon();
+
+	//reload icon
 	if(wi_fs_path_exists(wr_icon_path, false)) {
 		command = wi_string_with_format(WI_STR("/icon %@"), wr_icon_path);
 		wr_commands_parse_command(command, false);
@@ -736,9 +756,9 @@ void wb_bot_status_command(wb_bot_t *bot, wi_string_t *arguments) {
 
 void wb_bot_help_command(wb_bot_t *bot, wi_p7_message_t *message, wr_user_t *user) {
 	wi_string_t * 		help_string;
-	wb_output_t * 		output;
+	wb_output_t * 		output = NULL;
 
-	output = wb_output_init_with_message(wb_output_alloc(), message);
+	output = wb_output_init_with_message_name(wb_output_alloc(), wi_p7_message_name(message));
 
 	help_string = WI_STR("Wirebot Help:\n\n"
 		" \n"
@@ -759,7 +779,9 @@ void wb_bot_help_command(wb_bot_t *bot, wi_p7_message_t *message, wr_user_t *use
 	wb_output_set_output(output, help_string);
 	wb_bot_execute_output(output, user);
 
-	wi_autorelease(output);
+	// need a fix, it's weird
+	if(output)
+		wi_release(output);
 }
 
 
@@ -970,55 +992,44 @@ static wi_boolean_t _wb_bot_load_watchers(wb_bot_t *bot, xmlNodePtr node) {
 
 
 
-#pragma mark -
-
-static wb_watcher_t * _wb_bot_load_watcher_with_node(wb_watcher_t *watcher, xmlNodePtr node) {
-	wi_string_t 			*path, *activated;
-
-	// get watcher path
-	path = wi_xml_node_attribute_with_name(node, WI_STR("path"));
-	if(path)
-		watcher->path = wi_retain(path);
-
-	// is an activated watcher ?
-	activated = wi_xml_node_attribute_with_name(node, WI_STR("activated"));
-	if(activated)
-		watcher->activated = wi_is_equal(activated, WI_STR("true")) ? true : false;
-
-	return watcher;
-}
-
-
 
 
 
 #pragma mark -
 
-void _wb_bot_subscribe_to_remote_directory_for_watcher(wb_watcher_t *watcher) {
+void _wb_bot_subscribe_to_remote_directory_for_watcher(wb_bot_t *bot, wb_watcher_t *watcher) {
 	wi_p7_message_t     *message;
+	wi_string_t 		*path;
 
-	wi_log_info(WI_STR("_wb_bot_subscribe_to_remote_directory_at_path: %@"), watcher->path);
+	bot->subscribing = true;
+
+	path = wb_watcher_path(watcher);
+
+	wi_log_info(WI_STR("_wb_bot_subscribe_to_remote_directory_at_path: %@"), path);
 
 	message = wi_p7_message_with_name(WI_STR("wired.file.list_directory"), wr_p7_spec);
-	wi_p7_message_set_string_for_name(message, watcher->path, WI_STR("wired.file.path"));
+	wi_p7_message_set_string_for_name(message, path, WI_STR("wired.file.path"));
 
 	if(wr_connected)
     	wr_client_send_message(message);
 
     message = wi_p7_message_with_name(WI_STR("wired.file.subscribe_directory"), wr_p7_spec);
-    wi_p7_message_set_string_for_name(message, watcher->path, WI_STR("wired.file.path"));
+    wi_p7_message_set_string_for_name(message, path, WI_STR("wired.file.path"));
 
 	if(wr_connected)
     	wr_client_send_message(message);
 }
 
-void _wb_bot_unsubscribe_to_remote_directory_for_watcher(wb_watcher_t *watcher) {
+void _wb_bot_unsubscribe_to_remote_directory_for_watcher(wb_bot_t *bot, wb_watcher_t *watcher) {
 	wi_p7_message_t     *message;
+	wi_string_t 		*path;
 
-	wi_log_info(WI_STR("_wb_bot_unsubscribe_to_remote_directory_at_path: %@"), watcher->path);
+	path = wb_watcher_path(watcher);
+
+	wi_log_info(WI_STR("_wb_bot_unsubscribe_to_remote_directory_at_path: %@"), path);
 
     message = wi_p7_message_with_name(WI_STR("wired.file.unsubscribe_directory"), wr_p7_spec);
-    wi_p7_message_set_string_for_name(message, watcher->path, WI_STR("wired.file.path"));
+    wi_p7_message_set_string_for_name(message, path, WI_STR("wired.file.path"));
 
     if(wr_connected)
     	wr_client_send_message(message);
@@ -1042,6 +1053,13 @@ wi_array_t * wb_bot_rules(wb_bot_t * bot) {
 	return bot->rules;
 }
 
+wi_boolean_t wb_bot_is_subscribing(wb_bot_t * bot) {
+	return bot->subscribing;
+}
+
+wi_boolean_t wb_bot_set_subscribing(wb_bot_t *bot, wi_boolean_t sub) {
+	bot->subscribing = sub;
+}
 
 
 
@@ -1069,23 +1087,4 @@ static wi_hash_code_t wb_bot_hash(wi_runtime_instance_t *instance) {
 }
 
 
-#pragma mark -
-#pragma mark command runtime methods
-
-
-static void wb_watcher_dealloc(wi_runtime_instance_t *instance) {
-	wb_watcher_t		* watcher = instance;
-
-	wi_release(watcher->path);
-	wi_release(watcher->files);
-}
-
-static wi_string_t * wb_watcher_description(wi_runtime_instance_t *instance) {
-	wb_watcher_t		* watcher = instance;
-	wi_string_t 		* string;
-
-	string = wi_string_with_format(WI_STR("Watcher: [%@] (%@)"), watcher->path, watcher->files);
-
-	return string;
-}
 
