@@ -28,6 +28,7 @@ This tutorial explains how to install and run Wirebot on an UNIX-like operating 
 * GNU readline
 * GNU libiconv
 * OpenSSL
+* cURL
 
 Be sure to have these components installed on your system, they are dependencies of libwired and Wirebot. 
 
@@ -43,13 +44,11 @@ Be sure to have these components installed on your system, they are dependencies
 	
 3. Add git submodules (here, libwired):
 
-		git submodule init && git submodule update
+		git submodule update --init --recursive
 	
 4. Configure the package:
 
-		./configure --enable-pthreads
-
-	*The "--enable-pthreads" is currently needed.*
+		./configure
 	
 5. Compile both libwired and Wirebot
 
@@ -176,9 +175,13 @@ The shorter way is to take an example:
 
 TBD
 
+#### Watchers
+
+TBD
+
 ### Mac Users
 
-If you are a Mac user, have a look to [WireBot for Mac](http://wired.read-write.fr/products/wire-bot/). It provides a binary version for OSX and a graphical user interface to edit dictionnary file. 
+If you are a Mac user, have a look to [WireBot for Mac](http://wired.read-write.fr/products/wire-bot/). It provides a binary version for OSX and a graphical user interface to edit dictionnary file. [COming soon]
 
 ## Licence
 
