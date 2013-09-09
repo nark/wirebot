@@ -1,0 +1,122 @@
+Sep  9 19:45:57 wirebot[37684]: Info: Reading /Users/nark/.wirebot/wirebot.conf
+Sep  9 19:45:57 wirebot[37684]: Debug:   auto reconnect = yes
+Sep  9 19:45:57 wirebot[37684]: Debug:   dictionary path = wirebot.xml
+Sep  9 19:45:57 wirebot[37684]: Debug:   hostname = localhost
+Sep  9 19:45:57 wirebot[37684]: Debug:   icon path = Bot.png
+Sep  9 19:45:57 wirebot[37684]: Debug:   login = admin
+Sep  9 19:45:57 wirebot[37684]: Debug:   nick = Wire Bot
+Sep  9 19:45:57 wirebot[37684]: Debug:   password = 
+Sep  9 19:45:57 wirebot[37684]: Debug:   port = 4871
+Sep  9 19:45:57 wirebot[37684]: Debug:   reconnect on kick = no
+Sep  9 19:45:57 wirebot[37684]: Debug:   status = Jedi in the Matrix
+Sep  9 19:45:57 wirebot[37684]: Info: Reading /Users/nark/.wirebot/wirebot.xml robot file...
+Sep  9 19:45:57 wirebot[37684]: Info: wb_bot path: /Users/nark/.wirebot/wirebot.xml
+Sep  9 19:45:57 wirebot[37684]: Info: Writting PID file: /Users/nark/.wirebot/wirebot.pid
+Sep  9 19:45:57 wirebot[37684]: Info: Connecting to localhost...
+Sep  9 19:45:57 wirebot[37684]: Info: Trying ::1 at port 4871...
+Sep  9 19:45:57 wirebot[37684]: Info: Connected using AES/256 bits, logging in...
+Sep  9 19:45:57 wirebot[37684]: Info: Logged in, welcome to Wired Server
+Sep  9 19:46:14 wirebot[37684]: Info: Signal INT received, quitting
+Sep  9 19:46:14 wirebot[37684]: Info: Connection to ::1 closed
+Sep  9 19:46:23 wirebot[37695]: Info: Reading /Users/nark/.wirebot/wirebot.conf
+Sep  9 19:46:23 wirebot[37695]: Debug:   auto reconnect = yes
+Sep  9 19:46:23 wirebot[37695]: Debug:   dictionary path = wirebot.xml
+Sep  9 19:46:23 wirebot[37695]: Debug:   hostname = localhost
+Sep  9 19:46:23 wirebot[37695]: Debug:   icon path = Bot.png
+Sep  9 19:46:23 wirebot[37695]: Debug:   login = admin
+Sep  9 19:46:23 wirebot[37695]: Debug:   nick = Wire Bot
+Sep  9 19:46:23 wirebot[37695]: Debug:   password = 
+Sep  9 19:46:23 wirebot[37695]: Debug:   port = 4871
+Sep  9 19:46:23 wirebot[37695]: Debug:   reconnect on kick = no
+Sep  9 19:46:23 wirebot[37695]: Debug:   status = Jedi in the Matrix
+Sep  9 19:46:23 wirebot[37695]: Info: Reading /Users/nark/.wirebot/wirebot.xml robot file...
+Sep  9 19:46:23 wirebot[37695]: Info: wb_bot path: /Users/nark/.wirebot/wirebot.xml
+Sep  9 19:46:23 wirebot[37695]: Info: Writting PID file: /Users/nark/.wirebot/wirebot.pid
+Sep  9 19:46:23 wirebot[37695]: Info: Connecting to localhost...
+Sep  9 19:46:23 wirebot[37695]: Info: Trying ::1 at port 4871...
+Sep  9 19:46:23 wirebot[37695]: Info: Connected using AES/256 bits, logging in...
+Sep  9 19:46:23 wirebot[37695]: Info: Logged in, welcome to Wired Server
+Sep  9 19:46:27 wirebot[37695]: Info: wb_bot_execute_output: Yo @INPUT_NICK. :-)
+Sep  9 19:47:32 wirebot[37695]: Info: wb_bot_execute_output: :-(
+Sep  9 19:49:06 wirebot[37695]: Info: Signal INT received, quitting
+Sep  9 19:49:06 wirebot[37695]: Info: Connection to ::1 closed
+Sep  9 19:49:10 wirebot[37777]: Info: Reading /Users/nark/.wirebot/wirebot.conf
+Sep  9 19:49:10 wirebot[37777]: Debug:   auto reconnect = yes
+Sep  9 19:49:10 wirebot[37777]: Debug:   dictionary path = wirebot.xml
+Sep  9 19:49:10 wirebot[37777]: Debug:   hostname = localhost
+Sep  9 19:49:10 wirebot[37777]: Debug:   icon path = Bot.png
+Sep  9 19:49:10 wirebot[37777]: Debug:   login = admin
+Sep  9 19:49:10 wirebot[37777]: Debug:   nick = Wire Bot
+Sep  9 19:49:10 wirebot[37777]: Debug:   password = 
+Sep  9 19:49:10 wirebot[37777]: Debug:   port = 4871
+Sep  9 19:49:10 wirebot[37777]: Debug:   reconnect on kick = no
+Sep  9 19:49:10 wirebot[37777]: Debug:   status = Jedi in the Matrix
+Sep  9 19:49:10 wirebot[37777]: Info: Reading /Users/nark/.wirebot/wirebot.xml robot file...
+Sep  9 19:49:10 wirebot[37777]: Info: wb_bot path: /Users/nark/.wirebot/wirebot.xml
+Sep  9 19:49:10 wirebot[37777]: Info: Writting PID file: /Users/nark/.wirebot/wirebot.pid
+Sep  9 19:49:10 wirebot[37777]: Info: Connecting to localhost...
+Sep  9 19:49:10 wirebot[37777]: Info: Trying ::1 at port 4871...
+Sep  9 19:49:10 wirebot[37777]: Info: Connected using AES/256 bits, logging in...
+Sep  9 19:49:10 wirebot[37777]: Info: Logged in, welcome to Wired Server
+Sep  9 19:49:14 wirebot[37777]: Info: Output: Weeeee! :-)
+Sep  9 19:50:37 wirebot[37777]: Info: Signal INT received, quitting
+Sep  9 19:50:37 wirebot[37777]: Info: Connection to ::1 closed
+Sep  9 19:50:39 wirebot[37845]: Info: Reading /Users/nark/.wirebot/wirebot.conf
+Sep  9 19:50:39 wirebot[37845]: Debug:   auto reconnect = yes
+Sep  9 19:50:39 wirebot[37845]: Debug:   dictionary path = wirebot.xml
+Sep  9 19:50:39 wirebot[37845]: Debug:   hostname = localhost
+Sep  9 19:50:39 wirebot[37845]: Debug:   icon path = Bot.png
+Sep  9 19:50:39 wirebot[37845]: Debug:   login = admin
+Sep  9 19:50:39 wirebot[37845]: Debug:   nick = Wire Bot
+Sep  9 19:50:39 wirebot[37845]: Debug:   password = 
+Sep  9 19:50:39 wirebot[37845]: Debug:   port = 4871
+Sep  9 19:50:39 wirebot[37845]: Debug:   reconnect on kick = no
+Sep  9 19:50:39 wirebot[37845]: Debug:   status = Jedi in the Matrix
+Sep  9 19:50:39 wirebot[37845]: Info: Reading /Users/nark/.wirebot/wirebot.xml robot file...
+Sep  9 19:50:39 wirebot[37845]: Info: wb_bot path: /Users/nark/.wirebot/wirebot.xml
+Sep  9 19:50:39 wirebot[37845]: Info: Writting PID file: /Users/nark/.wirebot/wirebot.pid
+Sep  9 19:50:39 wirebot[37845]: Info: Connecting to localhost...
+Sep  9 19:50:39 wirebot[37845]: Info: Trying ::1 at port 4871...
+Sep  9 19:50:39 wirebot[37845]: Info: Connected using AES/256 bits, logging in...
+Sep  9 19:50:39 wirebot[37845]: Info: Logged in, welcome to Wired Server
+Sep  9 19:50:39 wirebot[37845]: Info: Watcher subscribe to directory: /Uploads
+Sep  9 20:01:46 wirebot[37845]: Info: Output: Weeeee! :-)
+Sep  9 20:01:51 wirebot[37845]: Info: Watcher File Removed: /Uploads/Test
+Sep  9 20:01:51 wirebot[37845]: Info: Watcher File Removed: /Uploads/Growl-1.2.2.dmg
+Sep  9 20:01:51 wirebot[37845]: Info: Watcher File Removed: /Uploads/freeformatter-output
+Sep  9 20:03:25 wirebot[37845]: Info: Watcher File Removed: /Uploads/user_homme.png
+Sep  9 20:06:48 wirebot[37845]: Info: Watcher unsubscribe to directory: /Uploads
+Sep  9 20:06:48 wirebot[37845]: Info: Reading /Users/nark/.wirebot/wirebot.xml robot file...
+Sep  9 20:06:48 wirebot[37845]: Info: Watcher subscribe to directory: /Uploads
+Sep  9 20:06:48 wirebot[37845]: Info: Watcher subscribe to directory: /Uploads/Movies
+Sep  9 20:06:48 wirebot[37845]: Info: Watcher subscribe to directory: /Uploads
+Sep  9 20:06:48 wirebot[37845]: Info: Output: Oh. I learnt many new studip worlds…
+Sep  9 20:06:49 wirebot[37845]: Info: File or folder not found
+Sep  9 20:06:49 wirebot[37845]: Info: File or folder not found
+Sep  9 20:09:41 wirebot[37845]: Info: Signal INT received, quitting
+Sep  9 20:09:41 wirebot[37845]: Info: Connection to ::1 closed
+Sep  9 20:09:43 wirebot[37969]: Info: Reading /Users/nark/.wirebot/wirebot.conf
+Sep  9 20:09:43 wirebot[37969]: Debug:   auto reconnect = yes
+Sep  9 20:09:43 wirebot[37969]: Debug:   dictionary path = wirebot.xml
+Sep  9 20:09:43 wirebot[37969]: Debug:   hostname = localhost
+Sep  9 20:09:43 wirebot[37969]: Debug:   icon path = Bot.png
+Sep  9 20:09:43 wirebot[37969]: Debug:   login = admin
+Sep  9 20:09:43 wirebot[37969]: Debug:   nick = Wire Bot
+Sep  9 20:09:43 wirebot[37969]: Debug:   password = 
+Sep  9 20:09:43 wirebot[37969]: Debug:   port = 4871
+Sep  9 20:09:43 wirebot[37969]: Debug:   reconnect on kick = no
+Sep  9 20:09:43 wirebot[37969]: Debug:   status = Jedi in the Matrix
+Sep  9 20:09:43 wirebot[37969]: Info: Reading /Users/nark/.wirebot/wirebot.xml robot file...
+Sep  9 20:09:43 wirebot[37969]: Info: wb_bot path: /Users/nark/.wirebot/wirebot.xml
+Sep  9 20:09:43 wirebot[37969]: Info: Writting PID file: /Users/nark/.wirebot/wirebot.pid
+Sep  9 20:09:43 wirebot[37969]: Info: Connecting to localhost...
+Sep  9 20:09:43 wirebot[37969]: Info: Trying ::1 at port 4871...
+Sep  9 20:09:43 wirebot[37969]: Info: Connected using AES/256 bits, logging in...
+Sep  9 20:09:43 wirebot[37969]: Info: Logged in, welcome to Wired Server
+Sep  9 20:09:43 wirebot[37969]: Info: Watcher subscribe to directory: /Uploads/Movies
+Sep  9 20:09:43 wirebot[37969]: Info: Watcher subscribe to directory: /Uploads
+Sep  9 20:09:43 wirebot[37969]: Info: File or folder not found
+Sep  9 20:09:43 wirebot[37969]: Info: File or folder not found
+Sep  9 20:09:46 wirebot[37969]: Info: Watcher File Added: /Uploads/user_homme.png
+Sep  9 20:10:04 wirebot[37969]: Info: Signal INT received, quitting
+Sep  9 20:10:04 wirebot[37969]: Info: Connection to ::1 closed

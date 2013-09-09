@@ -214,7 +214,7 @@ void wb_watcher_files_diff(wb_watcher_t *watcher) {
 	while((path = wi_enumerator_next_data(enumerator))) {
 		if(!wi_array_contains_data(watcher->new_files, path)) {
 			if(!wi_is_equal(wi_string_path_extension(path), WI_STR("WiredTransfer"))) {
-				wi_log_info(WI_STR("File removed: %@"), path);
+				wi_log_info(WI_STR("Watcher File Removed: %@"), path);
 			}
 		}
 	}
@@ -225,7 +225,7 @@ void wb_watcher_files_diff(wb_watcher_t *watcher) {
 		if(!wi_array_contains_data(watcher->files, path)) {
 			if(!wi_is_equal(wi_string_path_extension(path), WI_STR("WiredTransfer"))) {
 				if(wi_array_count(watcher->outputs) > 0) {
-					wi_log_info(WI_STR("File added: %@"), path);
+					wi_log_info(WI_STR("Watcher File Added: %@"), path);
 					
 					for(i = 0; i < wi_array_count(watcher->outputs); i++) {
 						wb_watcher_execute_output(watcher, wi_array_data_at_index(watcher->outputs, i), path);

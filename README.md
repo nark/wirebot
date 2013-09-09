@@ -9,6 +9,7 @@ Wirebot is a chat robot for the Wired 2.0 protocol. It connects to a Wired serve
 * Support for Wired 2.0 protocol
 * XML-based triggers dictionary
 * Custom chat commands
+* Directory watchers
 * Many more...
 
 ## How it works

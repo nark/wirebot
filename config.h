@@ -97,7 +97,7 @@
 #define STDC_HEADERS 1
 
 /* Subversion revision */
-#define WI_REVISION "fa15497"
+#define WI_REVISION "9f061a7"
 
 /* Maintainer's email address */
 #define WR_BUGREPORT "dev@read-write.fr"

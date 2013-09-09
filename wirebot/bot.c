@@ -540,7 +540,7 @@ wi_boolean_t wb_bot_execute_output(wb_output_t *output, wr_user_t *user) {
 	if(wb_output_output(output) == NULL)
 		return false;
 
-	wi_log_info(WI_STR("wb_bot_execute_output: %@"), wb_output_output(output));
+	wi_log_info(WI_STR("Output: %@"), wb_output_output(output));
 
 	i 					= 0;
 	repeat 				= wb_output_repeat(output);
@@ -1004,7 +1004,7 @@ void _wb_bot_subscribe_to_remote_directory_for_watcher(wb_bot_t *bot, wb_watcher
 
 	path = wb_watcher_path(watcher);
 
-	wi_log_info(WI_STR("_wb_bot_subscribe_to_remote_directory_at_path: %@"), path);
+	wi_log_info(WI_STR("Watcher subscribe to directory: %@"), path);
 
 	message = wi_p7_message_with_name(WI_STR("wired.file.list_directory"), wr_p7_spec);
 	wi_p7_message_set_string_for_name(message, path, WI_STR("wired.file.path"));
@@ -1025,7 +1025,7 @@ void _wb_bot_unsubscribe_to_remote_directory_for_watcher(wb_bot_t *bot, wb_watch
 
 	path = wb_watcher_path(watcher);
 
-	wi_log_info(WI_STR("_wb_bot_unsubscribe_to_remote_directory_at_path: %@"), path);
+	wi_log_info(WI_STR("Watcher unsubscribe to directory: %@"), path);
 
     message = wi_p7_message_with_name(WI_STR("wired.file.unsubscribe_directory"), wr_p7_spec);
     wi_p7_message_set_string_for_name(message, path, WI_STR("wired.file.path"));

@@ -1,7 +1,18 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <wirebot>
+	<watchers>
+		<watcher path="/Uploads/Movies" type="movies" activated="true">
+			<service name="OMDB"></service>
+			<output message="wired.board.add_thread" board="Uploads/Movies">New! @WATCHER_FILE [@WATCHER_PATH]</output>
+		</watcher>
+
+		<watcher path="/Uploads" type="all" activated="true">
+			<output message="wired.chat.say">New file @WATCHER_FILE in @WATCHER_PATH</output>
+		</watcher>
+	</watchers>
+
 	<rules>
-		<rule permissions="any" activated="true">
+		<rule permissions="any"  activated="true">
 			<input message="wired.message.message" comparison="equals" sensitive="false">:-)</input>
 
 			<output message="wired.message.message" delay="1" repeat="0">OK</output>
