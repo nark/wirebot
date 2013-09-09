@@ -19,7 +19,7 @@ The bot also respond to chat commands, thus users can directly execute some oper
 
 ## Install Wirebot (UNIX-like systems)
 
-This tutorial explains how to install and run Wirebot on an UNIX-like operating system.
+This tutorial explains how to install and run Wirebot on an UNIX-like operating system. (Linux, BSD, OSX, etc)
 
 ### Requirements
 
