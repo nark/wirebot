@@ -33,13 +33,13 @@ This tutorial explains how to install and run Wirebot on an UNIX-like operating 
 
 Be sure to have these components installed on your system, they are dependencies of libwired and Wirebot. 
 
-### Install form binary
+### Install from the repository
 
 1. Clone Wiredbot repository:
 
-		wget http://master.dl.sourceforge.net/project/wired2/wirebot/wirebot.tar.gz
+		git clone https://github.com/nark/wirebot.git
 	
-2. Move into the clone directory:
+2. Move into the cloned directory:
 
 		cd wirebot/
 	
