@@ -680,7 +680,7 @@ wi_boolean_t wb_bot_reload_configuration(wb_bot_t *bot) {
 	wi_release(bot->commands);
 	wi_release(bot->rules);
 
-	//wb_bot_unsubscribe_watchers(bot);
+	wb_bot_unsubscribe_watchers(bot);
 
 	// init again
 	bot->path					= wi_retain(old_path);
@@ -692,17 +692,16 @@ wi_boolean_t wb_bot_reload_configuration(wb_bot_t *bot) {
 	// reload dictionnary
 	loaded = _wb_bot_load_file(bot, old_path);
 
-	// reload directory warchers
-	// if(loaded)
-	// 	wb_bot_unsubscribe_watchers(bot);
-
-
 	wr_client_reload_icon();
 
 	//reload icon
 	if(wi_fs_path_exists(wr_icon_path, false)) {
 		command = wi_string_with_format(WI_STR("/icon %@"), wr_icon_path);
 		wr_commands_parse_command(command, false);
+	}
+
+	if(loaded) {
+		wb_bot_subscribe_watchers(bot);
 	}
 
 	return loaded;
