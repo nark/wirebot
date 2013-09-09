@@ -24,12 +24,12 @@ This tutorial explains how to install and run Wirebot on an UNIX-like operating 
 
 ### Requirements
 
-* Git
-* libxml2
-* GNU readline
-* GNU libiconv
-* OpenSSL
-* cURL
+* Git (apt-get install git)
+* libxml2 (apt-get install libxml2-dev)
+* GNU readline (apt-get install libreadline-dev)
+* GNU libiconv (apt-get install libiconv-dev)
+* OpenSSL (apt-get install libssl-dev)
+* cURL (apt-get install curl libcurl4-openssl-dev)
 
 Be sure to have these components installed on your system, they are dependencies of libwired and Wirebot. 
 
@@ -177,6 +177,8 @@ The shorter way is to take an example:
 TBD
 
 #### Watchers
+
+Watchers are triggers that launch on file changes. A watcher observes a directory using the subscribtion system of the Wired 2.0 protocol and executes operations defined into the XML bot dictionary.
 
 TBD
 
