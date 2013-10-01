@@ -164,7 +164,7 @@ wi_boolean_t wb_service_execute(wb_service_t *service, wb_watcher_t *watcher) {
 	wi_p7_message_t 		*message;
 
 	if(!service->file_path)
-		return;
+		return false;
 
 	readable_name = _wb_service_parse_for_human_readable_name(service);
 
