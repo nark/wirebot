@@ -288,7 +288,7 @@ wb_watcher_t * wb_bot_watcher_for_path(wb_bot_t *bot, wi_string_t *path) {
 	wb_watcher_t 			*watcher;
 
 	if(!bot->watchers)
-		return;
+		return NULL;
 
 	enumerator = wi_array_data_enumerator(bot->watchers);
 
