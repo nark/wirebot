@@ -37,7 +37,7 @@ Be sure to have these components installed on your system, they are dependencies
 
 1. Clone Wiredbot repository:
 
-		git clone https://github.com/nark/wirebot.git
+		git clone https://github.com/profdrluigi/wirebot.git
 	
 2. Move into the cloned directory:
 
