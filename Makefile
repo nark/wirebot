@@ -1,6 +1,6 @@
 # Makefile.in
 
-abs_top_srcdir	= /Users/nark/Development/Me/Cocoa/Wired/wired2/wirebot
+abs_top_srcdir	= /Users/nark/Development/Me/Cocoa/Wired/wired2.5/wirebot
 datarootdir		= ${prefix}/share
 exec_prefix		= ${prefix}
 objdir			= obj
@@ -23,12 +23,12 @@ WIREOBJECTS		= $(addprefix $(objdir)/wirebot/,$(notdir $(patsubst %.c,%.o,$(shel
 DEFS			= -DHAVE_CONFIG_H
 CC				= gcc
 CFLAGS			= -g -O2
-CPPFLAGS		= -I/usr/local/include -DWI_PTHREADS -DWI_CORESERVICES -DWI_CARBON -DWI_DIGESTS -DWI_CIPHERS -DWI_RSA -I/usr/include/libxml2 -DWI_LIBXML2 -DWI_PLIST -DWI_ZLIB -DWI_P7 -DWI_ICONV -DWI_TERMCAP -DWI_READLINE
-LDFLAGS			= -L$(rundir)/libwired/lib -L/usr/local/lib
-LIBS			= -lwired -framework CoreServices -framework Carbon -lcrypto -lxml2 -lz -liconv -ltermcap -lreadline -lcurl
+CPPFLAGS		= -I/usr/local/Cellar/readline/8.2.1/include -I/usr/local/Cellar/openssl@1.1/1.1.1s/include -I/usr/local/include -DWI_PTHREADS -DWI_CORESERVICES -DWI_CARBON -DWI_DIGESTS -DWI_CIPHERS -DWI_RSA -DWI_LIBXML2 -DWI_PLIST -DWI_ZLIB -DWI_P7 -DWI_ICONV -DWI_TERMCAP -DWI_READLINE
+LDFLAGS			= -L$(rundir)/libwired/lib -L/usr/local/Cellar/readline/8.2.1/lib -L/usr/local/Cellar/openssl@1.1/1.1.1s/lib -L/usr/local/lib
+LIBS			= -lwired  -lreadline -liconv -lcrypto -lssl -lxml2 -framework CoreServices -framework Carbon -lz -ltermcap -lcurl
 INCLUDES		= -I$(abs_top_srcdir) -I$(rundir)/libwired/include
 
-INSTALL			= /usr/bin/install -c
+INSTALL			= /usr/local/bin/ginstall -c
 COMPILE			= $(CC) $(DEFS) $(INCLUDES) $(CPPFLAGS) $(CFLAGS)
 PREPROCESS		= $(CC) -E $(DEFS) $(INCLUDES) $(CPPFLAGS) $(CFLAGS)
 DEPEND			= $(CC) -MM $(INCLUDES)

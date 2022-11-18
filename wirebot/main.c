@@ -49,6 +49,7 @@
 #include "files.h"
 #include "transfers.h"
 #include "settings.h"
+#include "service.h"
 
 static void							wr_cleanup(void);
 static void							wr_usage(void);

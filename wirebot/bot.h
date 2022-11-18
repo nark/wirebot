@@ -49,7 +49,7 @@
 
 
 /**
- * Wirebot object types
+  Wirebot object types
  */
 typedef struct _wb_bot				wb_bot_t;
 
@@ -80,7 +80,7 @@ void								wb_bot_apply_settings(wi_set_t *);
 
 
 /* Bot API
-/* The following methods could become private 
+ The following methods could become private 
  **/
 wi_boolean_t						wb_bot_reload_configuration(wb_bot_t *);
 

@@ -31,6 +31,7 @@
 #include "client.h"
 #include "service.h"
 #include "output.h"
+#include "settings.h"
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
@@ -168,9 +169,13 @@ wi_boolean_t wb_service_execute(wb_service_t *service, wb_watcher_t *watcher) {
 
 	readable_name = _wb_service_parse_for_human_readable_name(service);
 
+	wi_log_info(WI_STR("Service: %@ searching « %@ »"), service->name, readable_name);
+
 	if(readable_name && wi_string_length(readable_name) > 0) {
 		service->readable_filename = wi_retain(readable_name);
 		xml_string = _wb_service_curl_request(service, service->readable_filename);
+
+		wi_log_debug(WI_STR("Service output: %@"), xml_string);
 
 		if(_wb_service_format_xml_output(service, watcher, xml_string)) {
 			return true;
@@ -250,7 +255,7 @@ static wi_string_t * _wb_service_parse_for_human_readable_name(wb_service_t *ser
 
 
 static wi_string_t * _wb_service_curl_request(wb_service_t *service, wi_string_t *name) {
-	wi_string_t 			*url, *result;
+	wi_string_t 			*api_key, *url, *result;
 	CURL 					*curl;  
 	CURLcode 				res;
 	struct MemoryStruct 	chunk;
@@ -263,8 +268,12 @@ static wi_string_t * _wb_service_curl_request(wb_service_t *service, wi_string_t
 	chunk.size 		= 0;
 
 	if(curl) {
-		url		= wi_string_with_format(WI_STR("http://www.omdbapi.com/?t=%@&r=xml"), name);
+		api_key = wi_config_string_for_name(wd_config, WI_STR("omdb api key"));
+
+		url		= wi_string_with_format(WI_STR("http://www.omdbapi.com/?apiKey=%@&t=%@&r=xml"), api_key, name);
 		url 	= wi_string_by_replacing_string_with_string(url, WI_STR(" "), WI_STR("+"), 0);
+
+		wi_log_debug(WI_STR("Service URL: %@"), url);
 
 		curl_easy_setopt(curl, CURLOPT_URL, wi_string_cstring(url));
 		curl_easy_setopt(curl, CURLOPT_WRITEFUNCTION, WriteMemoryCallback);

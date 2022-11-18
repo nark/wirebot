@@ -1,6 +1,6 @@
 # Process this file with autoconf to produce a configure script
-AC_INIT([wirebot], [2.0], [dev@read-write.fr])
-AC_PREREQ([2.57])
+AC_INIT([wirebot],[2.0],[dev@read-write.fr])
+AC_PREREQ([2.69])
 AC_CONFIG_SRCDIR([config.h.in])
 AC_CONFIG_HEADER([config.h])
 
@@ -35,7 +35,7 @@ AC_PROG_MAKE_SET
 
 # Check for warnings
 AC_MSG_CHECKING([for warning flags])
-AC_ARG_ENABLE([warnings], AC_HELP_STRING([--enable-warnings], [enable warnings]))
+AC_ARG_ENABLE([warnings], AS_HELP_STRING([--enable-warnings],[enable warnings]))
 
 if test -n "$enable_warnings"; then
 	WI_INCLUDE_WARNING_FLAG([-W])

@@ -34,7 +34,7 @@
 #include "messages.h"
 #include "settings.h"
 #include <wired/wired.h>
-
+#include <string.h>
 
 
 
@@ -679,14 +679,16 @@ wi_boolean_t wb_bot_reload_configuration(wb_bot_t *bot) {
 	wi_release(bot->xml);
 	wi_release(bot->commands);
 	wi_release(bot->rules);
-
+    wi_release(bot->watchers);
+    
 	wb_bot_unsubscribe_watchers(bot);
 
 	// init again
 	bot->path					= wi_retain(old_path);
 	bot->commands				= wi_array_init(wi_mutable_array_alloc());
 	bot->rules					= wi_array_init(wi_mutable_array_alloc());
-
+    bot->watchers               = wi_array_init(wi_mutable_array_alloc());
+    
 	wi_release(old_path);
 
 	// reload dictionnary
@@ -884,9 +886,9 @@ static wi_boolean_t _wb_bot_load_wirebot(wb_bot_t *bot, xmlDocPtr doc) {
 	root_node = xmlDocGetRootElement(doc);
 	
 	if(strcmp((const char *) root_node->name, "wirebot") != 0) {
-		wi_error_set_libwired_error_with_format(WI_ERROR_P7_INVALIDSPEC,
-			WI_STR("Expected \"wirebot\" node but got \"%s\""),
-			root_node->name);
+		// wi_error_set_libwired_error_with_format(WI_ERROR_P7_INVALIDSPEC,
+		// 	WI_STR("Expected \"wirebot\" node but got \"%s\""),
+		// 	root_node->name);
 		
 		return false;
 	}

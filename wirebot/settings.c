@@ -58,6 +58,7 @@ void wd_settings_initialize(void) {
 		WI_INT32(WI_CONFIG_PATH),				WI_STR("dictionary path"),
 		WI_INT32(WI_CONFIG_BOOL),				WI_STR("auto reconnect"),
 		WI_INT32(WI_CONFIG_BOOL),				WI_STR("reconnect on kick"),
+		WI_INT32(WI_CONFIG_STRING),				WI_STR("omdb api key"),
 		NULL);
 	
 	defaults = wi_dictionary_with_data_and_keys(
@@ -71,6 +72,7 @@ void wd_settings_initialize(void) {
 		WI_STR("wirebot.xml"),					WI_STR("dictionary path"),
 		wi_number_with_bool(true),				WI_STR("auto reconnect"),
 		wi_number_with_bool(false),				WI_STR("reconnect on kick"),
+		WI_STR(""),										WI_STR("omdb api key"),
 		NULL);
 	
 	wd_config = wi_config_init_with_path(wi_config_alloc(), wr_config_path, types, defaults);
@@ -97,7 +99,8 @@ wi_boolean_t wd_settings_read_config(void) {
 		wi_config_note_change(wd_config, WI_STR("icon path"));
 		wi_config_note_change(wd_config, WI_STR("auto reconnect"));
 		wi_config_note_change(wd_config, WI_STR("reconnect on kick"));
-
+		wi_config_note_change(wd_config, WI_STR("omdb api key"));
+		
 		result = wi_config_write_file(wd_config);
 	} else {
 		result = wi_config_read_file(wd_config);

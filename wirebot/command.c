@@ -29,7 +29,7 @@
 
 #include "command.h"
 #include "output.h"
-
+#include <string.h>
 
 
 struct _wb_command {

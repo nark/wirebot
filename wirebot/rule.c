@@ -30,7 +30,7 @@
 #include "rule.h"
 #include "input.h"
 #include "output.h"
- 
+#include <string.h>
 
 struct _wb_rule {
 	wi_runtime_base_t				base;

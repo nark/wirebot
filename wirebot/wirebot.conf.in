@@ -17,3 +17,5 @@ auto reconnect		= true
 reconnect on kick	= false
 
 dictionary path		= 
+
+omdb api key = 

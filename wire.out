@@ -120,3 +120,1159 @@ Sep  9 20:09:43 wirebot[37969]: Info: File or folder not found
 Sep  9 20:09:46 wirebot[37969]: Info: Watcher File Added: /Uploads/user_homme.png
 Sep  9 20:10:04 wirebot[37969]: Info: Signal INT received, quitting
 Sep  9 20:10:04 wirebot[37969]: Info: Connection to ::1 closed
+May 20 23:18:39 wirebot[6683]: Info: Reading /home/admin/.wirebot/wirebot.conf
+May 20 23:18:39 wirebot[6683]: Info: Reading /home/admin/.wirebot/wirebot.xml robot file...
+May 20 23:18:39 wirebot[6683]: Info: wb_bot path: /home/admin/.wirebot/wirebot.xml
+May 20 23:18:39 wirebot[6683]: Info: Writting PID file: /home/admin/.wirebot/wirebot.pid
+May 20 23:18:39 wirebot[6683]: Info: Connecting to localhost...
+May 20 23:18:39 wirebot[6683]: Info: Trying 127.0.0.1 at port 4871...
+May 20 23:18:39 wirebot[6683]: Info: Could not connect to 127.0.0.1: Connection refused
+May 20 23:18:42 wirebot[6683]: Info: Signal INT received, quitting
+May 20 23:20:58 wirebot[6837]: Info: Reading /home/admin/.wirebot/wirebot.conf
+May 20 23:20:58 wirebot[6837]: Debug:   nick = Marvin
+May 20 23:20:58 wirebot[6837]: Debug:   status = Jedi in the Matrix
+May 20 23:20:58 wirebot[6837]: Debug:   dictionary path = wirebot.xml
+May 20 23:20:58 wirebot[6837]: Debug:   auto reconnect = yes
+May 20 23:20:58 wirebot[6837]: Debug:   reconnect on kick = no
+May 20 23:20:58 wirebot[6837]: Debug:   icon path = ~/Marvin.png
+May 20 23:20:58 wirebot[6837]: Debug:   hostname = localhost
+May 20 23:20:58 wirebot[6837]: Debug:   port = 4875
+May 20 23:20:58 wirebot[6837]: Debug:   login = bot
+May 20 23:20:58 wirebot[6837]: Debug:   password = 8Ppyg5ok
+May 20 23:20:58 wirebot[6837]: Info: Reading /home/admin/.wirebot/wirebot.xml robot file...
+May 20 23:20:58 wirebot[6837]: Info: wb_bot path: /home/admin/.wirebot/wirebot.xml
+May 20 23:20:58 wirebot[6837]: Info: Writting PID file: /home/admin/.wirebot/wirebot.pid
+May 20 23:20:58 wirebot[6837]: Info: Connecting to localhost...
+May 20 23:20:58 wirebot[6837]: Info: Trying 127.0.0.1 at port 4875...
+May 20 23:20:58 wirebot[6837]: Info: Connected using AES/256 bits, logging in...
+May 20 23:20:58 wirebot[6837]: Info: Logged in, welcome to G.S.C. 2.0
+May 20 23:20:58 wirebot[6837]: Info: Watcher subscribe to directory: /Uploads/Movies
+May 20 23:20:58 wirebot[6837]: Info: Watcher subscribe to directory: /Uploads
+May 20 23:20:59 wirebot[6837]: Info: File or folder not found
+May 20 23:21:00 wirebot[6837]: Info: File or folder not found
+May 20 23:21:00 wirebot[6837]: Info: File or folder not found
+May 20 23:21:00 wirebot[6837]: Info: File or folder not found
+May 20 23:21:14 wirebot[6837]: Info: Signal INT received, quitting
+May 20 23:21:14 wirebot[6837]: Info: Connection to 127.0.0.1 closed
+Nov 16 20:51:08 wirebot[76325]: Info: Reading /Users/nark/.wirebot/wirebot.conf
+Nov 16 20:51:08 wirebot[76325]: Debug:   nick = WireBot
+Nov 16 20:51:08 wirebot[76325]: Debug:   status = Jedi in the Matrix
+Nov 16 20:51:08 wirebot[76325]: Debug:   dictionary path = wirebot.xml
+Nov 16 20:51:08 wirebot[76325]: Debug:   auto reconnect = yes
+Nov 16 20:51:08 wirebot[76325]: Debug:   reconnect on kick = no
+Nov 16 20:51:08 wirebot[76325]: Debug:   icon path = icon.png
+Nov 16 20:51:08 wirebot[76325]: Debug:   hostname = localhost
+Nov 16 20:51:08 wirebot[76325]: Debug:   port = 4871
+Nov 16 20:51:08 wirebot[76325]: Debug:   login = admin
+Nov 16 20:51:08 wirebot[76325]: Debug:   password = 
+Nov 16 20:51:08 wirebot[76325]: Error: Can't read robot file: /Users/nark/.wirebot/wirebot.xml
+Nov 16 20:51:08 wirebot[76325]: Error: Wirebot cannot be initialized properly, shutdown.
+Nov 16 20:52:00 wirebot[76354]: Info: Reading /Users/nark/.wirebot/wirebot.conf
+Nov 16 20:52:00 wirebot[76354]: Debug:   nick = WireBot
+Nov 16 20:52:00 wirebot[76354]: Debug:   status = Jedi in the Matrix
+Nov 16 20:52:00 wirebot[76354]: Debug:   dictionary path = wirebot.xml
+Nov 16 20:52:00 wirebot[76354]: Debug:   auto reconnect = yes
+Nov 16 20:52:00 wirebot[76354]: Debug:   reconnect on kick = no
+Nov 16 20:52:00 wirebot[76354]: Debug:   icon path = icon.png
+Nov 16 20:52:00 wirebot[76354]: Debug:   hostname = localhost
+Nov 16 20:52:00 wirebot[76354]: Debug:   port = 4871
+Nov 16 20:52:00 wirebot[76354]: Debug:   login = admin
+Nov 16 20:52:00 wirebot[76354]: Debug:   password = 
+Nov 16 20:52:00 wirebot[76354]: Error: Can't read robot file: /Users/nark/.wirebot/wirebot.xml
+Nov 16 20:52:00 wirebot[76354]: Error: Wirebot cannot be initialized properly, shutdown.
+Nov 16 20:52:28 wirebot[76367]: Info: Reading /Users/nark/.wirebot/wirebot.conf
+Nov 16 20:52:28 wirebot[76367]: Debug:   nick = WireBot
+Nov 16 20:52:28 wirebot[76367]: Debug:   status = Jedi in the Matrix
+Nov 16 20:52:28 wirebot[76367]: Debug:   dictionary path = wirebot.xml
+Nov 16 20:52:28 wirebot[76367]: Debug:   auto reconnect = yes
+Nov 16 20:52:28 wirebot[76367]: Debug:   reconnect on kick = no
+Nov 16 20:52:28 wirebot[76367]: Debug:   icon path = icon.png
+Nov 16 20:52:28 wirebot[76367]: Debug:   hostname = localhost
+Nov 16 20:52:28 wirebot[76367]: Debug:   port = 4871
+Nov 16 20:52:28 wirebot[76367]: Debug:   login = admin
+Nov 16 20:52:28 wirebot[76367]: Debug:   password = 
+Nov 16 20:52:28 wirebot[76367]: Error: Can't read robot file: /Users/nark/.wirebot/wirebot.xml
+Nov 16 20:52:28 wirebot[76367]: Error: Wirebot cannot be initialized properly, shutdown.
+Nov 16 20:53:15 wirebot[76387]: Info: Reading /Users/nark/.wirebot/wirebot.conf
+Nov 16 20:53:15 wirebot[76387]: Error: Can't read robot file: /Users/nark/.wirebot/wirebot.xml
+Nov 16 20:53:15 wirebot[76387]: Error: Wirebot cannot be initialized properly, shutdown.
+Nov 16 20:53:43 wirebot[76401]: Info: Reading /Users/nark/.wirebot/wirebot.conf
+Nov 16 20:53:43 wirebot[76401]: Debug:   nick = WireBot
+Nov 16 20:53:43 wirebot[76401]: Debug:   status = Jedi in the Matrix
+Nov 16 20:53:43 wirebot[76401]: Debug:   dictionary path = wirebot.xml
+Nov 16 20:53:43 wirebot[76401]: Debug:   auto reconnect = yes
+Nov 16 20:53:43 wirebot[76401]: Debug:   reconnect on kick = no
+Nov 16 20:53:43 wirebot[76401]: Debug:   icon path = icon.png
+Nov 16 20:53:43 wirebot[76401]: Debug:   hostname = localhost
+Nov 16 20:53:43 wirebot[76401]: Debug:   port = 4871
+Nov 16 20:53:43 wirebot[76401]: Debug:   login = admin
+Nov 16 20:53:43 wirebot[76401]: Debug:   password = 
+Nov 16 20:53:43 wirebot[76401]: Error: Can't read robot file: /Users/nark/.wirebot/wirebot.xml
+Nov 16 20:53:43 wirebot[76401]: Error: Wirebot cannot be initialized properly, shutdown.
+Nov 16 20:57:08 wirebot[76650]: Info: Reading /Users/nark/.wirebot/wirebot.conf
+Nov 16 20:57:08 wirebot[76650]: Debug:   nick = WireBot
+Nov 16 20:57:08 wirebot[76650]: Debug:   status = Jedi in the Matrix
+Nov 16 20:57:08 wirebot[76650]: Debug:   dictionary path = wirebot.xml
+Nov 16 20:57:08 wirebot[76650]: Debug:   auto reconnect = yes
+Nov 16 20:57:08 wirebot[76650]: Debug:   reconnect on kick = no
+Nov 16 20:57:08 wirebot[76650]: Debug:   icon path = icon.png
+Nov 16 20:57:08 wirebot[76650]: Debug:   hostname = localhost
+Nov 16 20:57:08 wirebot[76650]: Debug:   port = 4871
+Nov 16 20:57:08 wirebot[76650]: Debug:   login = admin
+Nov 16 20:57:08 wirebot[76650]: Debug:   password = 
+Nov 16 20:57:08 wirebot[76650]: Error: Can't read robot file: /Users/nark/.wirebot/wirebot.xml
+Nov 16 20:57:08 wirebot[76650]: Error: Wirebot cannot be initialized properly, shutdown.
+Nov 16 20:57:45 wirebot[76668]: Info: Reading /Users/nark/.wirebot/wirebot.conf
+Nov 16 20:57:45 wirebot[76668]: Debug:   nick = WireBot
+Nov 16 20:57:45 wirebot[76668]: Debug:   status = Jedi in the Matrix
+Nov 16 20:57:45 wirebot[76668]: Debug:   dictionary path = wirebot.xml
+Nov 16 20:57:45 wirebot[76668]: Debug:   auto reconnect = yes
+Nov 16 20:57:45 wirebot[76668]: Debug:   reconnect on kick = no
+Nov 16 20:57:45 wirebot[76668]: Debug:   icon path = icon.png
+Nov 16 20:57:45 wirebot[76668]: Debug:   hostname = localhost
+Nov 16 20:57:45 wirebot[76668]: Debug:   port = 4871
+Nov 16 20:57:45 wirebot[76668]: Debug:   login = admin
+Nov 16 20:57:45 wirebot[76668]: Debug:   password = 
+Nov 16 20:57:45 wirebot[76668]: Error: Can't read robot file: /Users/nark/.wirebot/wirebot.xml
+Nov 16 20:57:45 wirebot[76668]: Error: Wirebot cannot be initialized properly, shutdown.
+Nov 16 20:58:32 wirebot[76689]: Info: Reading /Users/nark/.wirebot/wirebot.conf
+Nov 16 20:58:32 wirebot[76689]: Debug:   nick = WireBot
+Nov 16 20:58:32 wirebot[76689]: Debug:   status = Jedi in the Matrix
+Nov 16 20:58:32 wirebot[76689]: Debug:   dictionary path = wirebot.xml
+Nov 16 20:58:32 wirebot[76689]: Debug:   auto reconnect = yes
+Nov 16 20:58:32 wirebot[76689]: Debug:   reconnect on kick = no
+Nov 16 20:58:32 wirebot[76689]: Debug:   icon path = icon.png
+Nov 16 20:58:32 wirebot[76689]: Debug:   hostname = localhost
+Nov 16 20:58:32 wirebot[76689]: Debug:   port = 4871
+Nov 16 20:58:32 wirebot[76689]: Debug:   login = admin
+Nov 16 20:58:32 wirebot[76689]: Debug:   password = 
+Nov 16 20:58:32 wirebot[76689]: Error: Can't read robot file: /Users/nark/.wirebot/wirebot.xml
+Nov 16 20:58:32 wirebot[76689]: Error: Wirebot cannot be initialized properly, shutdown.
+Nov 16 20:59:38 wirebot[76715]: Info: Reading /Users/nark/.wirebot/wirebot.conf
+Nov 16 20:59:38 wirebot[76715]: Debug:   nick = WireBot
+Nov 16 20:59:38 wirebot[76715]: Debug:   status = Jedi in the Matrix
+Nov 16 20:59:38 wirebot[76715]: Debug:   dictionary path = wirebot.xml
+Nov 16 20:59:38 wirebot[76715]: Debug:   auto reconnect = yes
+Nov 16 20:59:38 wirebot[76715]: Debug:   reconnect on kick = no
+Nov 16 20:59:38 wirebot[76715]: Debug:   icon path = icon.png
+Nov 16 20:59:38 wirebot[76715]: Debug:   hostname = localhost
+Nov 16 20:59:38 wirebot[76715]: Debug:   port = 4871
+Nov 16 20:59:38 wirebot[76715]: Debug:   login = admin
+Nov 16 20:59:38 wirebot[76715]: Debug:   password = 
+Nov 16 20:59:38 wirebot[76715]: Info: Reading /Users/nark/.wirebot/wirebot.xml robot file...
+Nov 16 20:59:38 wirebot[76715]: Info: wb_bot path: /Users/nark/.wirebot/wirebot.xml
+Nov 16 20:59:38 wirebot[76715]: Info: Writting PID file: /Users/nark/.wirebot/wirebot.pid
+Nov 16 20:59:38 wirebot[76715]: Info: Connecting to localhost...
+Nov 16 20:59:38 wirebot[76715]: Info: Trying ::1 at port 4871...
+Nov 16 20:59:38 wirebot[76715]: Info: Connected using AES/256 bits, logging in...
+Nov 16 20:59:38 wirebot[76715]: Error: Could not read message from server: End of file
+Nov 16 20:59:52 wirebot[76715]: Info: Signal INT received, quitting
+Nov 16 20:59:55 wirebot[76722]: Info: Reading /Users/nark/.wirebot/wirebot.conf
+Nov 16 20:59:55 wirebot[76722]: Debug:   nick = WireBot
+Nov 16 20:59:55 wirebot[76722]: Debug:   status = Jedi in the Matrix
+Nov 16 20:59:55 wirebot[76722]: Debug:   dictionary path = wirebot.xml
+Nov 16 20:59:55 wirebot[76722]: Debug:   auto reconnect = yes
+Nov 16 20:59:55 wirebot[76722]: Debug:   reconnect on kick = no
+Nov 16 20:59:55 wirebot[76722]: Debug:   icon path = icon.png
+Nov 16 20:59:55 wirebot[76722]: Debug:   hostname = localhost
+Nov 16 20:59:55 wirebot[76722]: Debug:   port = 4871
+Nov 16 20:59:55 wirebot[76722]: Debug:   login = admin
+Nov 16 20:59:55 wirebot[76722]: Debug:   password = 
+Nov 16 20:59:55 wirebot[76722]: Info: Reading /Users/nark/.wirebot/wirebot.xml robot file...
+Nov 16 20:59:55 wirebot[76722]: Info: wb_bot path: /Users/nark/.wirebot/wirebot.xml
+Nov 16 20:59:55 wirebot[76722]: Info: Writting PID file: /Users/nark/.wirebot/wirebot.pid
+Nov 16 20:59:55 wirebot[76722]: Info: Connecting to localhost...
+Nov 16 20:59:55 wirebot[76722]: Info: Trying ::1 at port 4871...
+Nov 16 20:59:55 wirebot[76722]: Info: Connected using AES/256 bits, logging in...
+Nov 16 20:59:55 wirebot[76722]: Error: Could not read message from server: Connection reset by peer
+Nov 16 21:02:05 wirebot[76722]: Info: Signal INT received, quitting
+Nov 16 21:02:06 wirebot[76866]: Info: Reading /Users/nark/.wirebot/wirebot.conf
+Nov 16 21:02:06 wirebot[76866]: Debug:   nick = WireBot
+Nov 16 21:02:06 wirebot[76866]: Debug:   status = Jedi in the Matrix
+Nov 16 21:02:06 wirebot[76866]: Debug:   dictionary path = wirebot.xml
+Nov 16 21:02:06 wirebot[76866]: Debug:   auto reconnect = yes
+Nov 16 21:02:06 wirebot[76866]: Debug:   reconnect on kick = no
+Nov 16 21:02:06 wirebot[76866]: Debug:   icon path = icon.png
+Nov 16 21:02:06 wirebot[76866]: Debug:   hostname = localhost
+Nov 16 21:02:06 wirebot[76866]: Debug:   port = 4871
+Nov 16 21:02:06 wirebot[76866]: Debug:   login = admin
+Nov 16 21:02:06 wirebot[76866]: Debug:   password = 
+Nov 16 21:02:06 wirebot[76866]: Info: Reading /Users/nark/.wirebot/wirebot.xml robot file...
+Nov 16 21:02:06 wirebot[76866]: Info: wb_bot path: /Users/nark/.wirebot/wirebot.xml
+Nov 16 21:02:06 wirebot[76866]: Info: Writting PID file: /Users/nark/.wirebot/wirebot.pid
+Nov 16 21:02:06 wirebot[76866]: Info: Connecting to localhost...
+Nov 16 21:02:06 wirebot[76866]: Info: Trying ::1 at port 4871...
+Nov 16 21:02:06 wirebot[76866]: Info: Connected using AES/256 bits, logging in...
+Nov 16 21:02:06 wirebot[76866]: Info: Logged in, welcome to Wired Server
+Nov 16 21:02:06 wirebot[76866]: Info: Watcher subscribe to directory: /2 • Uploads/Movies
+Nov 16 21:02:06 wirebot[76866]: Info: Watcher subscribe to directory: /1 • Last Arrived
+Nov 16 21:02:06 wirebot[76866]: Info: File or folder not found
+Nov 16 21:02:06 wirebot[76866]: Info: File or folder not found
+Nov 16 21:02:06 wirebot[76866]: Info: File or folder not found
+Nov 16 21:02:06 wirebot[76866]: Info: File or folder not found
+Nov 16 21:02:18 wirebot[76866]: Info: Output: Welcome Boss! :-)
+Nov 16 21:11:48 wirebot[76866]: Info: Output: Ciao Boss! :-)
+Nov 16 21:12:20 wirebot[76866]: Info: Output: Welcome Boss! :-)
+Nov 16 21:13:12 wirebot[76866]: Info: Output: Ciao Boss! :-)
+Nov 16 21:13:18 wirebot[76866]: Info: Output: Welcome Boss! :-)
+Nov 16 21:18:12 wirebot[76866]: Info: Watcher unsubscribe to directory: /2 • Uploads/Movies
+Nov 16 21:18:12 wirebot[76866]: Info: Watcher unsubscribe to directory: /1 • Last Arrived
+Nov 16 21:18:12 wirebot[76866]: Info: Reading /Users/nark/.wirebot/wirebot.xml robot file...
+Nov 16 21:18:12 wirebot[76866]: Info: Watcher subscribe to directory: /2 • Uploads/Movies
+Nov 16 21:18:12 wirebot[76866]: Info: Watcher subscribe to directory: /1 • Last Arrived
+Nov 16 21:18:12 wirebot[76866]: Info: Watcher subscribe to directory: /Uploads/Movies
+Nov 16 21:18:12 wirebot[76866]: Info: Watcher subscribe to directory: /Uploads
+Nov 16 21:18:12 wirebot[76866]: Info: Output: Ready to fight!
+Nov 16 21:18:12 wirebot[76866]: Info: File or folder not found
+Nov 16 21:18:12 wirebot[76866]: Info: File or folder not found
+Nov 16 21:18:12 wirebot[76866]: Info: File or folder not found
+Nov 16 21:18:12 wirebot[76866]: Info: File or folder not found
+Nov 16 21:18:12 wirebot[76866]: Info: File or folder not found
+Nov 16 21:18:12 wirebot[76866]: Info: File or folder not found
+Nov 16 21:18:41 wirebot[76866]: Info: Signal INT received, quitting
+Nov 16 21:18:41 wirebot[76866]: Info: Connection to ::1 closed
+Nov 16 21:18:41 wirebot[77245]: Info: Reading /Users/nark/.wirebot/wirebot.conf
+Nov 16 21:18:41 wirebot[77245]: Debug:   nick = WireBot
+Nov 16 21:18:41 wirebot[77245]: Debug:   status = Jedi in the Matrix
+Nov 16 21:18:41 wirebot[77245]: Debug:   dictionary path = wirebot.xml
+Nov 16 21:18:41 wirebot[77245]: Debug:   auto reconnect = yes
+Nov 16 21:18:41 wirebot[77245]: Debug:   reconnect on kick = no
+Nov 16 21:18:41 wirebot[77245]: Debug:   icon path = icon.png
+Nov 16 21:18:41 wirebot[77245]: Debug:   hostname = localhost
+Nov 16 21:18:41 wirebot[77245]: Debug:   port = 4871
+Nov 16 21:18:41 wirebot[77245]: Debug:   login = admin
+Nov 16 21:18:41 wirebot[77245]: Debug:   password = 
+Nov 16 21:18:41 wirebot[77245]: Info: Reading /Users/nark/.wirebot/wirebot.xml robot file...
+Nov 16 21:18:41 wirebot[77245]: Info: wb_bot path: /Users/nark/.wirebot/wirebot.xml
+Nov 16 21:18:41 wirebot[77245]: Info: Writting PID file: /Users/nark/.wirebot/wirebot.pid
+Nov 16 21:18:41 wirebot[77245]: Info: Connecting to localhost...
+Nov 16 21:18:41 wirebot[77245]: Info: Trying ::1 at port 4871...
+Nov 16 21:18:41 wirebot[77245]: Info: Connected using AES/256 bits, logging in...
+Nov 16 21:18:41 wirebot[77245]: Info: Logged in, welcome to Wired Server
+Nov 16 21:18:41 wirebot[77245]: Info: Watcher subscribe to directory: /Uploads/Movies
+Nov 16 21:18:41 wirebot[77245]: Info: Watcher subscribe to directory: /Uploads
+Nov 16 21:18:51 wirebot[77245]: Info: Watcher File Added: /Uploads/Movies/The.Old.Man.S01.MULTi.1080p.DSNP.WEB-DL.DDP5.1.H264-FRATERNiTY.torrent
+Nov 16 21:21:22 wirebot[77245]: Info: Signal INT received, quitting
+Nov 16 21:21:22 wirebot[77245]: Info: Connection to ::1 closed
+Nov 16 21:21:25 wirebot[77344]: Info: Reading /Users/nark/.wirebot/wirebot.conf
+Nov 16 21:21:25 wirebot[77344]: Debug:   nick = WireBot
+Nov 16 21:21:25 wirebot[77344]: Debug:   status = Jedi in the Matrix
+Nov 16 21:21:25 wirebot[77344]: Debug:   dictionary path = wirebot.xml
+Nov 16 21:21:25 wirebot[77344]: Debug:   auto reconnect = yes
+Nov 16 21:21:25 wirebot[77344]: Debug:   reconnect on kick = no
+Nov 16 21:21:25 wirebot[77344]: Debug:   icon path = icon.png
+Nov 16 21:21:25 wirebot[77344]: Debug:   hostname = localhost
+Nov 16 21:21:25 wirebot[77344]: Debug:   port = 4871
+Nov 16 21:21:25 wirebot[77344]: Debug:   login = admin
+Nov 16 21:21:25 wirebot[77344]: Debug:   password = 
+Nov 16 21:21:25 wirebot[77344]: Info: Reading /Users/nark/.wirebot/wirebot.xml robot file...
+Nov 16 21:21:25 wirebot[77344]: Info: wb_bot path: /Users/nark/.wirebot/wirebot.xml
+Nov 16 21:21:25 wirebot[77344]: Info: Writting PID file: /Users/nark/.wirebot/wirebot.pid
+Nov 16 21:21:25 wirebot[77344]: Info: Connecting to localhost...
+Nov 16 21:21:25 wirebot[77344]: Info: Trying ::1 at port 4871...
+Nov 16 21:21:25 wirebot[77344]: Info: Connected using AES/256 bits, logging in...
+Nov 16 21:21:25 wirebot[77344]: Info: Logged in, welcome to Wired Server
+Nov 16 21:21:25 wirebot[77344]: Info: Watcher subscribe to directory: /Uploads/Movies
+Nov 16 21:21:25 wirebot[77344]: Info: Watcher subscribe to directory: /Uploads
+Nov 16 21:21:30 wirebot[77344]: Info: Watcher File Removed: /Uploads/Movies/The.Old.Man.S01.MULTi.1080p.DSNP.WEB-DL.DDP5.1.H264-FRATERNiTY.torrent
+Nov 16 21:21:35 wirebot[77344]: Info: Watcher File Added: /Uploads/Movies/The.Old.Man.S01.MULTi.1080p.DSNP.WEB-DL.DDP5.1.H264-FRATERNiTY.torrent
+Nov 16 21:21:35 wirebot[77344]: Info: readable_name: the old man
+Nov 16 21:21:55 wirebot[77344]: Info: Signal INT received, quitting
+Nov 16 21:21:55 wirebot[77344]: Info: Connection to ::1 closed
+Nov 16 21:21:58 wirebot[77409]: Info: Reading /Users/nark/.wirebot/wirebot.conf
+Nov 16 21:21:58 wirebot[77409]: Debug:   nick = WireBot
+Nov 16 21:21:58 wirebot[77409]: Debug:   status = Jedi in the Matrix
+Nov 16 21:21:58 wirebot[77409]: Debug:   dictionary path = wirebot.xml
+Nov 16 21:21:58 wirebot[77409]: Debug:   auto reconnect = yes
+Nov 16 21:21:58 wirebot[77409]: Debug:   reconnect on kick = no
+Nov 16 21:21:58 wirebot[77409]: Debug:   icon path = icon.png
+Nov 16 21:21:58 wirebot[77409]: Debug:   hostname = localhost
+Nov 16 21:21:58 wirebot[77409]: Debug:   port = 4871
+Nov 16 21:21:58 wirebot[77409]: Debug:   login = admin
+Nov 16 21:21:58 wirebot[77409]: Debug:   password = 
+Nov 16 21:21:58 wirebot[77409]: Info: Reading /Users/nark/.wirebot/wirebot.xml robot file...
+Nov 16 21:21:58 wirebot[77409]: Info: wb_bot path: /Users/nark/.wirebot/wirebot.xml
+Nov 16 21:21:58 wirebot[77409]: Info: Writting PID file: /Users/nark/.wirebot/wirebot.pid
+Nov 16 21:21:58 wirebot[77409]: Info: Connecting to localhost...
+Nov 16 21:21:58 wirebot[77409]: Info: Trying ::1 at port 4871...
+Nov 16 21:21:58 wirebot[77409]: Info: Connected using AES/256 bits, logging in...
+Nov 16 21:21:58 wirebot[77409]: Info: Logged in, welcome to Wired Server
+Nov 16 21:21:58 wirebot[77409]: Info: Watcher subscribe to directory: /Uploads/Movies
+Nov 16 21:21:58 wirebot[77409]: Info: Watcher subscribe to directory: /Uploads
+Nov 16 21:22:03 wirebot[77409]: Info: Watcher File Removed: /Uploads/Movies/The.Old.Man.S01.MULTi.1080p.DSNP.WEB-DL.DDP5.1.H264-FRATERNiTY.torrent
+Nov 16 21:22:09 wirebot[77409]: Info: Watcher File Added: /Uploads/Movies/The.Old.Man.S01.1080p.WEBRip.x265-NoTag.torrent
+Nov 16 21:22:09 wirebot[77409]: Info: readable_name: the old man
+Nov 16 21:22:09 wirebot[77409]: Info: xml_string: <root response="False"><error>No API key provided.</error></root>
+Nov 16 21:24:49 wirebot[77409]: Info: Signal INT received, quitting
+Nov 16 21:24:49 wirebot[77409]: Info: Connection to ::1 closed
+Nov 16 21:24:49 wirebot[77475]: Info: Reading /Users/nark/.wirebot/wirebot.conf
+Nov 16 21:24:49 wirebot[77475]: Debug:   nick = WireBot
+Nov 16 21:24:49 wirebot[77475]: Debug:   status = Jedi in the Matrix
+Nov 16 21:24:49 wirebot[77475]: Debug:   dictionary path = wirebot.xml
+Nov 16 21:24:49 wirebot[77475]: Debug:   auto reconnect = yes
+Nov 16 21:24:49 wirebot[77475]: Debug:   reconnect on kick = no
+Nov 16 21:24:49 wirebot[77475]: Debug:   icon path = icon.png
+Nov 16 21:24:49 wirebot[77475]: Debug:   hostname = localhost
+Nov 16 21:24:49 wirebot[77475]: Debug:   port = 4871
+Nov 16 21:24:49 wirebot[77475]: Debug:   login = admin
+Nov 16 21:24:49 wirebot[77475]: Debug:   password = 
+Nov 16 21:24:49 wirebot[77475]: Info: Reading /Users/nark/.wirebot/wirebot.xml robot file...
+Nov 16 21:24:49 wirebot[77475]: Info: wb_bot path: /Users/nark/.wirebot/wirebot.xml
+Nov 16 21:24:49 wirebot[77475]: Info: Writting PID file: /Users/nark/.wirebot/wirebot.pid
+Nov 16 21:24:49 wirebot[77475]: Info: Connecting to localhost...
+Nov 16 21:24:49 wirebot[77475]: Info: Trying ::1 at port 4871...
+Nov 16 21:24:49 wirebot[77475]: Info: Connected using AES/256 bits, logging in...
+Nov 16 21:24:49 wirebot[77475]: Info: Logged in, welcome to Wired Server
+Nov 16 21:24:49 wirebot[77475]: Info: Watcher subscribe to directory: /Uploads/Movies
+Nov 16 21:24:49 wirebot[77475]: Info: Watcher subscribe to directory: /Uploads
+Nov 16 21:24:51 wirebot[77475]: Info: Signal INT received, quitting
+Nov 16 21:24:51 wirebot[77475]: Info: Connection to ::1 closed
+Nov 16 21:24:57 wirebot[77520]: Info: Reading /Users/nark/.wirebot/wirebot.conf
+Nov 16 21:24:57 wirebot[77520]: Debug:   nick = WireBot
+Nov 16 21:24:57 wirebot[77520]: Debug:   status = Jedi in the Matrix
+Nov 16 21:24:57 wirebot[77520]: Debug:   dictionary path = wirebot.xml
+Nov 16 21:24:57 wirebot[77520]: Debug:   auto reconnect = yes
+Nov 16 21:24:57 wirebot[77520]: Debug:   reconnect on kick = no
+Nov 16 21:24:57 wirebot[77520]: Debug:   icon path = icon.png
+Nov 16 21:24:57 wirebot[77520]: Debug:   hostname = localhost
+Nov 16 21:24:57 wirebot[77520]: Debug:   port = 4871
+Nov 16 21:24:57 wirebot[77520]: Debug:   login = admin
+Nov 16 21:24:57 wirebot[77520]: Debug:   password = 
+Nov 16 21:24:57 wirebot[77520]: Info: Reading /Users/nark/.wirebot/wirebot.xml robot file...
+Nov 16 21:24:57 wirebot[77520]: Info: wb_bot path: /Users/nark/.wirebot/wirebot.xml
+Nov 16 21:24:57 wirebot[77520]: Info: Writting PID file: /Users/nark/.wirebot/wirebot.pid
+Nov 16 21:24:57 wirebot[77520]: Info: Connecting to localhost...
+Nov 16 21:24:57 wirebot[77520]: Info: Trying ::1 at port 4871...
+Nov 16 21:24:57 wirebot[77520]: Info: Connected using AES/256 bits, logging in...
+Nov 16 21:24:57 wirebot[77520]: Info: Logged in, welcome to Wired Server
+Nov 16 21:24:57 wirebot[77520]: Info: Watcher subscribe to directory: /Uploads/Movies
+Nov 16 21:24:57 wirebot[77520]: Info: Watcher subscribe to directory: /Uploads
+Nov 16 21:25:01 wirebot[77520]: Info: Watcher File Removed: /Uploads/Movies/The.Old.Man.S01.1080p.WEBRip.x265-NoTag.torrent
+Nov 16 21:25:06 wirebot[77520]: Info: Watcher File Added: /Uploads/Movies/The.Old.Man.S01.1080p.WEBRip.x265-NoTag.torrent
+Nov 16 21:25:06 wirebot[77520]: Info: readable_name: the old man
+Nov 16 21:25:06 wirebot[77520]: Info: xml_string: <?xml version="1.0" encoding="UTF-8"?><root response="True"><movie title="The Old Man" year="2022–" rated="TV-MA" released="16 Jun 2022" runtime="N/A" genre="Action, Drama, Thriller" director="N/A" writer="Robert Levine, Jonathan E. Steinberg" actors="Jeff Bridges, John Lithgow, E.J. Bonilla" plot="A retired CIA agent is hunted by both the agency he once worked for and his own nightmares, when an unknown man suddenly visits him after nearly three decades." language="English" country="United States" awards="N/A" poster="https://m.media-amazon.com/images/M/MV5BYzBlZWU5ZjAtNjgzNC00NWE3LTkyNTUtNjIyY2JiYWNhNWNkXkEyXkFqcGdeQXVyMTUzMTg2ODkz._V1_SX300.jpg" metascore="N/A" imdbRating="7.7" imdbVotes="31,651" imdbID="tt5645432" type="series"/></root>
+Nov 16 21:34:07 wirebot[77520]: Info: Watcher File Added: /Uploads/Movies/Andor (2022) S01E06 MULTi VFF 2160p 10bit 4KLight DV HDR WebRip DDP 5.1 Atmos x265-QTZ.mkv.torrent
+Nov 16 21:34:07 wirebot[77520]: Info: readable_name: andor
+Nov 16 21:34:07 wirebot[77520]: Info: xml_string: <?xml version="1.0" encoding="UTF-8"?><root response="True"><movie title="Andor" year="2022–" rated="TV-14" released="21 Sep 2022" runtime="N/A" genre="Action, Adventure, Drama" director="N/A" writer="Tony Gilroy" actors="Diego Luna, Stellan Skarsgård, Alex Ferns" plot="Prequel series to Star Wars' 'Rogue One'. In an era filled with danger, deception and intrigue, Cassian will embark on the path that is destined to turn him into a Rebel hero." language="English" country="United States" awards="N/A" poster="https://m.media-amazon.com/images/M/MV5BNDgxNTIyZTMtMzYxNi00NmRjLWFiMTEtM2U4MTFmODkzNzM1XkEyXkFqcGdeQXVyMTM1MTE1NDMx._V1_SX300.jpg" metascore="N/A" imdbRating="8.1" imdbVotes="31,004" imdbID="tt9253284" type="series"/></root>
+Nov 16 21:37:48 wirebot[77520]: Info: Watcher File Removed: /Uploads/Movies/Andor (2022) S01E06 MULTi VFF 2160p 10bit 4KLight DV HDR WebRip DDP 5.1 Atmos x265-QTZ.mkv.torrent
+Nov 16 21:37:48 wirebot[77520]: Info: Watcher File Removed: /Uploads/Movies/The.Old.Man.S01.1080p.WEBRip.x265-NoTag.torrent
+Nov 16 21:38:06 wirebot[77520]: Info: Watcher File Added: /Uploads/Movies/Bosch.S07.X265.HEVC.1080p.MULTi.WEBRip.AvALoN.torrent
+Nov 16 21:38:06 wirebot[77520]: Info: readable_name: bosch
+Nov 16 21:38:06 wirebot[77520]: Info: xml_string: <?xml version="1.0" encoding="UTF-8"?><root response="True"><movie title="Bosch" year="2014–2021" rated="TV-MA" released="06 Feb 2014" runtime="51 min" genre="Crime, Drama" director="N/A" writer="Eric Ellis Overmyer" actors="Titus Welliver, Jamie Hector, Amy Aquino" plot="An L.A.P.D. homicide detective works to solve the murder of a thirteen-year-old boy while standing trial in federal court for the murder of a serial killer." language="English" country="United States" awards="Nominated for 1 Primetime Emmy. 7 wins &amp; 14 nominations total" poster="https://m.media-amazon.com/images/M/MV5BZDBiYjg4OTgtZDg2YS00ZGIzLTk3ZWMtZWRlZDQ5M2I0MDNhXkEyXkFqcGdeQXVyMTEyMjM2NDc2._V1_SX300.jpg" metascore="N/A" imdbRating="8.5" imdbVotes="71,134" imdbID="tt3502248" type="series"/></root>
+Nov 16 21:38:29 wirebot[77520]: Info: Watcher File Removed: /Uploads/Movies/Bosch.S07.X265.HEVC.1080p.MULTi.WEBRip.AvALoN.torrent
+Nov 16 21:40:08 wirebot[77520]: Info: Signal INT received, quitting
+Nov 16 21:40:08 wirebot[77520]: Info: Connection to ::1 closed
+Nov 16 21:40:12 wirebot[77917]: Info: Reading /Users/nark/.wirebot/wirebot.conf
+Nov 16 21:40:12 wirebot[77917]: Debug:   nick = WireBot
+Nov 16 21:40:12 wirebot[77917]: Debug:   status = Jedi in the Matrix
+Nov 16 21:40:12 wirebot[77917]: Debug:   dictionary path = wirebot.xml
+Nov 16 21:40:12 wirebot[77917]: Debug:   auto reconnect = yes
+Nov 16 21:40:12 wirebot[77917]: Debug:   reconnect on kick = no
+Nov 16 21:40:12 wirebot[77917]: Debug:   icon path = icon.png
+Nov 16 21:40:12 wirebot[77917]: Debug:   hostname = localhost
+Nov 16 21:40:12 wirebot[77917]: Debug:   port = 4871
+Nov 16 21:40:12 wirebot[77917]: Debug:   login = admin
+Nov 16 21:40:12 wirebot[77917]: Debug:   password = 
+Nov 16 21:40:12 wirebot[77917]: Info: Reading /Users/nark/.wirebot/wirebot.xml robot file...
+Nov 16 21:40:12 wirebot[77917]: Info: wb_bot path: /Users/nark/.wirebot/wirebot.xml
+Nov 16 21:40:12 wirebot[77917]: Info: Writting PID file: /Users/nark/.wirebot/wirebot.pid
+Nov 16 21:40:12 wirebot[77917]: Info: Connecting to localhost...
+Nov 16 21:40:12 wirebot[77917]: Info: Trying ::1 at port 4871...
+Nov 16 21:40:12 wirebot[77917]: Info: Connected using AES/256 bits, logging in...
+Nov 16 21:40:12 wirebot[77917]: Info: Logged in, welcome to Wired Server
+Nov 16 21:40:12 wirebot[77917]: Info: Watcher subscribe to directory: /Uploads/Movies
+Nov 16 21:40:12 wirebot[77917]: Info: Watcher subscribe to directory: /Uploads
+Nov 16 21:40:25 wirebot[77917]: Info: Watcher File Added: /Uploads/Movies/The.Old.Man.S01.1080p.WEBRip.x265-NoTag.torrent
+Nov 16 21:40:25 wirebot[77917]: Info: Service: OMDB searching « the old man »
+Nov 16 21:40:25 wirebot[77917]: Debug: Service output: <?xml version="1.0" encoding="UTF-8"?><root response="True"><movie title="The Old Man" year="2022–" rated="TV-MA" released="16 Jun 2022" runtime="N/A" genre="Action, Drama, Thriller" director="N/A" writer="Robert Levine, Jonathan E. Steinberg" actors="Jeff Bridges, John Lithgow, E.J. Bonilla" plot="A retired CIA agent is hunted by both the agency he once worked for and his own nightmares, when an unknown man suddenly visits him after nearly three decades." language="English" country="United States" awards="N/A" poster="https://m.media-amazon.com/images/M/MV5BYzBlZWU5ZjAtNjgzNC00NWE3LTkyNTUtNjIyY2JiYWNhNWNkXkEyXkFqcGdeQXVyMTUzMTg2ODkz._V1_SX300.jpg" metascore="N/A" imdbRating="7.7" imdbVotes="31,651" imdbID="tt5645432" type="series"/></root>
+Nov 16 21:43:04 wirebot[77917]: Info: Watcher File Removed: /Uploads/Movies/The.Old.Man.S01.1080p.WEBRip.x265-NoTag.torrent
+Nov 16 21:45:01 wirebot[77917]: Info: Watcher File Added: /Uploads/Movies/WiredServer-2.5-19.zip
+Nov 16 21:45:01 wirebot[77917]: Info: Service: OMDB searching « wiredserve »
+Nov 16 21:45:01 wirebot[77917]: Debug: Service output: <root response="False"><error>Movie not found!</error></root>
+Nov 16 21:57:53 wirebot[77917]: Info: Watcher File Added: /Uploads/Movies/American Crime Story S01 MULTI Bluray 1080p HDLight AC3 x264 - MAN OF STYLE.torrent
+Nov 16 21:57:53 wirebot[77917]: Info: Service: OMDB searching « american crime story »
+Nov 16 21:57:53 wirebot[77917]: Debug: Service output: <?xml version="1.0" encoding="UTF-8"?><root response="True"><movie title="American Crime Story" year="2016–" rated="TV-MA" released="02 Feb 2016" runtime="42 min" genre="Biography, Crime, Drama" director="N/A" writer="Scott Alexander, Larry Karaszewski, Sarah Burgess" actors="Sarah Paulson, Annaleigh Ashford, Sterling K. Brown" plot="An anthology series centered around America's most notorious crimes and criminals." language="English" country="United States" awards="Won 17 Primetime Emmys. 103 wins &amp; 143 nominations total" poster="https://m.media-amazon.com/images/M/MV5BMGExZjgzNzktNzUwYS00ZDgxLWFlMTktMzZhOWQxMGM0N2VkXkEyXkFqcGdeQXVyMTkxNjUyNQ@@._V1_SX300.jpg" metascore="N/A" imdbRating="8.4" imdbVotes="95,274" imdbID="tt2788432" type="series"/></root>
+Nov 16 21:57:53 wirebot[77917]: Info: Watcher File Added: /Uploads/Movies/Andor (2022) S01E02 MULTi VFF 2160p 10bit 4KLight DV HDR WebRip DDP 5.1 Atmos x265-QTZ.mkv-2.torrent
+Nov 16 21:57:53 wirebot[77917]: Info: Service: OMDB searching « andor »
+Nov 16 21:57:53 wirebot[77917]: Debug: Service output: <?xml version="1.0" encoding="UTF-8"?><root response="True"><movie title="Andor" year="2022–" rated="TV-14" released="21 Sep 2022" runtime="N/A" genre="Action, Adventure, Drama" director="N/A" writer="Tony Gilroy" actors="Diego Luna, Stellan Skarsgård, Alex Ferns" plot="Prequel series to Star Wars' 'Rogue One'. In an era filled with danger, deception and intrigue, Cassian will embark on the path that is destined to turn him into a Rebel hero." language="English" country="United States" awards="N/A" poster="https://m.media-amazon.com/images/M/MV5BNDgxNTIyZTMtMzYxNi00NmRjLWFiMTEtM2U4MTFmODkzNzM1XkEyXkFqcGdeQXVyMTM1MTE1NDMx._V1_SX300.jpg" metascore="N/A" imdbRating="8.1" imdbVotes="31,004" imdbID="tt9253284" type="series"/></root>
+Nov 16 21:57:53 wirebot[77917]: Info: Watcher File Added: /Uploads/Movies/Andor (2022) S01E01 MULTi VFF 2160p 10bit 4KLight DV HDR WebRip DDP 5.1 Atmos x265-QTZ.mkv.torrent
+Nov 16 21:57:53 wirebot[77917]: Info: Service: OMDB searching « andor »
+Nov 16 21:57:53 wirebot[77917]: Debug: Service output: <?xml version="1.0" encoding="UTF-8"?><root response="True"><movie title="Andor" year="2022–" rated="TV-14" released="21 Sep 2022" runtime="N/A" genre="Action, Adventure, Drama" director="N/A" writer="Tony Gilroy" actors="Diego Luna, Stellan Skarsgård, Alex Ferns" plot="Prequel series to Star Wars' 'Rogue One'. In an era filled with danger, deception and intrigue, Cassian will embark on the path that is destined to turn him into a Rebel hero." language="English" country="United States" awards="N/A" poster="https://m.media-amazon.com/images/M/MV5BNDgxNTIyZTMtMzYxNi00NmRjLWFiMTEtM2U4MTFmODkzNzM1XkEyXkFqcGdeQXVyMTM1MTE1NDMx._V1_SX300.jpg" metascore="N/A" imdbRating="8.1" imdbVotes="31,004" imdbID="tt9253284" type="series"/></root>
+Nov 16 21:57:53 wirebot[77917]: Info: Watcher File Added: /Uploads/Movies/Andor (2022) S01E05 MULTi VFF 2160p 10bit 4KLight DV HDR WebRip DDP 5.1 Atmos x265-QTZ.mkv.torrent
+Nov 16 21:57:53 wirebot[77917]: Info: Service: OMDB searching « andor »
+Nov 16 21:57:54 wirebot[77917]: Debug: Service output: <?xml version="1.0" encoding="UTF-8"?><root response="True"><movie title="Andor" year="2022–" rated="TV-14" released="21 Sep 2022" runtime="N/A" genre="Action, Adventure, Drama" director="N/A" writer="Tony Gilroy" actors="Diego Luna, Stellan Skarsgård, Alex Ferns" plot="Prequel series to Star Wars' 'Rogue One'. In an era filled with danger, deception and intrigue, Cassian will embark on the path that is destined to turn him into a Rebel hero." language="English" country="United States" awards="N/A" poster="https://m.media-amazon.com/images/M/MV5BNDgxNTIyZTMtMzYxNi00NmRjLWFiMTEtM2U4MTFmODkzNzM1XkEyXkFqcGdeQXVyMTM1MTE1NDMx._V1_SX300.jpg" metascore="N/A" imdbRating="8.1" imdbVotes="31,004" imdbID="tt9253284" type="series"/></root>
+Nov 16 21:57:54 wirebot[77917]: Info: Watcher File Added: /Uploads/Movies/Andor (2022) S01E02 MULTi VFF 2160p 10bit 4KLight DV HDR WebRip DDP 5.1 Atmos x265-QTZ.mkv.torrent
+Nov 16 21:57:54 wirebot[77917]: Info: Service: OMDB searching « andor »
+Nov 16 21:57:54 wirebot[77917]: Debug: Service output: <?xml version="1.0" encoding="UTF-8"?><root response="True"><movie title="Andor" year="2022–" rated="TV-14" released="21 Sep 2022" runtime="N/A" genre="Action, Adventure, Drama" director="N/A" writer="Tony Gilroy" actors="Diego Luna, Stellan Skarsgård, Alex Ferns" plot="Prequel series to Star Wars' 'Rogue One'. In an era filled with danger, deception and intrigue, Cassian will embark on the path that is destined to turn him into a Rebel hero." language="English" country="United States" awards="N/A" poster="https://m.media-amazon.com/images/M/MV5BNDgxNTIyZTMtMzYxNi00NmRjLWFiMTEtM2U4MTFmODkzNzM1XkEyXkFqcGdeQXVyMTM1MTE1NDMx._V1_SX300.jpg" metascore="N/A" imdbRating="8.1" imdbVotes="31,004" imdbID="tt9253284" type="series"/></root>
+Nov 16 21:57:54 wirebot[77917]: Info: Watcher File Added: /Uploads/Movies/Andor (2022) S01E03 MULTi VFF 2160p 10bit 4KLight DV HDR WebRip DDP 5.1 Atmos x265-QTZ.mkv.torrent
+Nov 16 21:57:54 wirebot[77917]: Info: Service: OMDB searching « andor »
+Nov 16 21:57:54 wirebot[77917]: Debug: Service output: <?xml version="1.0" encoding="UTF-8"?><root response="True"><movie title="Andor" year="2022–" rated="TV-14" released="21 Sep 2022" runtime="N/A" genre="Action, Adventure, Drama" director="N/A" writer="Tony Gilroy" actors="Diego Luna, Stellan Skarsgård, Alex Ferns" plot="Prequel series to Star Wars' 'Rogue One'. In an era filled with danger, deception and intrigue, Cassian will embark on the path that is destined to turn him into a Rebel hero." language="English" country="United States" awards="N/A" poster="https://m.media-amazon.com/images/M/MV5BNDgxNTIyZTMtMzYxNi00NmRjLWFiMTEtM2U4MTFmODkzNzM1XkEyXkFqcGdeQXVyMTM1MTE1NDMx._V1_SX300.jpg" metascore="N/A" imdbRating="8.1" imdbVotes="31,004" imdbID="tt9253284" type="series"/></root>
+Nov 16 21:57:54 wirebot[77917]: Info: Watcher File Added: /Uploads/Movies/Andor (2022) S01E04 MULTi VFF 2160p 10bit 4KLight DV HDR WebRip DDP 5.1 Atmos x265-QTZ.mkv.torrent
+Nov 16 21:57:54 wirebot[77917]: Info: Service: OMDB searching « andor »
+Nov 16 21:57:54 wirebot[77917]: Debug: Service output: <?xml version="1.0" encoding="UTF-8"?><root response="True"><movie title="Andor" year="2022–" rated="TV-14" released="21 Sep 2022" runtime="N/A" genre="Action, Adventure, Drama" director="N/A" writer="Tony Gilroy" actors="Diego Luna, Stellan Skarsgård, Alex Ferns" plot="Prequel series to Star Wars' 'Rogue One'. In an era filled with danger, deception and intrigue, Cassian will embark on the path that is destined to turn him into a Rebel hero." language="English" country="United States" awards="N/A" poster="https://m.media-amazon.com/images/M/MV5BNDgxNTIyZTMtMzYxNi00NmRjLWFiMTEtM2U4MTFmODkzNzM1XkEyXkFqcGdeQXVyMTM1MTE1NDMx._V1_SX300.jpg" metascore="N/A" imdbRating="8.1" imdbVotes="31,004" imdbID="tt9253284" type="series"/></root>
+Nov 16 21:57:54 wirebot[77917]: Info: Watcher File Added: /Uploads/Movies/Andor (2022) S01E08 MULTi VFF 2160p 10bit 4KLight DV HDR WebRip DDP 5.1 Atmos x265-QTZ.mkv.torrent
+Nov 16 21:57:54 wirebot[77917]: Info: Service: OMDB searching « andor »
+Nov 16 21:57:54 wirebot[77917]: Debug: Service output: <?xml version="1.0" encoding="UTF-8"?><root response="True"><movie title="Andor" year="2022–" rated="TV-14" released="21 Sep 2022" runtime="N/A" genre="Action, Adventure, Drama" director="N/A" writer="Tony Gilroy" actors="Diego Luna, Stellan Skarsgård, Alex Ferns" plot="Prequel series to Star Wars' 'Rogue One'. In an era filled with danger, deception and intrigue, Cassian will embark on the path that is destined to turn him into a Rebel hero." language="English" country="United States" awards="N/A" poster="https://m.media-amazon.com/images/M/MV5BNDgxNTIyZTMtMzYxNi00NmRjLWFiMTEtM2U4MTFmODkzNzM1XkEyXkFqcGdeQXVyMTM1MTE1NDMx._V1_SX300.jpg" metascore="N/A" imdbRating="8.1" imdbVotes="31,004" imdbID="tt9253284" type="series"/></root>
+Nov 16 21:57:54 wirebot[77917]: Info: Watcher File Added: /Uploads/Movies/Andor (2022) S01E06 MULTi VFF 2160p 10bit 4KLight DV HDR WebRip DDP 5.1 Atmos x265-QTZ.mkv.torrent
+Nov 16 21:57:54 wirebot[77917]: Info: Service: OMDB searching « andor »
+Nov 16 21:57:55 wirebot[77917]: Debug: Service output: <?xml version="1.0" encoding="UTF-8"?><root response="True"><movie title="Andor" year="2022–" rated="TV-14" released="21 Sep 2022" runtime="N/A" genre="Action, Adventure, Drama" director="N/A" writer="Tony Gilroy" actors="Diego Luna, Stellan Skarsgård, Alex Ferns" plot="Prequel series to Star Wars' 'Rogue One'. In an era filled with danger, deception and intrigue, Cassian will embark on the path that is destined to turn him into a Rebel hero." language="English" country="United States" awards="N/A" poster="https://m.media-amazon.com/images/M/MV5BNDgxNTIyZTMtMzYxNi00NmRjLWFiMTEtM2U4MTFmODkzNzM1XkEyXkFqcGdeQXVyMTM1MTE1NDMx._V1_SX300.jpg" metascore="N/A" imdbRating="8.1" imdbVotes="31,004" imdbID="tt9253284" type="series"/></root>
+Nov 16 21:57:55 wirebot[77917]: Info: Watcher File Added: /Uploads/Movies/The.Old.Man.S01.1080p.WEBRip.x265-NoTag.torrent
+Nov 16 21:57:55 wirebot[77917]: Info: Service: OMDB searching « the old man »
+Nov 16 21:57:55 wirebot[77917]: Debug: Service output: <?xml version="1.0" encoding="UTF-8"?><root response="True"><movie title="The Old Man" year="2022–" rated="TV-MA" released="16 Jun 2022" runtime="N/A" genre="Action, Drama, Thriller" director="N/A" writer="Robert Levine, Jonathan E. Steinberg" actors="Jeff Bridges, John Lithgow, E.J. Bonilla" plot="A retired CIA agent is hunted by both the agency he once worked for and his own nightmares, when an unknown man suddenly visits him after nearly three decades." language="English" country="United States" awards="N/A" poster="https://m.media-amazon.com/images/M/MV5BYzBlZWU5ZjAtNjgzNC00NWE3LTkyNTUtNjIyY2JiYWNhNWNkXkEyXkFqcGdeQXVyMTUzMTg2ODkz._V1_SX300.jpg" metascore="N/A" imdbRating="7.7" imdbVotes="31,651" imdbID="tt5645432" type="series"/></root>
+Nov 16 21:57:55 wirebot[77917]: Info: Watcher File Added: /Uploads/Movies/Andor (2022) S01E07 MULTi VFF 2160p 10bit 4KLight DV HDR WebRip DDP 5.1 Atmos x265-QTZ.mkv.torrent
+Nov 16 21:57:55 wirebot[77917]: Info: Service: OMDB searching « andor »
+Nov 16 21:57:55 wirebot[77917]: Debug: Service output: <?xml version="1.0" encoding="UTF-8"?><root response="True"><movie title="Andor" year="2022–" rated="TV-14" released="21 Sep 2022" runtime="N/A" genre="Action, Adventure, Drama" director="N/A" writer="Tony Gilroy" actors="Diego Luna, Stellan Skarsgård, Alex Ferns" plot="Prequel series to Star Wars' 'Rogue One'. In an era filled with danger, deception and intrigue, Cassian will embark on the path that is destined to turn him into a Rebel hero." language="English" country="United States" awards="N/A" poster="https://m.media-amazon.com/images/M/MV5BNDgxNTIyZTMtMzYxNi00NmRjLWFiMTEtM2U4MTFmODkzNzM1XkEyXkFqcGdeQXVyMTM1MTE1NDMx._V1_SX300.jpg" metascore="N/A" imdbRating="8.1" imdbVotes="31,004" imdbID="tt9253284" type="series"/></root>
+Nov 16 21:57:55 wirebot[77917]: Info: Watcher File Added: /Uploads/Movies/The.Old.Man.S01.MULTi.1080p.DSNP.WEB-DL.DDP5.1.H264-FRATERNiTY.torrent
+Nov 16 21:57:55 wirebot[77917]: Info: Service: OMDB searching « the old man »
+Nov 16 21:57:55 wirebot[77917]: Debug: Service output: <?xml version="1.0" encoding="UTF-8"?><root response="True"><movie title="The Old Man" year="2022–" rated="TV-MA" released="16 Jun 2022" runtime="N/A" genre="Action, Drama, Thriller" director="N/A" writer="Robert Levine, Jonathan E. Steinberg" actors="Jeff Bridges, John Lithgow, E.J. Bonilla" plot="A retired CIA agent is hunted by both the agency he once worked for and his own nightmares, when an unknown man suddenly visits him after nearly three decades." language="English" country="United States" awards="N/A" poster="https://m.media-amazon.com/images/M/MV5BYzBlZWU5ZjAtNjgzNC00NWE3LTkyNTUtNjIyY2JiYWNhNWNkXkEyXkFqcGdeQXVyMTUzMTg2ODkz._V1_SX300.jpg" metascore="N/A" imdbRating="7.7" imdbVotes="31,651" imdbID="tt5645432" type="series"/></root>
+Nov 16 21:57:55 wirebot[77917]: Info: Watcher File Added: /Uploads/Movies/Andor.S01E09.MULTi.1080p.WEB.H264-PATOPESTO.mkv.torrent
+Nov 16 21:57:55 wirebot[77917]: Info: Service: OMDB searching « andor »
+Nov 16 21:57:56 wirebot[77917]: Debug: Service output: <?xml version="1.0" encoding="UTF-8"?><root response="True"><movie title="Andor" year="2022–" rated="TV-14" released="21 Sep 2022" runtime="N/A" genre="Action, Adventure, Drama" director="N/A" writer="Tony Gilroy" actors="Diego Luna, Stellan Skarsgård, Alex Ferns" plot="Prequel series to Star Wars' 'Rogue One'. In an era filled with danger, deception and intrigue, Cassian will embark on the path that is destined to turn him into a Rebel hero." language="English" country="United States" awards="N/A" poster="https://m.media-amazon.com/images/M/MV5BNDgxNTIyZTMtMzYxNi00NmRjLWFiMTEtM2U4MTFmODkzNzM1XkEyXkFqcGdeQXVyMTM1MTE1NDMx._V1_SX300.jpg" metascore="N/A" imdbRating="8.1" imdbVotes="31,004" imdbID="tt9253284" type="series"/></root>
+Nov 16 21:57:56 wirebot[77917]: Info: Watcher File Removed: /Uploads/Movies/Andor (2022) S01E02 MULTi VFF 2160p 10bit 4KLight DV HDR WebRip DDP 5.1 Atmos x265-QTZ.mkv-2.torrent
+Nov 16 21:57:56 wirebot[77917]: Info: Watcher File Added: /Uploads/Movies/Andor (2022) S01E02 MULTi VFF 2160p 10bit 4KLight DV HDR WebRip DDP 5.1 Atmos x265-QTZ.mkv-2.torrent
+Nov 16 21:57:56 wirebot[77917]: Info: Service: OMDB searching « andor »
+Nov 16 21:57:56 wirebot[77917]: Debug: Service output: <?xml version="1.0" encoding="UTF-8"?><root response="True"><movie title="Andor" year="2022–" rated="TV-14" released="21 Sep 2022" runtime="N/A" genre="Action, Adventure, Drama" director="N/A" writer="Tony Gilroy" actors="Diego Luna, Stellan Skarsgård, Alex Ferns" plot="Prequel series to Star Wars' 'Rogue One'. In an era filled with danger, deception and intrigue, Cassian will embark on the path that is destined to turn him into a Rebel hero." language="English" country="United States" awards="N/A" poster="https://m.media-amazon.com/images/M/MV5BNDgxNTIyZTMtMzYxNi00NmRjLWFiMTEtM2U4MTFmODkzNzM1XkEyXkFqcGdeQXVyMTM1MTE1NDMx._V1_SX300.jpg" metascore="N/A" imdbRating="8.1" imdbVotes="31,004" imdbID="tt9253284" type="series"/></root>
+Nov 16 21:57:56 wirebot[77917]: Info: Watcher File Removed: /Uploads/Movies/Andor (2022) S01E02 MULTi VFF 2160p 10bit 4KLight DV HDR WebRip DDP 5.1 Atmos x265-QTZ.mkv-2.torrent
+Nov 16 21:58:26 wirebot[77917]: Info: Watcher File Removed: /Uploads/Movies/Andor (2022) S01E04 MULTi VFF 2160p 10bit 4KLight DV HDR WebRip DDP 5.1 Atmos x265-QTZ.mkv.torrent
+Nov 16 21:58:26 wirebot[77917]: Info: Watcher File Added: /Uploads/Movies/Andor (2022) S01E02 MULTi VFF 2160p 10bit 4KLight DV HDR WebRip DDP 5.1 Atmos x265-QTZ.mkv-2.torrent
+Nov 16 21:58:26 wirebot[77917]: Info: Service: OMDB searching « andor »
+Nov 16 21:58:26 wirebot[77917]: Debug: Service output: <?xml version="1.0" encoding="UTF-8"?><root response="True"><movie title="Andor" year="2022–" rated="TV-14" released="21 Sep 2022" runtime="N/A" genre="Action, Adventure, Drama" director="N/A" writer="Tony Gilroy" actors="Diego Luna, Stellan Skarsgård, Alex Ferns" plot="Prequel series to Star Wars' 'Rogue One'. In an era filled with danger, deception and intrigue, Cassian will embark on the path that is destined to turn him into a Rebel hero." language="English" country="United States" awards="N/A" poster="https://m.media-amazon.com/images/M/MV5BNDgxNTIyZTMtMzYxNi00NmRjLWFiMTEtM2U4MTFmODkzNzM1XkEyXkFqcGdeQXVyMTM1MTE1NDMx._V1_SX300.jpg" metascore="N/A" imdbRating="8.1" imdbVotes="31,004" imdbID="tt9253284" type="series"/></root>
+Nov 16 21:59:17 wirebot[77917]: Info: Watcher File Added: /Uploads/Movies/Adobe InDesign CC 2022 (17.4 [U2BK])-133255.torrent
+Nov 16 21:59:17 wirebot[77917]: Info: Service: OMDB searching « adobe indesign cc »
+Nov 16 21:59:17 wirebot[77917]: Debug: Service output: <root response="False"><error>Movie not found!</error></root>
+Nov 16 21:59:26 wirebot[77917]: Info: Watcher File Removed: /Uploads/Movies/Adobe InDesign CC 2022 (17.4 [U2BK])-133255.torrent
+Nov 16 21:59:32 wirebot[77917]: Info: Watcher File Added: /Uploads/Movies/Adobe Illustrator CC 2023 (27.0 [U2BK])-134044.torrent
+Nov 16 21:59:32 wirebot[77917]: Info: Service: OMDB searching « adobe illustrator cc »
+Nov 16 21:59:33 wirebot[77917]: Debug: Service output: <root response="False"><error>Movie not found!</error></root>
+Nov 16 21:59:33 wirebot[77917]: Info: Watcher File Added: /Uploads/Movies/Adobe Photoshop CC 2023 (24.0.0 [U2BK])-134009.torrent
+Nov 16 21:59:33 wirebot[77917]: Info: Service: OMDB searching « adobe photoshop cc »
+Nov 16 21:59:33 wirebot[77917]: Debug: Service output: <root response="False"><error>Movie not found!</error></root>
+Nov 16 22:00:43 wirebot[77917]: Info: Signal INT received, quitting
+Nov 16 22:00:43 wirebot[77917]: Info: Connection to ::1 closed
+Nov 16 22:00:44 wirebot[78409]: Info: Reading /Users/nark/.wirebot/wirebot.conf
+Nov 16 22:00:44 wirebot[78409]: Debug:   nick = WireBot
+Nov 16 22:00:44 wirebot[78409]: Debug:   status = Jedi in the Matrix
+Nov 16 22:00:44 wirebot[78409]: Debug:   dictionary path = wirebot.xml
+Nov 16 22:00:44 wirebot[78409]: Debug:   auto reconnect = yes
+Nov 16 22:00:44 wirebot[78409]: Debug:   reconnect on kick = no
+Nov 16 22:00:44 wirebot[78409]: Debug:   icon path = icon.png
+Nov 16 22:00:44 wirebot[78409]: Debug:   hostname = localhost
+Nov 16 22:00:44 wirebot[78409]: Debug:   port = 4871
+Nov 16 22:00:44 wirebot[78409]: Debug:   login = admin
+Nov 16 22:00:44 wirebot[78409]: Debug:   password = 
+Nov 16 22:00:44 wirebot[78409]: Info: Reading /Users/nark/.wirebot/wirebot.xml robot file...
+Nov 16 22:00:44 wirebot[78409]: Info: wb_bot path: /Users/nark/.wirebot/wirebot.xml
+Nov 16 22:00:44 wirebot[78409]: Info: Writting PID file: /Users/nark/.wirebot/wirebot.pid
+Nov 16 22:00:44 wirebot[78409]: Info: Connecting to localhost...
+Nov 16 22:00:44 wirebot[78409]: Info: Trying ::1 at port 4871...
+Nov 16 22:00:44 wirebot[78409]: Info: Connected using AES/256 bits, logging in...
+Nov 16 22:00:44 wirebot[78409]: Info: Logged in, welcome to Wired Server
+Nov 16 22:00:44 wirebot[78409]: Info: Watcher subscribe to directory: /Uploads/Movies
+Nov 16 22:00:44 wirebot[78409]: Info: Watcher subscribe to directory: /Uploads
+Nov 16 22:00:53 wirebot[78409]: Info: Watcher File Added: /Uploads/Movies/Bosch.S04.X265.HEVC.1080p.MULTi.WEBRip.AvALoN.torrent
+Nov 16 22:00:53 wirebot[78409]: Info: Service: OMDB searching « bosch »
+Nov 16 22:00:53 wirebot[78409]: Debug: Service output: <?xml version="1.0" encoding="UTF-8"?><root response="True"><movie title="Bosch" year="2014–2021" rated="TV-MA" released="06 Feb 2014" runtime="51 min" genre="Crime, Drama" director="N/A" writer="Eric Ellis Overmyer" actors="Titus Welliver, Jamie Hector, Amy Aquino" plot="An L.A.P.D. homicide detective works to solve the murder of a thirteen-year-old boy while standing trial in federal court for the murder of a serial killer." language="English" country="United States" awards="Nominated for 1 Primetime Emmy. 7 wins &amp; 14 nominations total" poster="https://m.media-amazon.com/images/M/MV5BZDBiYjg4OTgtZDg2YS00ZGIzLTk3ZWMtZWRlZDQ5M2I0MDNhXkEyXkFqcGdeQXVyMTEyMjM2NDc2._V1_SX300.jpg" metascore="N/A" imdbRating="8.5" imdbVotes="71,134" imdbID="tt3502248" type="series"/></root>
+Nov 16 22:01:30 wirebot[78409]: Info: Watcher File Removed: /Uploads/Movies/Andor.S01E09.MULTi.1080p.WEB.H264-PATOPESTO.mkv.torrent
+Nov 16 22:01:34 wirebot[78409]: Info: Watcher File Removed: /Uploads/Movies/Andor (2022) S01E02 MULTi VFF 2160p 10bit 4KLight DV HDR WebRip DDP 5.1 Atmos x265-QTZ.mkv.torrent
+Nov 16 22:01:40 wirebot[78409]: Info: Watcher File Added: /Uploads/Movies/Bosch.S03.MULTi.1080p.WEB.x265-CHK.torrent
+Nov 16 22:01:40 wirebot[78409]: Info: Service: OMDB searching « bosch »
+Nov 16 22:01:41 wirebot[78409]: Debug: Service output: <?xml version="1.0" encoding="UTF-8"?><root response="True"><movie title="Bosch" year="2014–2021" rated="TV-MA" released="06 Feb 2014" runtime="51 min" genre="Crime, Drama" director="N/A" writer="Eric Ellis Overmyer" actors="Titus Welliver, Jamie Hector, Amy Aquino" plot="An L.A.P.D. homicide detective works to solve the murder of a thirteen-year-old boy while standing trial in federal court for the murder of a serial killer." language="English" country="United States" awards="Nominated for 1 Primetime Emmy. 7 wins &amp; 14 nominations total" poster="https://m.media-amazon.com/images/M/MV5BZDBiYjg4OTgtZDg2YS00ZGIzLTk3ZWMtZWRlZDQ5M2I0MDNhXkEyXkFqcGdeQXVyMTEyMjM2NDc2._V1_SX300.jpg" metascore="N/A" imdbRating="8.5" imdbVotes="71,134" imdbID="tt3502248" type="series"/></root>
+Nov 16 22:01:44 wirebot[78409]: Info: Signal INT received, quitting
+Nov 16 22:01:44 wirebot[78409]: Info: Connection to ::1 closed
+Nov 16 22:07:42 wirebot[78650]: Info: Reading /Users/nark/.wirebot/wirebot.conf
+Nov 16 22:07:42 wirebot[78650]: Debug:   nick = WireBot
+Nov 16 22:07:42 wirebot[78650]: Debug:   status = Jedi in the Matrix
+Nov 16 22:07:42 wirebot[78650]: Debug:   dictionary path = wirebot.xml
+Nov 16 22:07:42 wirebot[78650]: Debug:   auto reconnect = yes
+Nov 16 22:07:42 wirebot[78650]: Debug:   reconnect on kick = no
+Nov 16 22:07:42 wirebot[78650]: Debug:   icon path = icon.png
+Nov 16 22:07:42 wirebot[78650]: Debug:   hostname = localhost
+Nov 16 22:07:42 wirebot[78650]: Debug:   port = 4871
+Nov 16 22:07:42 wirebot[78650]: Debug:   login = admin
+Nov 16 22:07:42 wirebot[78650]: Debug:   password = 
+Nov 16 22:07:42 wirebot[78650]: Warning: Could not interpret the setting "omdb api key" at /Users/nark/.wirebot/wirebot.conf line 11: Unknown setting name
+Nov 16 22:07:42 wirebot[78650]: Info: Reading /Users/nark/.wirebot/wirebot.xml robot file...
+Nov 16 22:07:42 wirebot[78650]: Info: wb_bot path: /Users/nark/.wirebot/wirebot.xml
+Nov 16 22:07:42 wirebot[78650]: Info: Writting PID file: /Users/nark/.wirebot/wirebot.pid
+Nov 16 22:07:42 wirebot[78650]: Info: Connecting to localhost...
+Nov 16 22:07:42 wirebot[78650]: Info: Trying ::1 at port 4871...
+Nov 16 22:07:42 wirebot[78650]: Info: Connected using AES/256 bits, logging in...
+Nov 16 22:07:42 wirebot[78650]: Info: Logged in, welcome to Wired Server
+Nov 16 22:07:42 wirebot[78650]: Info: Watcher subscribe to directory: /Uploads/Movies
+Nov 16 22:07:42 wirebot[78650]: Info: Watcher subscribe to directory: /Uploads
+Nov 16 22:08:03 wirebot[78650]: Info: Watcher File Added: /Uploads/Movies/Andor (2022) S01E06 MULTi VFF 2160p 10bit 4KLight DV HDR WebRip DDP 5.1 Atmos x265-QTZ.mkv.torrent
+Nov 16 22:08:03 wirebot[78650]: Info: Service: OMDB searching « andor »
+Nov 16 22:08:03 wirebot[78650]: Debug: Service output: <root response="False"><error>Invalid API key!</error></root>
+Nov 16 22:10:12 wirebot[78650]: Info: Signal INT received, quitting
+Nov 16 22:10:12 wirebot[78650]: Info: Connection to ::1 closed
+Nov 16 22:10:15 wirebot[78755]: Info: Reading /Users/nark/.wirebot/wirebot.conf
+Nov 16 22:10:15 wirebot[78755]: Debug:   nick = WireBot
+Nov 16 22:10:15 wirebot[78755]: Debug:   status = Jedi in the Matrix
+Nov 16 22:10:15 wirebot[78755]: Debug:   dictionary path = wirebot.xml
+Nov 16 22:10:15 wirebot[78755]: Debug:   auto reconnect = yes
+Nov 16 22:10:15 wirebot[78755]: Debug:   reconnect on kick = no
+Nov 16 22:10:15 wirebot[78755]: Debug:   icon path = icon.png
+Nov 16 22:10:15 wirebot[78755]: Debug:   hostname = localhost
+Nov 16 22:10:15 wirebot[78755]: Debug:   port = 4871
+Nov 16 22:10:15 wirebot[78755]: Debug:   login = admin
+Nov 16 22:10:15 wirebot[78755]: Debug:   password = 
+Nov 16 22:10:15 wirebot[78755]: Warning: Could not interpret the setting "omdb api key" at /Users/nark/.wirebot/wirebot.conf line 11: Unknown setting name
+Nov 16 22:10:15 wirebot[78755]: Info: Reading /Users/nark/.wirebot/wirebot.xml robot file...
+Nov 16 22:10:15 wirebot[78755]: Info: wb_bot path: /Users/nark/.wirebot/wirebot.xml
+Nov 16 22:10:15 wirebot[78755]: Info: Writting PID file: /Users/nark/.wirebot/wirebot.pid
+Nov 16 22:10:15 wirebot[78755]: Info: Connecting to localhost...
+Nov 16 22:10:15 wirebot[78755]: Info: Trying ::1 at port 4871...
+Nov 16 22:10:15 wirebot[78755]: Info: Connected using AES/256 bits, logging in...
+Nov 16 22:10:15 wirebot[78755]: Info: Logged in, welcome to Wired Server
+Nov 16 22:10:15 wirebot[78755]: Info: Watcher subscribe to directory: /Uploads/Movies
+Nov 16 22:10:15 wirebot[78755]: Info: Watcher subscribe to directory: /Uploads
+Nov 16 22:10:20 wirebot[78755]: Info: Watcher File Added: /Uploads/Movies/Andor (2022) S01E02 MULTi VFF 2160p 10bit 4KLight DV HDR WebRip DDP 5.1 Atmos x265-QTZ.mkv.torrent
+Nov 16 22:10:20 wirebot[78755]: Info: Service: OMDB searching « andor »
+Nov 16 22:10:20 wirebot[78755]: Debug: Service URL: http://www.omdbapi.com/?apiKey=(null)&t=andor&r=xml
+Nov 16 22:10:20 wirebot[78755]: Debug: Service output: <root response="False"><error>Invalid API key!</error></root>
+Nov 16 22:11:42 wirebot[78755]: Info: Signal INT received, quitting
+Nov 16 22:11:42 wirebot[78755]: Info: Connection to ::1 closed
+Nov 16 22:11:46 wirebot[78848]: Info: Reading /Users/nark/.wirebot/wirebot.conf
+Nov 16 22:11:46 wirebot[78848]: Debug:   nick = WireBot
+Nov 16 22:11:46 wirebot[78848]: Debug:   status = Jedi in the Matrix
+Nov 16 22:11:46 wirebot[78848]: Debug:   dictionary path = wirebot.xml
+Nov 16 22:11:46 wirebot[78848]: Debug:   auto reconnect = yes
+Nov 16 22:11:46 wirebot[78848]: Debug:   reconnect on kick = no
+Nov 16 22:11:46 wirebot[78848]: Debug:   icon path = icon.png
+Nov 16 22:11:46 wirebot[78848]: Debug:   hostname = localhost
+Nov 16 22:11:46 wirebot[78848]: Debug:   port = 4871
+Nov 16 22:11:46 wirebot[78848]: Debug:   login = admin
+Nov 16 22:11:46 wirebot[78848]: Debug:   password = 
+Nov 16 22:11:46 wirebot[78848]: Debug:   omdb api key = abafc4bb
+Nov 16 22:11:46 wirebot[78848]: Info: Reading /Users/nark/.wirebot/wirebot.xml robot file...
+Nov 16 22:11:46 wirebot[78848]: Info: wb_bot path: /Users/nark/.wirebot/wirebot.xml
+Nov 16 22:11:46 wirebot[78848]: Info: Writting PID file: /Users/nark/.wirebot/wirebot.pid
+Nov 16 22:11:46 wirebot[78848]: Info: Connecting to localhost...
+Nov 16 22:11:46 wirebot[78848]: Info: Trying ::1 at port 4871...
+Nov 16 22:11:46 wirebot[78848]: Info: Connected using AES/256 bits, logging in...
+Nov 16 22:11:46 wirebot[78848]: Info: Logged in, welcome to Wired Server
+Nov 16 22:11:46 wirebot[78848]: Info: Watcher subscribe to directory: /Uploads/Movies
+Nov 16 22:11:46 wirebot[78848]: Info: Watcher subscribe to directory: /Uploads
+Nov 16 22:11:53 wirebot[78848]: Info: Watcher File Added: /Uploads/Movies/Andor (2022) S01E08 MULTi VFF 2160p 10bit 4KLight DV HDR WebRip DDP 5.1 Atmos x265-QTZ.mkv.torrent
+Nov 16 22:11:53 wirebot[78848]: Info: Service: OMDB searching « andor »
+Nov 16 22:11:53 wirebot[78848]: Debug: Service URL: http://www.omdbapi.com/?apiKey=abafc4bb&t=andor&r=xml
+Nov 16 22:11:54 wirebot[78848]: Debug: Service output: <?xml version="1.0" encoding="UTF-8"?><root response="True"><movie title="Andor" year="2022–" rated="TV-14" released="21 Sep 2022" runtime="N/A" genre="Action, Adventure, Drama" director="N/A" writer="Tony Gilroy" actors="Diego Luna, Stellan Skarsgård, Alex Ferns" plot="Prequel series to Star Wars' 'Rogue One'. In an era filled with danger, deception and intrigue, Cassian will embark on the path that is destined to turn him into a Rebel hero." language="English" country="United States" awards="N/A" poster="https://m.media-amazon.com/images/M/MV5BNDgxNTIyZTMtMzYxNi00NmRjLWFiMTEtM2U4MTFmODkzNzM1XkEyXkFqcGdeQXVyMTM1MTE1NDMx._V1_SX300.jpg" metascore="N/A" imdbRating="8.1" imdbVotes="31,004" imdbID="tt9253284" type="series"/></root>
+Nov 16 22:16:17 wirebot[78848]: Info: Signal INT received, quitting
+Nov 16 22:16:17 wirebot[78848]: Info: Connection to ::1 closed
+Nov 16 22:16:20 wirebot[78999]: Info: Reading /Users/nark/.wirebot/wirebot.conf
+Nov 16 22:16:20 wirebot[78999]: Debug:   nick = WireBot
+Nov 16 22:16:20 wirebot[78999]: Debug:   status = Jedi in the Matrix
+Nov 16 22:16:20 wirebot[78999]: Debug:   dictionary path = wirebot.xml
+Nov 16 22:16:20 wirebot[78999]: Debug:   auto reconnect = yes
+Nov 16 22:16:20 wirebot[78999]: Debug:   reconnect on kick = no
+Nov 16 22:16:20 wirebot[78999]: Debug:   icon path = icon.png
+Nov 16 22:16:20 wirebot[78999]: Debug:   hostname = localhost
+Nov 16 22:16:20 wirebot[78999]: Debug:   port = 4871
+Nov 16 22:16:20 wirebot[78999]: Debug:   login = admin
+Nov 16 22:16:20 wirebot[78999]: Debug:   password = 
+Nov 16 22:16:20 wirebot[78999]: Debug:   omdb api key = abafc4bb
+Nov 16 22:16:20 wirebot[78999]: Info: Reading /Users/nark/.wirebot/wirebot.xml robot file...
+Nov 16 22:16:20 wirebot[78999]: Info: wb_bot path: /Users/nark/.wirebot/wirebot.xml
+Nov 16 22:16:20 wirebot[78999]: Info: Writting PID file: /Users/nark/.wirebot/wirebot.pid
+Nov 16 22:16:20 wirebot[78999]: Info: Connecting to localhost...
+Nov 16 22:16:20 wirebot[78999]: Info: Trying ::1 at port 4871...
+Nov 16 22:16:21 wirebot[78999]: Info: Connected using AES/256 bits, logging in...
+Nov 16 22:16:21 wirebot[78999]: Info: Logged in, welcome to Wired Server
+Nov 16 22:16:21 wirebot[78999]: Info: Watcher subscribe to directory: /Uploads/Movies
+Nov 16 22:16:21 wirebot[78999]: Info: Watcher subscribe to directory: /Uploads
+Nov 16 22:16:34 wirebot[78999]: Info: Watcher File Added: /Uploads/Movies/The.Old.Man.S01.1080p.WEBRip.x265-NoTag.torrent
+Nov 16 22:16:34 wirebot[78999]: Info: Service: OMDB searching « the old man »
+Nov 16 22:16:34 wirebot[78999]: Debug: Service URL: http://www.omdbapi.com/?apiKey=abafc4bb&t=the+old+man&r=xml
+Nov 16 22:16:34 wirebot[78999]: Debug: Service output: <?xml version="1.0" encoding="UTF-8"?><root response="True"><movie title="The Old Man" year="2022–" rated="TV-MA" released="16 Jun 2022" runtime="N/A" genre="Action, Drama, Thriller" director="N/A" writer="Robert Levine, Jonathan E. Steinberg" actors="Jeff Bridges, John Lithgow, E.J. Bonilla" plot="A retired CIA agent is hunted by both the agency he once worked for and his own nightmares, when an unknown man suddenly visits him after nearly three decades." language="English" country="United States" awards="N/A" poster="https://m.media-amazon.com/images/M/MV5BYzBlZWU5ZjAtNjgzNC00NWE3LTkyNTUtNjIyY2JiYWNhNWNkXkEyXkFqcGdeQXVyMTUzMTg2ODkz._V1_SX300.jpg" metascore="N/A" imdbRating="7.7" imdbVotes="31,651" imdbID="tt5645432" type="series"/></root>
+Nov 16 22:18:53 wirebot[78999]: Info: Signal INT received, quitting
+Nov 16 22:18:53 wirebot[78999]: Info: Connection to ::1 closed
+Nov 16 22:18:56 wirebot[79112]: Info: Reading /Users/nark/.wirebot/wirebot.conf
+Nov 16 22:18:56 wirebot[79112]: Debug:   nick = WireBot
+Nov 16 22:18:56 wirebot[79112]: Debug:   status = Jedi in the Matrix
+Nov 16 22:18:56 wirebot[79112]: Debug:   dictionary path = wirebot.xml
+Nov 16 22:18:56 wirebot[79112]: Debug:   auto reconnect = yes
+Nov 16 22:18:56 wirebot[79112]: Debug:   reconnect on kick = no
+Nov 16 22:18:56 wirebot[79112]: Debug:   icon path = icon.png
+Nov 16 22:18:56 wirebot[79112]: Debug:   hostname = localhost
+Nov 16 22:18:56 wirebot[79112]: Debug:   port = 4871
+Nov 16 22:18:56 wirebot[79112]: Debug:   login = admin
+Nov 16 22:18:56 wirebot[79112]: Debug:   password = 
+Nov 16 22:18:56 wirebot[79112]: Debug:   omdb api key = abafc4bb
+Nov 16 22:18:56 wirebot[79112]: Info: Reading /Users/nark/.wirebot/wirebot.xml robot file...
+Nov 16 22:18:56 wirebot[79112]: Info: wb_bot path: /Users/nark/.wirebot/wirebot.xml
+Nov 16 22:18:56 wirebot[79112]: Info: Writting PID file: /Users/nark/.wirebot/wirebot.pid
+Nov 16 22:18:56 wirebot[79112]: Info: Connecting to localhost...
+Nov 16 22:18:56 wirebot[79112]: Info: Trying ::1 at port 4871...
+Nov 16 22:18:56 wirebot[79112]: Info: Connected using AES/256 bits, logging in...
+Nov 16 22:18:56 wirebot[79112]: Info: Logged in, welcome to Wired Server
+Nov 16 22:18:56 wirebot[79112]: Info: Watcher subscribe to directory: /Uploads/Movies
+Nov 16 22:18:56 wirebot[79112]: Info: Watcher subscribe to directory: /Uploads
+Nov 16 22:19:26 wirebot[79112]: Info: Watcher File Added: /Uploads/Movies/American Crime Story S01 MULTI Bluray 1080p HDLight AC3 x264 - MAN OF STYLE.torrent
+Nov 16 22:19:26 wirebot[79112]: Info: Service: OMDB searching « american crime story »
+Nov 16 22:19:26 wirebot[79112]: Debug: Service URL: http://www.omdbapi.com/?apiKey=abafc4bb&t=american+crime+story&r=xml
+Nov 16 22:19:27 wirebot[79112]: Debug: Service output: <?xml version="1.0" encoding="UTF-8"?><root response="True"><movie title="American Crime Story" year="2016–" rated="TV-MA" released="02 Feb 2016" runtime="42 min" genre="Biography, Crime, Drama" director="N/A" writer="Scott Alexander, Larry Karaszewski, Sarah Burgess" actors="Sarah Paulson, Annaleigh Ashford, Sterling K. Brown" plot="An anthology series centered around America's most notorious crimes and criminals." language="English" country="United States" awards="Won 17 Primetime Emmys. 103 wins &amp; 143 nominations total" poster="https://m.media-amazon.com/images/M/MV5BMGExZjgzNzktNzUwYS00ZDgxLWFlMTktMzZhOWQxMGM0N2VkXkEyXkFqcGdeQXVyMTkxNjUyNQ@@._V1_SX300.jpg" metascore="N/A" imdbRating="8.4" imdbVotes="95,274" imdbID="tt2788432" type="series"/></root>
+Nov 16 22:21:37 wirebot[79112]: Info: Output: :-(
+Nov 16 22:21:55 wirebot[79112]: Info: Output: Weeeee! :-)
+Nov 16 22:23:25 wirebot[79112]: Info: Signal INT received, quitting
+Nov 16 22:23:25 wirebot[79112]: Info: Connection to ::1 closed
+Nov 16 22:24:38 wirebot[79342]: Info: Reading /Users/nark/.wirebot/wirebot.conf
+Nov 16 22:24:38 wirebot[79342]: Debug:   nick = WireBot
+Nov 16 22:24:38 wirebot[79342]: Debug:   status = Jedi in the Matrix
+Nov 16 22:24:38 wirebot[79342]: Debug:   dictionary path = wirebot.xml
+Nov 16 22:24:38 wirebot[79342]: Debug:   auto reconnect = yes
+Nov 16 22:24:38 wirebot[79342]: Debug:   reconnect on kick = no
+Nov 16 22:24:38 wirebot[79342]: Debug:   icon path = icon.png
+Nov 16 22:24:38 wirebot[79342]: Debug:   hostname = localhost
+Nov 16 22:24:38 wirebot[79342]: Debug:   port = 4871
+Nov 16 22:24:38 wirebot[79342]: Debug:   login = admin
+Nov 16 22:24:38 wirebot[79342]: Debug:   password = 
+Nov 16 22:24:38 wirebot[79342]: Debug:   omdb api key = abafc4bb
+Nov 16 22:24:38 wirebot[79342]: Info: Reading /Users/nark/.wirebot/wirebot.xml robot file...
+Nov 16 22:24:38 wirebot[79342]: Info: wb_bot path: /Users/nark/.wirebot/wirebot.xml
+Nov 16 22:24:38 wirebot[79342]: Info: Writting PID file: /Users/nark/.wirebot/wirebot.pid
+Nov 16 22:24:38 wirebot[79342]: Info: Connecting to localhost...
+Nov 16 22:24:38 wirebot[79342]: Info: Trying ::1 at port 4871...
+Nov 16 22:24:38 wirebot[79342]: Info: Connected using AES/256 bits, logging in...
+Nov 16 22:24:38 wirebot[79342]: Info: Logged in, welcome to Wired Server
+Nov 16 22:24:38 wirebot[79342]: Info: Watcher subscribe to directory: /Uploads/Movies
+Nov 16 22:24:38 wirebot[79342]: Info: Watcher subscribe to directory: /Uploads
+Nov 16 22:25:01 wirebot[79342]: Info: Watcher File Added: /Uploads/Movies/Andor (2022) S01E07 MULTi VFF 2160p 10bit 4KLight DV HDR WebRip DDP 5.1 Atmos x265-QTZ.mkv.torrent
+Nov 16 22:25:01 wirebot[79342]: Info: Service: OMDB searching « andor »
+Nov 16 22:25:01 wirebot[79342]: Debug: Service URL: http://www.omdbapi.com/?apiKey=abafc4bb&t=andor&r=xml
+Nov 16 22:25:01 wirebot[79342]: Debug: Service output: <?xml version="1.0" encoding="UTF-8"?><root response="True"><movie title="Andor" year="2022–" rated="TV-14" released="21 Sep 2022" runtime="N/A" genre="Action, Adventure, Drama" director="N/A" writer="Tony Gilroy" actors="Diego Luna, Stellan Skarsgård, Alex Ferns" plot="Prequel series to Star Wars' 'Rogue One'. In an era filled with danger, deception and intrigue, Cassian will embark on the path that is destined to turn him into a Rebel hero." language="English" country="United States" awards="N/A" poster="https://m.media-amazon.com/images/M/MV5BNDgxNTIyZTMtMzYxNi00NmRjLWFiMTEtM2U4MTFmODkzNzM1XkEyXkFqcGdeQXVyMTM1MTE1NDMx._V1_SX300.jpg" metascore="N/A" imdbRating="8.1" imdbVotes="31,004" imdbID="tt9253284" type="series"/></root>
+Nov 16 22:27:15 wirebot[79342]: Info: Signal INT received, quitting
+Nov 16 22:27:15 wirebot[79342]: Info: Connection to ::1 closed
+Nov 16 22:27:40 wirebot[79511]: Info: Reading /Users/nark/.wirebot/wirebot.conf
+Nov 16 22:27:40 wirebot[79511]: Debug:   nick = WireBot
+Nov 16 22:27:40 wirebot[79511]: Debug:   status = Jedi in the Matrix
+Nov 16 22:27:40 wirebot[79511]: Debug:   dictionary path = wirebot.xml
+Nov 16 22:27:40 wirebot[79511]: Debug:   auto reconnect = yes
+Nov 16 22:27:40 wirebot[79511]: Debug:   reconnect on kick = no
+Nov 16 22:27:40 wirebot[79511]: Debug:   icon path = icon.png
+Nov 16 22:27:40 wirebot[79511]: Debug:   hostname = localhost
+Nov 16 22:27:40 wirebot[79511]: Debug:   port = 4871
+Nov 16 22:27:40 wirebot[79511]: Debug:   login = admin
+Nov 16 22:27:40 wirebot[79511]: Debug:   password = 
+Nov 16 22:27:40 wirebot[79511]: Debug:   omdb api key = abafc4bb
+Nov 16 22:27:40 wirebot[79511]: Info: Reading /Users/nark/.wirebot/wirebot.xml robot file...
+Nov 16 22:27:40 wirebot[79511]: Info: wb_bot path: /Users/nark/.wirebot/wirebot.xml
+Nov 16 22:27:40 wirebot[79511]: Info: Writting PID file: /Users/nark/.wirebot/wirebot.pid
+Nov 16 22:27:40 wirebot[79511]: Info: Connecting to localhost...
+Nov 16 22:27:40 wirebot[79511]: Info: Trying ::1 at port 4871...
+Nov 16 22:27:40 wirebot[79511]: Info: Connected using AES/256 bits, logging in...
+Nov 16 22:27:40 wirebot[79511]: Info: Logged in, welcome to Wired Server
+Nov 16 22:27:40 wirebot[79511]: Info: Watcher subscribe to directory: /Uploads/Movies
+Nov 16 22:27:40 wirebot[79511]: Info: Watcher subscribe to directory: /Uploads
+Nov 16 22:27:48 wirebot[79511]: Info: Watcher File Added: /Uploads/Movies/Andor (2022) S01E02 MULTi VFF 2160p 10bit 4KLight DV HDR WebRip DDP 5.1 Atmos x265-QTZ.mkv-2.torrent
+Nov 16 22:27:48 wirebot[79511]: Info: Service: OMDB searching « andor »
+Nov 16 22:27:48 wirebot[79511]: Debug: Service URL: http://www.omdbapi.com/?apiKey=abafc4bb&t=andor&r=xml
+Nov 16 22:27:48 wirebot[79511]: Debug: Service output: <?xml version="1.0" encoding="UTF-8"?><root response="True"><movie title="Andor" year="2022–" rated="TV-14" released="21 Sep 2022" runtime="N/A" genre="Action, Adventure, Drama" director="N/A" writer="Tony Gilroy" actors="Diego Luna, Stellan Skarsgård, Alex Ferns" plot="Prequel series to Star Wars' 'Rogue One'. In an era filled with danger, deception and intrigue, Cassian will embark on the path that is destined to turn him into a Rebel hero." language="English" country="United States" awards="N/A" poster="https://m.media-amazon.com/images/M/MV5BNDgxNTIyZTMtMzYxNi00NmRjLWFiMTEtM2U4MTFmODkzNzM1XkEyXkFqcGdeQXVyMTM1MTE1NDMx._V1_SX300.jpg" metascore="N/A" imdbRating="8.1" imdbVotes="31,004" imdbID="tt9253284" type="series"/></root>
+Nov 16 22:29:10 wirebot[79511]: Info: Signal INT received, quitting
+Nov 16 22:29:10 wirebot[79511]: Info: Connection to ::1 closed
+Nov 17 00:27:06 wirebot[87690]: Info: Reading /Users/nark/.wirebot/wirebot.conf
+Nov 17 00:27:06 wirebot[87690]: Debug:   nick = WireBot
+Nov 17 00:27:06 wirebot[87690]: Debug:   status = Jedi in the Matrix
+Nov 17 00:27:06 wirebot[87690]: Debug:   dictionary path = wirebot.xml
+Nov 17 00:27:06 wirebot[87690]: Debug:   auto reconnect = yes
+Nov 17 00:27:06 wirebot[87690]: Debug:   reconnect on kick = no
+Nov 17 00:27:06 wirebot[87690]: Debug:   icon path = icon.png
+Nov 17 00:27:06 wirebot[87690]: Debug:   hostname = localhost
+Nov 17 00:27:06 wirebot[87690]: Debug:   port = 4871
+Nov 17 00:27:06 wirebot[87690]: Debug:   login = admin
+Nov 17 00:27:06 wirebot[87690]: Debug:   password = 
+Nov 17 00:27:06 wirebot[87690]: Debug:   omdb api key = abafc4bb
+Nov 17 00:27:06 wirebot[87690]: Info: Reading /Users/nark/.wirebot/wirebot.xml robot file...
+Nov 17 00:27:06 wirebot[87690]: Info: wb_bot path: /Users/nark/.wirebot/wirebot.xml
+Nov 17 00:27:06 wirebot[87690]: Info: Writting PID file: /Users/nark/.wirebot/wirebot.pid
+Nov 17 00:27:06 wirebot[87690]: Info: Connecting to localhost...
+Nov 17 00:27:06 wirebot[87690]: Info: Trying ::1 at port 4871...
+Nov 17 00:27:06 wirebot[87690]: Info: Connected using AES/256 bits, logging in...
+Nov 17 00:27:06 wirebot[87690]: Info: Logged in, welcome to Wired Server
+Nov 17 00:27:06 wirebot[87690]: Info: Watcher subscribe to directory: /Uploads/Movies
+Nov 17 00:27:06 wirebot[87690]: Info: Watcher subscribe to directory: /Uploads
+Nov 17 00:27:11 wirebot[87690]: Info: Output: Bots are silly programs. :-)
+Nov 17 00:30:09 wirebot[87690]: Info: Signal HUP received, reloading configuration
+Nov 17 00:30:09 wirebot[87690]: Info: Reading /Users/nark/.wirebot/wirebot.conf
+Nov 17 00:30:09 wirebot[87690]: Debug:   nick = WireBot
+Nov 17 00:30:09 wirebot[87690]: Debug:   status = Jedi in the Matrix
+Nov 17 00:30:09 wirebot[87690]: Debug:   dictionary path = wirebot.xml
+Nov 17 00:30:09 wirebot[87690]: Debug:   auto reconnect = yes
+Nov 17 00:30:09 wirebot[87690]: Debug:   reconnect on kick = no
+Nov 17 00:30:09 wirebot[87690]: Debug:   icon path = icon.png
+Nov 17 00:30:09 wirebot[87690]: Debug:   hostname = localhost
+Nov 17 00:30:09 wirebot[87690]: Debug:   port = 4871
+Nov 17 00:30:09 wirebot[87690]: Debug:   login = admin
+Nov 17 00:30:09 wirebot[87690]: Debug:   password = 
+Nov 17 00:30:09 wirebot[87690]: Debug:   omdb api key = abafc4bb
+Nov 17 00:30:09 wirebot[87690]: Info: Watcher unsubscribe to directory: /Uploads/Movies
+Nov 17 00:30:09 wirebot[87690]: Info: Watcher unsubscribe to directory: /Uploads
+Nov 17 00:30:09 wirebot[87690]: Info: Reading /Users/nark/.wirebot/wirebot.xml robot file...
+Nov 17 00:30:09 wirebot[87690]: Info: Watcher subscribe to directory: /Uploads/Movies
+Nov 17 00:30:09 wirebot[87690]: Info: Watcher subscribe to directory: /Uploads
+Nov 17 00:30:09 wirebot[87690]: Info: Watcher subscribe to directory: /Uploads/Movies
+Nov 17 00:30:09 wirebot[87690]: Info: Watcher subscribe to directory: /Uploads
+Nov 17 00:31:07 wirebot[87690]: Info: Output: ;-)
+Nov 17 00:31:16 wirebot[87690]: Info: Output: Yay !
+Nov 17 00:31:19 wirebot[87690]: Info: Signal HUP received, reloading configuration
+Nov 17 00:31:19 wirebot[87690]: Info: Reading /Users/nark/.wirebot/wirebot.conf
+Nov 17 00:31:19 wirebot[87690]: Debug:   nick = WireBot
+Nov 17 00:31:19 wirebot[87690]: Debug:   status = Jedi in the Matrix
+Nov 17 00:31:19 wirebot[87690]: Debug:   dictionary path = wirebot.xml
+Nov 17 00:31:19 wirebot[87690]: Debug:   auto reconnect = yes
+Nov 17 00:31:19 wirebot[87690]: Debug:   reconnect on kick = no
+Nov 17 00:31:19 wirebot[87690]: Debug:   icon path = icon.png
+Nov 17 00:31:19 wirebot[87690]: Debug:   hostname = localhost
+Nov 17 00:31:19 wirebot[87690]: Debug:   port = 4871
+Nov 17 00:31:19 wirebot[87690]: Debug:   login = admin
+Nov 17 00:31:19 wirebot[87690]: Debug:   password = 
+Nov 17 00:31:19 wirebot[87690]: Debug:   omdb api key = abafc4bb
+Nov 17 00:31:19 wirebot[87690]: Info: Watcher unsubscribe to directory: /Uploads/Movies
+Nov 17 00:31:19 wirebot[87690]: Info: Watcher unsubscribe to directory: /Uploads
+Nov 17 00:31:19 wirebot[87690]: Info: Watcher unsubscribe to directory: /Uploads/Movies
+Nov 17 00:31:19 wirebot[87690]: Info: Watcher unsubscribe to directory: /Uploads
+Nov 17 00:31:19 wirebot[87690]: Info: Reading /Users/nark/.wirebot/wirebot.xml robot file...
+Nov 17 00:31:19 wirebot[87690]: Info: Watcher subscribe to directory: /Uploads/Movies
+Nov 17 00:31:19 wirebot[87690]: Info: Watcher subscribe to directory: /Uploads
+Nov 17 00:31:19 wirebot[87690]: Info: Watcher subscribe to directory: /Uploads/Movies
+Nov 17 00:31:19 wirebot[87690]: Info: Watcher subscribe to directory: /Uploads
+Nov 17 00:31:19 wirebot[87690]: Info: Watcher subscribe to directory: /Uploads/Movies
+Nov 17 00:31:19 wirebot[87690]: Info: Watcher subscribe to directory: /Uploads
+Nov 17 00:31:21 wirebot[87690]: Info: Signal HUP received, reloading configuration
+Nov 17 00:31:21 wirebot[87690]: Info: Reading /Users/nark/.wirebot/wirebot.conf
+Nov 17 00:31:21 wirebot[87690]: Debug:   nick = WireBot
+Nov 17 00:31:21 wirebot[87690]: Debug:   status = Jedi in the Matrix
+Nov 17 00:31:21 wirebot[87690]: Debug:   dictionary path = wirebot.xml
+Nov 17 00:31:21 wirebot[87690]: Debug:   auto reconnect = yes
+Nov 17 00:31:21 wirebot[87690]: Debug:   reconnect on kick = no
+Nov 17 00:31:21 wirebot[87690]: Debug:   icon path = icon.png
+Nov 17 00:31:21 wirebot[87690]: Debug:   hostname = localhost
+Nov 17 00:31:21 wirebot[87690]: Debug:   port = 4871
+Nov 17 00:31:21 wirebot[87690]: Debug:   login = admin
+Nov 17 00:31:21 wirebot[87690]: Debug:   password = 
+Nov 17 00:31:21 wirebot[87690]: Debug:   omdb api key = abafc4bb
+Nov 17 00:31:21 wirebot[87690]: Info: Watcher unsubscribe to directory: /Uploads/Movies
+Nov 17 00:31:21 wirebot[87690]: Info: Watcher unsubscribe to directory: /Uploads
+Nov 17 00:31:21 wirebot[87690]: Info: Watcher unsubscribe to directory: /Uploads/Movies
+Nov 17 00:31:21 wirebot[87690]: Info: Watcher unsubscribe to directory: /Uploads
+Nov 17 00:31:21 wirebot[87690]: Info: Watcher unsubscribe to directory: /Uploads/Movies
+Nov 17 00:31:21 wirebot[87690]: Info: Watcher unsubscribe to directory: /Uploads
+Nov 17 00:31:21 wirebot[87690]: Info: Reading /Users/nark/.wirebot/wirebot.xml robot file...
+Nov 17 00:31:21 wirebot[87690]: Info: Watcher subscribe to directory: /Uploads/Movies
+Nov 17 00:31:21 wirebot[87690]: Info: Watcher subscribe to directory: /Uploads
+Nov 17 00:31:21 wirebot[87690]: Info: Watcher subscribe to directory: /Uploads/Movies
+Nov 17 00:31:21 wirebot[87690]: Info: Watcher subscribe to directory: /Uploads
+Nov 17 00:31:21 wirebot[87690]: Info: Watcher subscribe to directory: /Uploads/Movies
+Nov 17 00:31:21 wirebot[87690]: Info: Watcher subscribe to directory: /Uploads
+Nov 17 00:31:21 wirebot[87690]: Info: Watcher subscribe to directory: /Uploads/Movies
+Nov 17 00:31:21 wirebot[87690]: Info: Watcher subscribe to directory: /Uploads
+Nov 17 00:32:39 wirebot[87690]: Info: Output: Yes, my lord.
+Nov 17 00:32:41 wirebot[87690]: Info: Output: Ready to serve.
+Nov 17 00:32:42 wirebot[87690]: Info: Output: Yes, my lord.
+Nov 17 00:32:43 wirebot[87690]: Info: Output: I need more blood.
+Nov 17 00:33:15 wirebot[87690]: Info: Signal HUP received, reloading configuration
+Nov 17 00:33:15 wirebot[87690]: Info: Reading /Users/nark/.wirebot/wirebot.conf
+Nov 17 00:33:15 wirebot[87690]: Debug:   nick = WireBot
+Nov 17 00:33:15 wirebot[87690]: Debug:   status = Jedi in the Matrix
+Nov 17 00:33:15 wirebot[87690]: Debug:   dictionary path = wirebot.xml
+Nov 17 00:33:15 wirebot[87690]: Debug:   auto reconnect = yes
+Nov 17 00:33:15 wirebot[87690]: Debug:   reconnect on kick = no
+Nov 17 00:33:15 wirebot[87690]: Debug:   icon path = icon.png
+Nov 17 00:33:15 wirebot[87690]: Debug:   hostname = localhost
+Nov 17 00:33:15 wirebot[87690]: Debug:   port = 4871
+Nov 17 00:33:15 wirebot[87690]: Debug:   login = admin
+Nov 17 00:33:15 wirebot[87690]: Debug:   password = 
+Nov 17 00:33:15 wirebot[87690]: Debug:   omdb api key = abafc4bb
+Nov 17 00:33:15 wirebot[87690]: Info: Watcher unsubscribe to directory: /Uploads/Movies
+Nov 17 00:33:15 wirebot[87690]: Info: Watcher unsubscribe to directory: /Uploads
+Nov 17 00:33:15 wirebot[87690]: Info: Watcher unsubscribe to directory: /Uploads/Movies
+Nov 17 00:33:15 wirebot[87690]: Info: Watcher unsubscribe to directory: /Uploads
+Nov 17 00:33:15 wirebot[87690]: Info: Watcher unsubscribe to directory: /Uploads/Movies
+Nov 17 00:33:15 wirebot[87690]: Info: Watcher unsubscribe to directory: /Uploads
+Nov 17 00:33:15 wirebot[87690]: Info: Watcher unsubscribe to directory: /Uploads/Movies
+Nov 17 00:33:15 wirebot[87690]: Info: Watcher unsubscribe to directory: /Uploads
+Nov 17 00:33:15 wirebot[87690]: Info: Reading /Users/nark/.wirebot/wirebot.xml robot file...
+Nov 17 00:33:15 wirebot[87690]: Info: Watcher subscribe to directory: /Uploads/Movies
+Nov 17 00:33:15 wirebot[87690]: Info: Watcher subscribe to directory: /Uploads
+Nov 17 00:33:15 wirebot[87690]: Info: Watcher subscribe to directory: /Uploads/Movies
+Nov 17 00:33:15 wirebot[87690]: Info: Watcher subscribe to directory: /Uploads
+Nov 17 00:33:15 wirebot[87690]: Info: Watcher subscribe to directory: /Uploads/Movies
+Nov 17 00:33:15 wirebot[87690]: Info: Watcher subscribe to directory: /Uploads
+Nov 17 00:33:15 wirebot[87690]: Info: Watcher subscribe to directory: /Uploads/Movies
+Nov 17 00:33:15 wirebot[87690]: Info: Watcher subscribe to directory: /Uploads
+Nov 17 00:33:15 wirebot[87690]: Info: Watcher subscribe to directory: /Uploads/Movies
+Nov 17 00:33:15 wirebot[87690]: Info: Watcher subscribe to directory: /Uploads
+Nov 17 00:33:16 wirebot[87690]: Info: Signal HUP received, reloading configuration
+Nov 17 00:33:16 wirebot[87690]: Info: Reading /Users/nark/.wirebot/wirebot.conf
+Nov 17 00:33:16 wirebot[87690]: Debug:   nick = WireBot
+Nov 17 00:33:16 wirebot[87690]: Debug:   status = Jedi in the Matrix
+Nov 17 00:33:16 wirebot[87690]: Debug:   dictionary path = wirebot.xml
+Nov 17 00:33:16 wirebot[87690]: Debug:   auto reconnect = yes
+Nov 17 00:33:16 wirebot[87690]: Debug:   reconnect on kick = no
+Nov 17 00:33:16 wirebot[87690]: Debug:   icon path = icon.png
+Nov 17 00:33:16 wirebot[87690]: Debug:   hostname = localhost
+Nov 17 00:33:16 wirebot[87690]: Debug:   port = 4871
+Nov 17 00:33:16 wirebot[87690]: Debug:   login = admin
+Nov 17 00:33:16 wirebot[87690]: Debug:   password = 
+Nov 17 00:33:16 wirebot[87690]: Debug:   omdb api key = abafc4bb
+Nov 17 00:33:16 wirebot[87690]: Info: Watcher unsubscribe to directory: /Uploads/Movies
+Nov 17 00:33:16 wirebot[87690]: Info: Watcher unsubscribe to directory: /Uploads
+Nov 17 00:33:16 wirebot[87690]: Info: Watcher unsubscribe to directory: /Uploads/Movies
+Nov 17 00:33:16 wirebot[87690]: Info: Watcher unsubscribe to directory: /Uploads
+Nov 17 00:33:16 wirebot[87690]: Info: Watcher unsubscribe to directory: /Uploads/Movies
+Nov 17 00:33:16 wirebot[87690]: Info: Watcher unsubscribe to directory: /Uploads
+Nov 17 00:33:16 wirebot[87690]: Info: Watcher unsubscribe to directory: /Uploads/Movies
+Nov 17 00:33:16 wirebot[87690]: Info: Watcher unsubscribe to directory: /Uploads
+Nov 17 00:33:16 wirebot[87690]: Info: Watcher unsubscribe to directory: /Uploads/Movies
+Nov 17 00:33:16 wirebot[87690]: Info: Watcher unsubscribe to directory: /Uploads
+Nov 17 00:33:16 wirebot[87690]: Info: Reading /Users/nark/.wirebot/wirebot.xml robot file...
+Nov 17 00:33:16 wirebot[87690]: Info: Watcher subscribe to directory: /Uploads/Movies
+Nov 17 00:33:16 wirebot[87690]: Info: Watcher subscribe to directory: /Uploads
+Nov 17 00:33:16 wirebot[87690]: Info: Watcher subscribe to directory: /Uploads/Movies
+Nov 17 00:33:16 wirebot[87690]: Info: Watcher subscribe to directory: /Uploads
+Nov 17 00:33:16 wirebot[87690]: Info: Watcher subscribe to directory: /Uploads/Movies
+Nov 17 00:33:16 wirebot[87690]: Info: Watcher subscribe to directory: /Uploads
+Nov 17 00:33:16 wirebot[87690]: Info: Watcher subscribe to directory: /Uploads/Movies
+Nov 17 00:33:16 wirebot[87690]: Info: Watcher subscribe to directory: /Uploads
+Nov 17 00:33:16 wirebot[87690]: Info: Watcher subscribe to directory: /Uploads/Movies
+Nov 17 00:33:16 wirebot[87690]: Info: Watcher subscribe to directory: /Uploads
+Nov 17 00:33:16 wirebot[87690]: Info: Watcher subscribe to directory: /Uploads/Movies
+Nov 17 00:33:16 wirebot[87690]: Info: Watcher subscribe to directory: /Uploads
+Nov 17 00:33:23 wirebot[87690]: Info: Watcher unsubscribe to directory: /Uploads/Movies
+Nov 17 00:33:23 wirebot[87690]: Info: Watcher unsubscribe to directory: /Uploads
+Nov 17 00:33:23 wirebot[87690]: Info: Watcher unsubscribe to directory: /Uploads/Movies
+Nov 17 00:33:23 wirebot[87690]: Info: Watcher unsubscribe to directory: /Uploads
+Nov 17 00:33:23 wirebot[87690]: Info: Watcher unsubscribe to directory: /Uploads/Movies
+Nov 17 00:33:23 wirebot[87690]: Info: Watcher unsubscribe to directory: /Uploads
+Nov 17 00:33:23 wirebot[87690]: Info: Watcher unsubscribe to directory: /Uploads/Movies
+Nov 17 00:33:23 wirebot[87690]: Info: Watcher unsubscribe to directory: /Uploads
+Nov 17 00:33:23 wirebot[87690]: Info: Watcher unsubscribe to directory: /Uploads/Movies
+Nov 17 00:33:23 wirebot[87690]: Info: Watcher unsubscribe to directory: /Uploads
+Nov 17 00:33:23 wirebot[87690]: Info: Watcher unsubscribe to directory: /Uploads/Movies
+Nov 17 00:33:23 wirebot[87690]: Info: Watcher unsubscribe to directory: /Uploads
+Nov 17 00:33:23 wirebot[87690]: Info: Reading /Users/nark/.wirebot/wirebot.xml robot file...
+Nov 17 00:33:23 wirebot[87690]: Info: Watcher subscribe to directory: /Uploads/Movies
+Nov 17 00:33:23 wirebot[87690]: Info: Watcher subscribe to directory: /Uploads
+Nov 17 00:33:23 wirebot[87690]: Info: Watcher subscribe to directory: /Uploads/Movies
+Nov 17 00:33:23 wirebot[87690]: Info: Watcher subscribe to directory: /Uploads
+Nov 17 00:33:23 wirebot[87690]: Info: Watcher subscribe to directory: /Uploads/Movies
+Nov 17 00:33:23 wirebot[87690]: Info: Watcher subscribe to directory: /Uploads
+Nov 17 00:33:23 wirebot[87690]: Info: Watcher subscribe to directory: /Uploads/Movies
+Nov 17 00:33:23 wirebot[87690]: Info: Watcher subscribe to directory: /Uploads
+Nov 17 00:33:23 wirebot[87690]: Info: Watcher subscribe to directory: /Uploads/Movies
+Nov 17 00:33:23 wirebot[87690]: Info: Watcher subscribe to directory: /Uploads
+Nov 17 00:33:23 wirebot[87690]: Info: Watcher subscribe to directory: /Uploads/Movies
+Nov 17 00:33:23 wirebot[87690]: Info: Watcher subscribe to directory: /Uploads
+Nov 17 00:33:23 wirebot[87690]: Info: Watcher subscribe to directory: /Uploads/Movies
+Nov 17 00:33:23 wirebot[87690]: Info: Watcher subscribe to directory: /Uploads
+Nov 17 00:33:23 wirebot[87690]: Info: Output: Yay! Reloaded.
+Nov 17 00:33:31 wirebot[87690]: Info: Signal HUP received, reloading configuration
+Nov 17 00:33:31 wirebot[87690]: Info: Reading /Users/nark/.wirebot/wirebot.conf
+Nov 17 00:33:31 wirebot[87690]: Debug:   nick = WireBot
+Nov 17 00:33:31 wirebot[87690]: Debug:   status = Jedi in the Matrix
+Nov 17 00:33:31 wirebot[87690]: Debug:   dictionary path = wirebot.xml
+Nov 17 00:33:31 wirebot[87690]: Debug:   auto reconnect = yes
+Nov 17 00:33:31 wirebot[87690]: Debug:   reconnect on kick = no
+Nov 17 00:33:31 wirebot[87690]: Debug:   icon path = icon.png
+Nov 17 00:33:31 wirebot[87690]: Debug:   hostname = localhost
+Nov 17 00:33:31 wirebot[87690]: Debug:   port = 4871
+Nov 17 00:33:31 wirebot[87690]: Debug:   login = admin
+Nov 17 00:33:31 wirebot[87690]: Debug:   password = 
+Nov 17 00:33:31 wirebot[87690]: Debug:   omdb api key = abafc4bb
+Nov 17 00:33:31 wirebot[87690]: Info: Watcher unsubscribe to directory: /Uploads/Movies
+Nov 17 00:33:31 wirebot[87690]: Info: Watcher unsubscribe to directory: /Uploads
+Nov 17 00:33:31 wirebot[87690]: Info: Watcher unsubscribe to directory: /Uploads/Movies
+Nov 17 00:33:31 wirebot[87690]: Info: Watcher unsubscribe to directory: /Uploads
+Nov 17 00:33:31 wirebot[87690]: Info: Watcher unsubscribe to directory: /Uploads/Movies
+Nov 17 00:33:31 wirebot[87690]: Info: Watcher unsubscribe to directory: /Uploads
+Nov 17 00:33:31 wirebot[87690]: Info: Watcher unsubscribe to directory: /Uploads/Movies
+Nov 17 00:33:31 wirebot[87690]: Info: Watcher unsubscribe to directory: /Uploads
+Nov 17 00:33:31 wirebot[87690]: Info: Watcher unsubscribe to directory: /Uploads/Movies
+Nov 17 00:33:31 wirebot[87690]: Info: Watcher unsubscribe to directory: /Uploads
+Nov 17 00:33:31 wirebot[87690]: Info: Watcher unsubscribe to directory: /Uploads/Movies
+Nov 17 00:33:31 wirebot[87690]: Info: Watcher unsubscribe to directory: /Uploads
+Nov 17 00:33:31 wirebot[87690]: Info: Watcher unsubscribe to directory: /Uploads/Movies
+Nov 17 00:33:31 wirebot[87690]: Info: Watcher unsubscribe to directory: /Uploads
+Nov 17 00:33:31 wirebot[87690]: Info: Reading /Users/nark/.wirebot/wirebot.xml robot file...
+Nov 17 00:33:31 wirebot[87690]: Info: Watcher subscribe to directory: /Uploads/Movies
+Nov 17 00:33:31 wirebot[87690]: Info: Watcher subscribe to directory: /Uploads
+Nov 17 00:33:31 wirebot[87690]: Info: Watcher subscribe to directory: /Uploads/Movies
+Nov 17 00:33:31 wirebot[87690]: Info: Watcher subscribe to directory: /Uploads
+Nov 17 00:33:31 wirebot[87690]: Info: Watcher subscribe to directory: /Uploads/Movies
+Nov 17 00:33:31 wirebot[87690]: Info: Watcher subscribe to directory: /Uploads
+Nov 17 00:33:31 wirebot[87690]: Info: Watcher subscribe to directory: /Uploads/Movies
+Nov 17 00:33:31 wirebot[87690]: Info: Watcher subscribe to directory: /Uploads
+Nov 17 00:33:31 wirebot[87690]: Info: Watcher subscribe to directory: /Uploads/Movies
+Nov 17 00:33:31 wirebot[87690]: Info: Watcher subscribe to directory: /Uploads
+Nov 17 00:33:31 wirebot[87690]: Info: Watcher subscribe to directory: /Uploads/Movies
+Nov 17 00:33:31 wirebot[87690]: Info: Watcher subscribe to directory: /Uploads
+Nov 17 00:33:31 wirebot[87690]: Info: Watcher subscribe to directory: /Uploads/Movies
+Nov 17 00:33:31 wirebot[87690]: Info: Watcher subscribe to directory: /Uploads
+Nov 17 00:33:31 wirebot[87690]: Info: Watcher subscribe to directory: /Uploads/Movies
+Nov 17 00:33:31 wirebot[87690]: Info: Watcher subscribe to directory: /Uploads
+Nov 17 00:33:31 wirebot[87690]: Error: Could not read message from server: Connection reset by peer
+Nov 17 00:33:31 wirebot[87690]: Info: Connection to ::1 closed
+Nov 17 00:33:31 wirebot[87690]: Info: Reconnecting in 10 seconds...
+Nov 17 00:33:34 wirebot[87690]: Info: Signal HUP received, reloading configuration
+Nov 17 00:33:34 wirebot[87690]: Info: Reading /Users/nark/.wirebot/wirebot.conf
+Nov 17 00:33:34 wirebot[87690]: Debug:   nick = WireBot
+Nov 17 00:33:34 wirebot[87690]: Debug:   status = Jedi in the Matrix
+Nov 17 00:33:34 wirebot[87690]: Debug:   dictionary path = wirebot.xml
+Nov 17 00:33:34 wirebot[87690]: Debug:   auto reconnect = yes
+Nov 17 00:33:34 wirebot[87690]: Debug:   reconnect on kick = no
+Nov 17 00:33:34 wirebot[87690]: Debug:   icon path = icon.png
+Nov 17 00:33:34 wirebot[87690]: Debug:   hostname = localhost
+Nov 17 00:33:34 wirebot[87690]: Debug:   port = 4871
+Nov 17 00:33:34 wirebot[87690]: Debug:   login = admin
+Nov 17 00:33:34 wirebot[87690]: Debug:   password = 
+Nov 17 00:33:34 wirebot[87690]: Debug:   omdb api key = abafc4bb
+Nov 17 00:33:34 wirebot[87690]: Info: Watcher unsubscribe to directory: /Uploads/Movies
+Nov 17 00:33:34 wirebot[87690]: Info: Watcher unsubscribe to directory: /Uploads
+Nov 17 00:33:34 wirebot[87690]: Info: Watcher unsubscribe to directory: /Uploads/Movies
+Nov 17 00:33:34 wirebot[87690]: Info: Watcher unsubscribe to directory: /Uploads
+Nov 17 00:33:34 wirebot[87690]: Info: Watcher unsubscribe to directory: /Uploads/Movies
+Nov 17 00:33:34 wirebot[87690]: Info: Watcher unsubscribe to directory: /Uploads
+Nov 17 00:33:34 wirebot[87690]: Info: Watcher unsubscribe to directory: /Uploads/Movies
+Nov 17 00:33:34 wirebot[87690]: Info: Watcher unsubscribe to directory: /Uploads
+Nov 17 00:33:34 wirebot[87690]: Info: Watcher unsubscribe to directory: /Uploads/Movies
+Nov 17 00:33:34 wirebot[87690]: Info: Watcher unsubscribe to directory: /Uploads
+Nov 17 00:33:34 wirebot[87690]: Info: Watcher unsubscribe to directory: /Uploads/Movies
+Nov 17 00:33:34 wirebot[87690]: Info: Watcher unsubscribe to directory: /Uploads
+Nov 17 00:33:34 wirebot[87690]: Info: Watcher unsubscribe to directory: /Uploads/Movies
+Nov 17 00:33:34 wirebot[87690]: Info: Watcher unsubscribe to directory: /Uploads
+Nov 17 00:33:34 wirebot[87690]: Info: Watcher unsubscribe to directory: /Uploads/Movies
+Nov 17 00:33:34 wirebot[87690]: Info: Watcher unsubscribe to directory: /Uploads
+Nov 17 00:33:34 wirebot[87690]: Info: Reading /Users/nark/.wirebot/wirebot.xml robot file...
+Nov 17 00:33:34 wirebot[87690]: Info: Watcher subscribe to directory: /Uploads/Movies
+Nov 17 00:33:34 wirebot[87690]: Info: Watcher subscribe to directory: /Uploads
+Nov 17 00:33:34 wirebot[87690]: Info: Watcher subscribe to directory: /Uploads/Movies
+Nov 17 00:33:34 wirebot[87690]: Info: Watcher subscribe to directory: /Uploads
+Nov 17 00:33:34 wirebot[87690]: Info: Watcher subscribe to directory: /Uploads/Movies
+Nov 17 00:33:34 wirebot[87690]: Info: Watcher subscribe to directory: /Uploads
+Nov 17 00:33:34 wirebot[87690]: Info: Watcher subscribe to directory: /Uploads/Movies
+Nov 17 00:33:34 wirebot[87690]: Info: Watcher subscribe to directory: /Uploads
+Nov 17 00:33:34 wirebot[87690]: Info: Watcher subscribe to directory: /Uploads/Movies
+Nov 17 00:33:34 wirebot[87690]: Info: Watcher subscribe to directory: /Uploads
+Nov 17 00:33:34 wirebot[87690]: Info: Watcher subscribe to directory: /Uploads/Movies
+Nov 17 00:33:34 wirebot[87690]: Info: Watcher subscribe to directory: /Uploads
+Nov 17 00:33:34 wirebot[87690]: Info: Watcher subscribe to directory: /Uploads/Movies
+Nov 17 00:33:34 wirebot[87690]: Info: Watcher subscribe to directory: /Uploads
+Nov 17 00:33:34 wirebot[87690]: Info: Watcher subscribe to directory: /Uploads/Movies
+Nov 17 00:33:34 wirebot[87690]: Info: Watcher subscribe to directory: /Uploads
+Nov 17 00:33:34 wirebot[87690]: Info: Watcher subscribe to directory: /Uploads/Movies
+Nov 17 00:33:34 wirebot[87690]: Info: Watcher subscribe to directory: /Uploads
+Nov 17 00:33:41 wirebot[87690]: Info: Connecting to localhost...
+Nov 17 00:33:41 wirebot[87690]: Info: Trying ::1 at port 4871...
+Nov 17 00:33:41 wirebot[87690]: Info: Connected using AES/256 bits, logging in...
+Nov 17 00:33:41 wirebot[87690]: Info: Logged in, welcome to Wired Server
+Nov 17 00:33:41 wirebot[87690]: Info: Watcher subscribe to directory: /Uploads/Movies
+Nov 17 00:33:41 wirebot[87690]: Info: Watcher subscribe to directory: /Uploads
+Nov 17 00:33:41 wirebot[87690]: Info: Watcher subscribe to directory: /Uploads/Movies
+Nov 17 00:33:41 wirebot[87690]: Info: Watcher subscribe to directory: /Uploads
+Nov 17 00:33:41 wirebot[87690]: Info: Watcher subscribe to directory: /Uploads/Movies
+Nov 17 00:33:41 wirebot[87690]: Info: Watcher subscribe to directory: /Uploads
+Nov 17 00:33:41 wirebot[87690]: Info: Watcher subscribe to directory: /Uploads/Movies
+Nov 17 00:33:41 wirebot[87690]: Info: Watcher subscribe to directory: /Uploads
+Nov 17 00:33:41 wirebot[87690]: Info: Watcher subscribe to directory: /Uploads/Movies
+Nov 17 00:33:41 wirebot[87690]: Info: Watcher subscribe to directory: /Uploads
+Nov 17 00:33:41 wirebot[87690]: Info: Watcher subscribe to directory: /Uploads/Movies
+Nov 17 00:33:41 wirebot[87690]: Info: Watcher subscribe to directory: /Uploads
+Nov 17 00:33:41 wirebot[87690]: Info: Watcher subscribe to directory: /Uploads/Movies
+Nov 17 00:33:41 wirebot[87690]: Info: Watcher subscribe to directory: /Uploads
+Nov 17 00:33:41 wirebot[87690]: Info: Watcher subscribe to directory: /Uploads/Movies
+Nov 17 00:33:41 wirebot[87690]: Info: Watcher subscribe to directory: /Uploads
+Nov 17 00:33:41 wirebot[87690]: Info: Watcher subscribe to directory: /Uploads/Movies
+Nov 17 00:33:41 wirebot[87690]: Info: Watcher subscribe to directory: /Uploads
+Nov 17 00:34:26 wirebot[87690]: Info: Signal INT received, quitting
+Nov 17 00:34:26 wirebot[87690]: Info: Connection to ::1 closed
+Nov 17 00:34:27 wirebot[87875]: Info: Reading /Users/nark/.wirebot/wirebot.conf
+Nov 17 00:34:27 wirebot[87875]: Debug:   nick = WireBot
+Nov 17 00:34:27 wirebot[87875]: Debug:   status = Jedi in the Matrix
+Nov 17 00:34:27 wirebot[87875]: Debug:   dictionary path = wirebot.xml
+Nov 17 00:34:27 wirebot[87875]: Debug:   auto reconnect = yes
+Nov 17 00:34:27 wirebot[87875]: Debug:   reconnect on kick = no
+Nov 17 00:34:27 wirebot[87875]: Debug:   icon path = icon.png
+Nov 17 00:34:27 wirebot[87875]: Debug:   hostname = localhost
+Nov 17 00:34:27 wirebot[87875]: Debug:   port = 4871
+Nov 17 00:34:27 wirebot[87875]: Debug:   login = admin
+Nov 17 00:34:27 wirebot[87875]: Debug:   password = 
+Nov 17 00:34:27 wirebot[87875]: Debug:   omdb api key = abafc4bb
+Nov 17 00:34:27 wirebot[87875]: Info: Reading /Users/nark/.wirebot/wirebot.xml robot file...
+Nov 17 00:34:27 wirebot[87875]: Info: wb_bot path: /Users/nark/.wirebot/wirebot.xml
+Nov 17 00:34:27 wirebot[87875]: Info: Writting PID file: /Users/nark/.wirebot/wirebot.pid
+Nov 17 00:34:27 wirebot[87875]: Info: Connecting to localhost...
+Nov 17 00:34:27 wirebot[87875]: Info: Trying ::1 at port 4871...
+Nov 17 00:34:27 wirebot[87875]: Info: Connected using AES/256 bits, logging in...
+Nov 17 00:34:27 wirebot[87875]: Info: Logged in, welcome to Wired Server
+Nov 17 00:34:27 wirebot[87875]: Info: Watcher subscribe to directory: /Uploads/Movies
+Nov 17 00:34:27 wirebot[87875]: Info: Watcher subscribe to directory: /Uploads
+Nov 17 00:34:38 wirebot[87875]: Info: Output: Weeee !
+Nov 17 00:36:13 wirebot[87875]: Info: Signal INT received, quitting
+Nov 17 00:36:13 wirebot[87875]: Info: Connection to ::1 closed
+Nov 17 00:37:18 wirebot[87972]: Info: Reading /Users/nark/.wirebot/wirebot.conf
+Nov 17 00:37:18 wirebot[87972]: Debug:   nick = WireBot
+Nov 17 00:37:18 wirebot[87972]: Debug:   status = Jedi in the Matrix
+Nov 17 00:37:18 wirebot[87972]: Debug:   dictionary path = wirebot.xml
+Nov 17 00:37:18 wirebot[87972]: Debug:   auto reconnect = yes
+Nov 17 00:37:18 wirebot[87972]: Debug:   reconnect on kick = no
+Nov 17 00:37:18 wirebot[87972]: Debug:   icon path = icon.png
+Nov 17 00:37:18 wirebot[87972]: Debug:   hostname = localhost
+Nov 17 00:37:18 wirebot[87972]: Debug:   port = 4871
+Nov 17 00:37:18 wirebot[87972]: Debug:   login = admin
+Nov 17 00:37:18 wirebot[87972]: Debug:   password = 
+Nov 17 00:37:18 wirebot[87972]: Debug:   omdb api key = abafc4bb
+Nov 17 00:37:18 wirebot[87972]: Info: Reading /Users/nark/.wirebot/wirebot.xml robot file...
+Nov 17 00:37:18 wirebot[87972]: Info: wb_bot path: /Users/nark/.wirebot/wirebot.xml
+Nov 17 00:37:18 wirebot[87972]: Info: Writting PID file: /Users/nark/.wirebot/wirebot.pid
+Nov 17 00:37:18 wirebot[87972]: Info: Connecting to localhost...
+Nov 17 00:37:18 wirebot[87972]: Info: Trying ::1 at port 4871...
+Nov 17 00:37:18 wirebot[87972]: Info: Connected using AES/256 bits, logging in...
+Nov 17 00:37:18 wirebot[87972]: Info: Logged in, welcome to Wired Server
+Nov 17 00:37:18 wirebot[87972]: Info: Watcher subscribe to directory: /Uploads/Movies
+Nov 17 00:37:18 wirebot[87972]: Info: Watcher subscribe to directory: /Uploads
+Nov 17 00:37:21 wirebot[87972]: Info: Signal INT received, quitting
+Nov 17 00:37:21 wirebot[87972]: Info: Connection to ::1 closed
+Nov 17 00:41:12 wirebot[94379]: Info: Reading /Users/nark/.wirebot/wirebot.conf
+Nov 17 00:41:12 wirebot[94379]: Debug:   nick = WireBot
+Nov 17 00:41:12 wirebot[94379]: Debug:   status = Jedi in the Matrix
+Nov 17 00:41:12 wirebot[94379]: Debug:   dictionary path = wirebot.xml
+Nov 17 00:41:12 wirebot[94379]: Debug:   auto reconnect = yes
+Nov 17 00:41:12 wirebot[94379]: Debug:   reconnect on kick = no
+Nov 17 00:41:12 wirebot[94379]: Debug:   icon path = icon.png
+Nov 17 00:41:12 wirebot[94379]: Debug:   hostname = localhost
+Nov 17 00:41:12 wirebot[94379]: Debug:   port = 4871
+Nov 17 00:41:12 wirebot[94379]: Debug:   login = admin
+Nov 17 00:41:12 wirebot[94379]: Debug:   password = 
+Nov 17 00:41:12 wirebot[94379]: Debug:   omdb api key = abafc4bb
+Nov 17 00:41:12 wirebot[94379]: Info: Reading /Users/nark/.wirebot/wirebot.xml robot file...
+Nov 17 00:41:12 wirebot[94379]: Info: wb_bot path: /Users/nark/.wirebot/wirebot.xml
+Nov 17 00:41:12 wirebot[94379]: Info: Writting PID file: /Users/nark/.wirebot/wirebot.pid
+Nov 17 00:41:12 wirebot[94379]: Info: Connecting to localhost...
+Nov 17 00:41:12 wirebot[94379]: Info: Trying ::1 at port 4871...
+Nov 17 00:41:12 wirebot[94379]: Info: Connected using AES/256 bits, logging in...
+Nov 17 00:41:12 wirebot[94379]: Info: Logged in, welcome to Wired Server
+Nov 17 00:41:12 wirebot[94379]: Info: Watcher subscribe to directory: /Uploads/Movies
+Nov 17 00:41:12 wirebot[94379]: Info: Watcher subscribe to directory: /Uploads
+Nov 17 00:41:20 wirebot[94379]: Info: Watcher unsubscribe to directory: /Uploads/Movies
+Nov 17 00:41:20 wirebot[94379]: Info: Watcher unsubscribe to directory: /Uploads
+Nov 17 00:41:20 wirebot[94379]: Info: Reading /Users/nark/.wirebot/wirebot.xml robot file...
+Nov 17 00:41:20 wirebot[94379]: Info: Watcher subscribe to directory: /Uploads/Movies
+Nov 17 00:41:20 wirebot[94379]: Info: Watcher subscribe to directory: /Uploads
+Nov 17 00:41:20 wirebot[94379]: Info: Output: Yay! Reloaded.
+Nov 17 00:41:25 wirebot[94379]: Info: Watcher unsubscribe to directory: /Uploads/Movies
+Nov 17 00:41:25 wirebot[94379]: Info: Watcher unsubscribe to directory: /Uploads
+Nov 17 00:41:25 wirebot[94379]: Info: Reading /Users/nark/.wirebot/wirebot.xml robot file...
+Nov 17 00:41:25 wirebot[94379]: Info: Watcher subscribe to directory: /Uploads/Movies
+Nov 17 00:41:25 wirebot[94379]: Info: Watcher subscribe to directory: /Uploads
+Nov 17 00:41:25 wirebot[94379]: Info: Output: …
+Nov 17 00:41:27 wirebot[94379]: Info: Watcher unsubscribe to directory: /Uploads/Movies
+Nov 17 00:41:27 wirebot[94379]: Info: Watcher unsubscribe to directory: /Uploads
+Nov 17 00:41:27 wirebot[94379]: Info: Reading /Users/nark/.wirebot/wirebot.xml robot file...
+Nov 17 00:41:27 wirebot[94379]: Info: Watcher subscribe to directory: /Uploads/Movies
+Nov 17 00:41:27 wirebot[94379]: Info: Watcher subscribe to directory: /Uploads
+Nov 17 00:41:27 wirebot[94379]: Info: Output: Ready to fight!
+Nov 17 00:41:28 wirebot[94379]: Info: Watcher unsubscribe to directory: /Uploads/Movies
+Nov 17 00:41:28 wirebot[94379]: Info: Watcher unsubscribe to directory: /Uploads
+Nov 17 00:41:28 wirebot[94379]: Info: Reading /Users/nark/.wirebot/wirebot.xml robot file...
+Nov 17 00:41:28 wirebot[94379]: Info: Watcher subscribe to directory: /Uploads/Movies
+Nov 17 00:41:28 wirebot[94379]: Info: Watcher subscribe to directory: /Uploads
+Nov 17 00:41:28 wirebot[94379]: Info: Output: …
+Nov 17 00:41:29 wirebot[94379]: Info: Watcher unsubscribe to directory: /Uploads/Movies
+Nov 17 00:41:29 wirebot[94379]: Info: Watcher unsubscribe to directory: /Uploads
+Nov 17 00:41:29 wirebot[94379]: Info: Reading /Users/nark/.wirebot/wirebot.xml robot file...
+Nov 17 00:41:29 wirebot[94379]: Info: Watcher subscribe to directory: /Uploads/Movies
+Nov 17 00:41:29 wirebot[94379]: Info: Watcher subscribe to directory: /Uploads
+Nov 17 00:41:29 wirebot[94379]: Info: Output: Yay! Reloaded.
+Nov 17 00:41:30 wirebot[94379]: Error: Assertion failed at /Users/nark/Development/Me/Cocoa/Wired/wired2.5/wirebot/libwired/libwired/base/wi-runtime.c:257: 0x600001f94680 is not a valid instance: magic=0x46d84680, id=11061
+Nov 17 00:41:48 wirebot[94406]: Info: Reading /Users/nark/.wirebot/wirebot.conf
+Nov 17 00:41:48 wirebot[94406]: Debug:   nick = WireBot
+Nov 17 00:41:48 wirebot[94406]: Debug:   status = Jedi in the Matrix
+Nov 17 00:41:48 wirebot[94406]: Debug:   dictionary path = wirebot.xml
+Nov 17 00:41:48 wirebot[94406]: Debug:   auto reconnect = yes
+Nov 17 00:41:48 wirebot[94406]: Debug:   reconnect on kick = no
+Nov 17 00:41:48 wirebot[94406]: Debug:   icon path = icon.png
+Nov 17 00:41:48 wirebot[94406]: Debug:   hostname = localhost
+Nov 17 00:41:48 wirebot[94406]: Debug:   port = 4871
+Nov 17 00:41:48 wirebot[94406]: Debug:   login = admin
+Nov 17 00:41:48 wirebot[94406]: Debug:   password = 
+Nov 17 00:41:48 wirebot[94406]: Debug:   omdb api key = abafc4bb
+Nov 17 00:41:48 wirebot[94406]: Info: Reading /Users/nark/.wirebot/wirebot.xml robot file...
+Nov 17 00:41:48 wirebot[94406]: Info: wb_bot path: /Users/nark/.wirebot/wirebot.xml
+Nov 17 00:41:48 wirebot[94406]: Info: Writting PID file: /Users/nark/.wirebot/wirebot.pid
+Nov 17 00:41:48 wirebot[94406]: Info: Connecting to localhost...
+Nov 17 00:41:48 wirebot[94406]: Info: Trying ::1 at port 4871...
+Nov 17 00:41:49 wirebot[94406]: Info: Connected using AES/256 bits, logging in...
+Nov 17 00:41:49 wirebot[94406]: Info: Logged in, welcome to Wired Server
+Nov 17 00:41:49 wirebot[94406]: Info: Watcher subscribe to directory: /Uploads/Movies
+Nov 17 00:41:49 wirebot[94406]: Info: Watcher subscribe to directory: /Uploads
+Nov 17 00:41:53 wirebot[94406]: Info: Watcher unsubscribe to directory: /Uploads/Movies
+Nov 17 00:41:53 wirebot[94406]: Info: Watcher unsubscribe to directory: /Uploads
+Nov 17 00:41:53 wirebot[94406]: Info: Reading /Users/nark/.wirebot/wirebot.xml robot file...
+Nov 17 00:41:53 wirebot[94406]: Info: Watcher subscribe to directory: /Uploads/Movies
+Nov 17 00:41:53 wirebot[94406]: Info: Watcher subscribe to directory: /Uploads
+Nov 17 00:41:53 wirebot[94406]: Info: Output: Yay! Reloaded.
+Nov 17 00:41:54 wirebot[94406]: Info: Watcher unsubscribe to directory: /Uploads/Movies
+Nov 17 00:41:54 wirebot[94406]: Info: Watcher unsubscribe to directory: /Uploads
+Nov 17 00:41:54 wirebot[94406]: Info: Reading /Users/nark/.wirebot/wirebot.xml robot file...
+Nov 17 00:41:54 wirebot[94406]: Info: Watcher subscribe to directory: /Uploads/Movies
+Nov 17 00:41:54 wirebot[94406]: Info: Watcher subscribe to directory: /Uploads
+Nov 17 00:41:54 wirebot[94406]: Info: Output: Ready to fight!
+Nov 17 00:41:55 wirebot[94406]: Info: Watcher unsubscribe to directory: /Uploads/Movies
+Nov 17 00:41:55 wirebot[94406]: Info: Watcher unsubscribe to directory: /Uploads
+Nov 17 00:41:55 wirebot[94406]: Info: Reading /Users/nark/.wirebot/wirebot.xml robot file...
+Nov 17 00:41:55 wirebot[94406]: Info: Watcher subscribe to directory: /Uploads/Movies
+Nov 17 00:41:55 wirebot[94406]: Info: Watcher subscribe to directory: /Uploads
+Nov 17 00:41:55 wirebot[94406]: Info: Output: …
+Nov 17 00:41:56 wirebot[94406]: Info: Watcher unsubscribe to directory: /Uploads/Movies
+Nov 17 00:41:56 wirebot[94406]: Info: Watcher unsubscribe to directory: /Uploads
+Nov 17 00:41:56 wirebot[94406]: Info: Reading /Users/nark/.wirebot/wirebot.xml robot file...
+Nov 17 00:41:56 wirebot[94406]: Info: Watcher subscribe to directory: /Uploads/Movies
+Nov 17 00:41:56 wirebot[94406]: Info: Watcher subscribe to directory: /Uploads
+Nov 17 00:41:56 wirebot[94406]: Info: Output: Yay! Reloaded.
+Nov 17 00:41:58 wirebot[94406]: Info: Watcher unsubscribe to directory: /Uploads/Movies
+Nov 17 00:41:58 wirebot[94406]: Info: Watcher unsubscribe to directory: /Uploads
+Nov 17 00:41:58 wirebot[94406]: Info: Reading /Users/nark/.wirebot/wirebot.xml robot file...
+Nov 17 00:41:58 wirebot[94406]: Info: Watcher subscribe to directory: /Uploads/Movies
+Nov 17 00:41:58 wirebot[94406]: Info: Watcher subscribe to directory: /Uploads
+Nov 17 00:41:58 wirebot[94406]: Info: Output: …
+Nov 17 00:41:59 wirebot[94406]: Error: Assertion failed at /Users/nark/Development/Me/Cocoa/Wired/wired2.5/wirebot/libwired/libwired/base/wi-runtime.c:257: 0x600003c06700 is not a valid instance: magic=0xf5e56700, id=32556
+Nov 17 00:42:07 wirebot[94422]: Info: Reading /Users/nark/.wirebot/wirebot.conf
+Nov 17 00:42:07 wirebot[94422]: Debug:   nick = WireBot
+Nov 17 00:42:07 wirebot[94422]: Debug:   status = Jedi in the Matrix
+Nov 17 00:42:07 wirebot[94422]: Debug:   dictionary path = wirebot.xml
+Nov 17 00:42:07 wirebot[94422]: Debug:   auto reconnect = yes
+Nov 17 00:42:07 wirebot[94422]: Debug:   reconnect on kick = no
+Nov 17 00:42:07 wirebot[94422]: Debug:   icon path = icon.png
+Nov 17 00:42:07 wirebot[94422]: Debug:   hostname = localhost
+Nov 17 00:42:07 wirebot[94422]: Debug:   port = 4871
+Nov 17 00:42:07 wirebot[94422]: Debug:   login = admin
+Nov 17 00:42:07 wirebot[94422]: Debug:   password = 
+Nov 17 00:42:07 wirebot[94422]: Debug:   omdb api key = abafc4bb
+Nov 17 00:42:07 wirebot[94422]: Info: Reading /Users/nark/.wirebot/wirebot.xml robot file...
+Nov 17 00:42:07 wirebot[94422]: Info: wb_bot path: /Users/nark/.wirebot/wirebot.xml
+Nov 17 00:42:07 wirebot[94422]: Info: Writting PID file: /Users/nark/.wirebot/wirebot.pid
+Nov 17 00:42:07 wirebot[94422]: Info: Connecting to localhost...
+Nov 17 00:42:07 wirebot[94422]: Info: Trying ::1 at port 4871...
+Nov 17 00:42:07 wirebot[94422]: Info: Connected using AES/256 bits, logging in...
+Nov 17 00:42:07 wirebot[94422]: Info: Logged in, welcome to Wired Server
+Nov 17 00:42:07 wirebot[94422]: Info: Watcher subscribe to directory: /Uploads/Movies
+Nov 17 00:42:07 wirebot[94422]: Info: Watcher subscribe to directory: /Uploads
+Nov 17 00:43:33 wirebot[94422]: Info: Output: Wirebot Help:
+
+ 
+Wirebot responds to chat commands to execute specific
+features. A chat command starts with a '!' characters
+followed by a keyword. See the list of available chat
+commands below:
+ 
+!start           : Start the bot
+!stop            : Stop the bot
+!sleep           : Make the bot idle
+!reload          : Reload the dictionary
+!nick [nickname] : Change the nick of the bot
+!status [status] : Change the status of the bot
+!help            : Show this help message
+
+
+Nov 17 00:45:53 wirebot[94422]: Info: Output: Yay for @BOT_NICK!
+Nov 17 09:18:31 wirebot[94422]: Info: Signal INT received, quitting
+Nov 17 09:18:31 wirebot[94422]: Info: Connection to ::1 closed

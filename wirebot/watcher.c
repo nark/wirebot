@@ -33,8 +33,9 @@
 #include "watcher.h"
 #include "settings.h"
 #include "service.h"
+#include "commands.h"
 #include <wired/wired.h>
-
+#include <string.h>
 
 #pragma mark -
 
